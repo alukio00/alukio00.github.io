@@ -1,7 +1,7 @@
 class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <header id="header" class="fixed left-0 h-full text-white flex flex-row justify-center">
+        <header id="header" class="z-10 fixed left-0 h-full text-white flex flex-row justify-center">
             <div class="flex flex-col align-middle justify-center gap-5 bg-gray-800 h-full w-16">
                 <div class="nav-bar-icons"><a href="index.html"><i class="material-symbols-outlined">home</i></a><div class="sidebar-child">
                     <p>Strona Główna</p>

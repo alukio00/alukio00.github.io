@@ -12,6 +12,13 @@ body {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.541) 55%, rgba(0, 0, 0, 0.096) 0%), url(https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR3747.jpg);
     background-size: cover;
 }
+@media (max-width: 1280px) {
+    .image {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 55%, rgba(0, 0, 0, 0.1) 0%), url(https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR3747.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
 section {
     padding: 40px;
 }
@@ -61,4 +68,8 @@ h3 {
     text-align: left;
     text-wrap: nowrap;
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.308);
+}
+.nav-bar-icons .material-symbols-outlined:hover {
+    border-radius: 15px;
+    transition-duration: 200ms;
 }
