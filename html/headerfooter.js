@@ -62,21 +62,21 @@ class Footer extends HTMLElement {
         `
     }
 }
-customElements.define("my-header", Header)
-customElements.define("my-footer", Footer)
+customElements.define("my-header", Header);
+customElements.define("my-footer", Footer);
 
 
 const menuIcon = document.getElementById("menu-icon");
-const mobileRight = document.getElementById("mobile-drop-right")
+const mobileRight = document.getElementById("mobile-drop-right");
 
 const mobileMenu = () => {
     mobileRight.classList.toggle("hidden")
     if (menuIcon.textContent == "close") {
-        menuIcon.textContent = "menu"
+        menuIcon.textContent = "menu";
     } else {
-        menuIcon.textContent = "close"
+        menuIcon.textContent = "close";
     }
-}
+};
 
 
-menuIcon.addEventListener("click", mobileMenu)
+menuIcon.addEventListener("click", mobileMenu);
