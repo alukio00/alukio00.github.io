@@ -1,12 +1,12 @@
 class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <header class="z-10 fixed left-0 h-full w-full text-white flex flex-row justify-start">
+            <header class="z-10 fixed left-0 h-full w-80 text-white flex flex-row justify-start">
                 <div class="max-md:hidden flex flex-col align-middle justify-center gap-5 bg-gray-800 h-full w-16">
                     <div class="nav-bar-icons"><a href="index.html"><i class="material-symbols-outlined">home</i></a><div class="sidebar-child">
                         <p>Strona Główna</p>
                     </div></div>
-                    <div class="nav-bar-icons"><a href=""><i class="material-symbols-outlined">apartment</i></a><div class="sidebar-child">
+                    <div class="nav-bar-icons"><a href="apartamenty.html"><i class="material-symbols-outlined">apartment</i></a><div class="sidebar-child">
                         <p>Apartamenty</p>
                     </div></div>
                     <div class="nav-bar-icons"><a href="galeria.html"><i class="material-symbols-outlined">photo_library</i></a><div class="sidebar-child">
@@ -26,7 +26,7 @@ class Header extends HTMLElement {
                         <a class="mobile-menu-a" href="index.html">
                             <i class="material-symbols-outlined">home</i><p>Strona Główna</p>
                         </a>
-                        <a class="mobile-menu-a" href="index.html">
+                        <a class="mobile-menu-a" href="apartamenty.html">
                             <i class="material-symbols-outlined">apartment</i><p>Apartamenty</p>
                         </a>
                         <a class="mobile-menu-a" href="galeria.html">
@@ -43,8 +43,22 @@ class Header extends HTMLElement {
                 
             </header>
         `
+
+        const menuIcon = this.querySelector("#menu-icon");
+        const mobileRight = this.querySelector("#mobile-drop-right");
+
+        menuIcon.addEventListener("click", () => {
+            mobileRight.classList.toggle("hidden");
+            if (menuIcon.textContent == "close") {
+                menuIcon.textContent = "menu";
+            } else {
+                menuIcon.textContent = "close";
+            }
+        });
     }
 }
+customElements.define("my-header", Header);
+
 
 class Footer extends HTMLElement {
     connectedCallback() {
@@ -62,21 +76,5 @@ class Footer extends HTMLElement {
         `
     }
 }
-customElements.define("my-header", Header);
+
 customElements.define("my-footer", Footer);
-
-
-const menuIcon = document.getElementById("menu-icon");
-const mobileRight = document.getElementById("mobile-drop-right");
-
-const mobileMenu = () => {
-    mobileRight.classList.toggle("hidden")
-    if (menuIcon.textContent == "close") {
-        menuIcon.textContent = "menu";
-    } else {
-        menuIcon.textContent = "close";
-    }
-};
-
-
-menuIcon.addEventListener("click", mobileMenu);

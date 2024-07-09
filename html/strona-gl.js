@@ -3,7 +3,6 @@ const arrowDrop = document.getElementById("dropdown-arrow");
 const divider = document.getElementById("div-aparts");
 
 const dropdown = () => {
-    console.log("ffffff")
     arrowDrop.classList.toggle("rotate-arrow");
     divider.classList.toggle("hidden");
 
