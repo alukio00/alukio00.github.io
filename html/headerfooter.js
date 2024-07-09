@@ -43,3 +43,6 @@ class Footer extends HTMLElement {
 }
 customElements.define("my-header", Header)
 customElements.define("my-footer", Footer)
+
+
+const menuIcon = document.getElementById("menu-icon");
