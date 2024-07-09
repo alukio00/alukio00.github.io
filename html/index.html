@@ -25,25 +25,28 @@
             <h2 class="text-center font-medium text-4xl">Do dyspozycji Gości:</h2>
             <div class="w-5/6 mx-auto my-12 flex flex-col gap-6">
                  <ul class="grid grid-cols-3 gap-7">
-                    <li class="lista"><i class="flex justify-center align-middle material-symbols-outlined">local_parking</i>Darmowy Monitorowany Parking</li>
-                    <li class="lista"><i class="flex justify-center align-middle material-symbols-outlined">wifi</i>Wifi</li>
-                    <li class="lista"><i class="flex justify-center align-middle material-symbols-outlined">skillet</i>Aneks Kuchenny</li>
-                    <li class="lista"><i class="flex justify-center align-middle material-symbols-outlined">deck</i>Taras</li>
-                    <li class="lista"><i class="flex justify-center align-middle material-symbols-outlined">sailing</i>Łódka</li>
-                    <li class="lista"><i class="flex justify-center align-middle material-symbols-outlined">self_improvement</i>Hamaki i Huśtawki</li>
+                    <li class="lista"><i class="material-symbols-outlined">local_parking</i>Darmowy Monitorowany Parking</li>
+                    <li class="lista"><i class="material-symbols-outlined">wifi</i>Wifi</li>
+                    <li class="lista"><i class="material-symbols-outlined">skillet</i>Aneks Kuchenny</li>
+                    <li class="lista"><i class="material-symbols-outlined">deck</i>Taras</li>
+                    <li class="lista"><i class="material-symbols-outlined">sailing</i>Łódka</li>
+                    <li class="lista"><i class="material-symbols-outlined">self_improvement</i>Hamaki i Huśtawki</li>
                 </ul>
             </div>
         </section>
-        <section>
-            <div>
-                <h2 class="text-center font-medium text-4xl">O nas</h2>
-                <div class="w-5/6 mx-auto my-12 flex flex-col gap-6">
-                    <p>Nasz obiekt położony jest w Kudowie - Zdroju, 1,5 km od Parku Zdrojowego, w cichej, spokojnej i atrakcyjnej przyrodniczo okolicy w otoczeniu gór i lasów, z dala od miejskiego zgiełku.<br><br>Znajdą Państwo u nas dużo zielonej przestrzeni oraz piękne krajobrazy - w pobliżu Park Narodowy Gór Stołowych.<br><br>Jest to idealna baza na wycieczki piesze i rowerowe.</p>
-                    <p>Zapewniamy także wysoki komfort wypoczynku oferując gościom wygodne i przestronne apartamenty z aneksami kuchennymi.</p>
+        <section class="space-y-16">
+            <h2 class="text-center font-medium text-4xl">O nas</h2>
+
+            <div class="flex flex-row gap-6 max-xl:flex-col">
+                <div class="max-xl:w-full w-3/5">
+                    <div class="h-full p-5 border-2 rounded-3xl border-gray-800 text-lg flex flex-col gap-6 shadow-lg">
+                        <p>Nasz obiekt położony jest w Kudowie - Zdroju, 1,5 km od Parku Zdrojowego, w cichej, spokojnej i atrakcyjnej przyrodniczo okolicy w otoczeniu gór i lasów, z dala od miejskiego zgiełku.<br><br>Znajdą Państwo u nas dużo zielonej przestrzeni oraz piękne krajobrazy - w pobliżu Park Narodowy Gór Stołowych.<br><br>Jest to idealna baza na wycieczki piesze i rowerowe.</p>
+                        <p>Zapewniamy także wysoki komfort wypoczynku oferując gościom wygodne i przestronne apartamenty z aneksami kuchennymi.</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img src="https://www.cichyzakatek.com.pl/gallery/CB6A8164.jpg" alt="zdjęcie obiektu">
+                <div class="max-xl:w-full w-2/5">
+                    <img class="w-full bg-cover rounded-3xl shadow-lg h-full" src="https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR4493.jpg" alt="zdjęcie obiektu">
+                </div>
             </div>
         </section>
         <section>
@@ -64,16 +67,27 @@
             </div>
         </section>
         <section>
-            <div>
-                <h2>Galeria</h2>
-                <div>
-                    <img src="https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR4493.jpg" alt="Apartament">
-                    <img src="https://www.cichyzakatek.com.pl/gallery/163-kudowa-zdroj-cichy-zakatek.jpg" alt="Domek Drewniany">
-                    <img src="https://www.cichyzakatek.com.pl/gallery/DSC_0246.jpg" alt="Łódka">
-                    <img src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A3959.jpg" alt="Apartament - wnętrze">
-                    <img src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/EC3A5271.jpg" alt="Apartament - kuchnia">
+            <div class="flex flex-col gap-16">
+                <h2 class="text-center font-medium text-4xl">Galeria</h2>
+                <div class="flex flex-col flex-wrap gap-3">
+                    <div class="flex max-lg:flex-col flex-row gap-3">
+                        <img class="galeria-img w-2/3 max-lg:w-full max-lg:h-auto h-2/3" src="https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR4739.jpg" alt="Apartament">
+                        <div class="flex max-lg:flex-row max-lg:w-full flex-col w-1/3 h-1/3 gap-3 max-sm:flex-col">
+                            <img class="galeria-img max-lg:w-1/2 max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4041.jpg" alt="Domek Drewniany">
+                            <img class="galeria-img max-lg:w-1/2  max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4027.jpg" alt="Łódka">
+                        </div>
+                        
+                    </div>
+                    <div class="flex max-lg:flex-col flex-row-reverse gap-3">
+                        <img class="galeria-img w-2/3 max-lg:h-auto max-lg:w-full h-2/3" src="https://www.cichyzakatek.com.pl/gallery/DJI_0909.jpg" alt="Apartament panorama">
+                        <div class="flex max-lg:flex-row max-lg:w-full flex-col w-1/3 h-1/3 gap-3 max-sm:flex-col">
+                            <img class="galeria-img max-lg:w-1/2  max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A3959.jpg" alt="Apartament - wnętrze">
+                            <img class="galeria-img max-lg:w-1/2  max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/EC3A5271.jpg" alt="Apartament - kuchnia">
+                        </div>
+                    </div>
+                
                 </div>
-                <button>Zobacz Wszystko</button>
+                <a href="galeria.html" class="mx-auto bg-gray-800 text-white p-2 px-3 rounded-xl shadow-md text-lg">Zobacz Wszystko</a>
             </div>
         </section>
         <section>
