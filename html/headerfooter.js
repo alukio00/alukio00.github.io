@@ -46,3 +46,16 @@ customElements.define("my-footer", Footer)
 
 
 const menuIcon = document.getElementById("menu-icon");
+const mobileRight = document.getElementById("mobile-drop-right")
+
+const mobileMenu = () => {
+    mobileRight.classList.toggle("hidden")
+    if (menuIcon.textContent == "close") {
+        menuIcon.textContent = "menu"
+    } else {
+        menuIcon.textContent = "close"
+    }
+}
+
+
+menuIcon.addEventListener("click", mobileMenu)

@@ -3,10 +3,16 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: Poppins;
     margin: 0px;
     padding-left: 64px;
+}
+@media(max-width: 768px) {
+    body {
+        padding-left: 0px;
+    }
 }
 
 section {
@@ -55,4 +61,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.mobile-menu-a {
+    display: flex;
+    gap: 5px;
 }
