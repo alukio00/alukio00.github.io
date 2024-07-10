@@ -16,7 +16,7 @@
     <my-header></my-header>
     <main>
         <section class="image h-screen flex flex-col justify-center">
-            <div class="p-5 bg-gray-800 border-white border-2 border-opacity-55 bg-opacity-80 text-white border-solid rounded-3xl shadow-lg flex flex-col gap-4 w-5/12 max-w-full max-xl:max-w-xl max-xl:w-full">
+            <div class="paralax-child p-5 bg-gray-800 border-white border-2 border-opacity-55 bg-opacity-80 text-white border-solid rounded-3xl shadow-lg flex flex-col gap-4 w-5/12 max-w-full max-xl:max-w-xl max-xl:w-full">
                 <h1 class="max-sm:text-3xl text-5xl font-semibold leading-tight">Apartamenty<br>Cichy Zakątek</h1>
                 <hr class="h-0.5 bg-white w-2/6">
                 <p class="max-xl:max-w-lg">Apartamenty Cichy Zakątek to jedyny obiekt w swoim rodzaju. Na naszym terenie panuje spokój i cisza, jest to idelane miejsce na wypoczynek</p>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
                 <div class="max-xl:w-full w-2/5">
-                    <img class="w-full bg-cover rounded-3xl shadow-lg h-full" src="https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR4493.jpg" alt="zdjęcie obiektu">
+                    <img loading="lazy" class="w-full bg-cover rounded-3xl shadow-lg h-full" src="https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR4493.jpg" alt="zdjęcie obiektu">
                 </div>
             </div>
         </section>
@@ -87,18 +87,18 @@
                 <h2 class="text-center font-medium text-4xl">Galeria</h2>
                 <div class="flex flex-col flex-wrap gap-3">
                     <div class="flex max-lg:flex-col flex-row gap-3">
-                        <img class="galeria-img w-2/3 max-lg:w-full max-lg:h-auto h-2/3" src="https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR4739.jpg" alt="Apartament">
+                        <img loading="lazy" class="galeria-img w-2/3 max-lg:w-full max-lg:h-auto h-2/3" src="https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR4739.jpg" alt="Apartament">
                         <div class="flex max-lg:flex-row max-lg:w-full flex-col w-1/3 h-1/3 gap-3 max-sm:flex-col">
-                            <img class="galeria-img max-lg:w-1/2 max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4041.jpg" alt="Domek Drewniany">
-                            <img class="galeria-img max-lg:w-1/2  max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4027.jpg" alt="Łódka">
+                            <img loading="lazy" class="galeria-img max-lg:w-1/2 max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4041.jpg" alt="Domek Drewniany">
+                            <img loading="lazy" class="galeria-img max-lg:w-1/2  max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4027.jpg" alt="Łódka">
                         </div>
                         
                     </div>
                     <div class="flex max-lg:flex-col flex-row-reverse gap-3">
-                        <img class="galeria-img w-2/3 max-lg:h-auto max-lg:w-full h-2/3" src="https://www.cichyzakatek.com.pl/gallery/DJI_0909.jpg" alt="Apartament panorama">
+                        <img loading="lazy" class="galeria-img w-2/3 max-lg:h-auto max-lg:w-full h-2/3" src="https://www.cichyzakatek.com.pl/gallery/DJI_0909.jpg" alt="Apartament panorama">
                         <div class="flex max-lg:flex-row max-lg:w-full flex-col w-1/3 h-1/3 gap-3 max-sm:flex-col">
-                            <img class="galeria-img max-lg:w-1/2  max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A3959.jpg" alt="Apartament - wnętrze">
-                            <img class="galeria-img max-lg:w-1/2  max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/EC3A5271.jpg" alt="Apartament - kuchnia">
+                            <img loading="lazy" class="galeria-img max-lg:w-1/2  max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A3959.jpg" alt="Apartament - wnętrze">
+                            <img loading="lazy" class="galeria-img max-lg:w-1/2  max-sm:w-full" src="https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/EC3A5271.jpg" alt="Apartament - kuchnia">
                         </div>
                     </div>
                 
@@ -106,62 +106,42 @@
                 <a href="galeria.html" class="mx-auto bg-gray-800 text-white p-2 px-3 rounded-xl shadow-md text-lg">Zobacz Wszystko</a>
             </div>
         </section>
-        <section>
-            <div class="container">
-                <h2>Kontakt</h2>
-                <form>
-                    <label for="name">Imię:</label>
-                    <input type="text" id="name" name="name" required>
-                    
+        <section class="flex flex-col gap-16 justify-center align-middle my-10">
+            <h2 class="text-center font-medium text-4xl">Kontakt</h2>
+            <form class="bg-white shadow-lg rounded-3xl p-10 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
+                <div class="flex flex-row gap-8 justify-between">
+                    <div class="w-full gap-3 flex flex-col">
+                        <label for="name">Imię:</label>
+                        <input class="w-full" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="w-full gap-3 flex flex-col">
+                        <label for="last-name">Nazwisko:</label>
+                        <input class="w-full" type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+                <div class="w-full gap-3 flex flex-col">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-                    
+                </div>
+                <div class="flex flex-row gap-8 justify-between">
+                    <div class="w-full gap-3 flex flex-col">
+                        <label for="date">Data Przyjazdu:</label>
+                        <input type="date" name="date" id="date"> 
+                    </div>
+                    <div class="w-full gap-3 flex flex-col">
+                        <label for="date-to">Data Odjazdu:</label>
+                        <input type="date" name="date-to" id="date-to">
+                    </div>
+                </div>
+                <div class="w-full gap-3 flex flex-col">
                     <label for="message">Wiadomość:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    
-                    <button type="submit">Wyślij</button>
-                </form>
-            </div>
+                    <textarea rows="4" id="message" name="message" required></textarea>
+                </div>
+              
+                <button class="mt-8 mx-auto bg-gray-800 text-white p-2 px-10 rounded-xl shadow-md text-lg" type="submit">Prześlij</button>
+            </form>
         </section>
     </main>
-    <footer class="bg-gradient-to-bl from-gray-700 to-gray-800 text-white flex flex-col">
-        <div class="p-10 flex flex-col justify-start w-11/12 max-xl:w-full">
-            <h2 class="text-3xl">Apartamenty Cichy Zakątek</h2>
-            <hr class="border-2 h-0.5 w-4/12 my-4 border-white">
-            <div class="flex flex-row justify-between flex-wrap gap-8">
-                <div class="flex flex-col justify-start w-96">
-                    <h3 class="text-2xl my-2">Informacje:</h3>
-                    <p><strong>Adres:</strong> Tadeusza Kościuszki Kudowa-Zdrój</p>
-                    <p><strong>Telefon:</strong> 123 456 789</p>
-                    <p><strong>Email:</strong> kontakt@hotel-luksusowy.pl</p>
-                </div>
-                <div class="flex flex-col justify-start w-96">
-                    <h3 class="text-2xl my-2">Apartamenty:</h3>
-                    <ul>
-                        <li class="list-disc list-inside"><a href="a1.html">Apartament Dwupoziomowy nr 1</a></li>
-                        <li class="list-disc list-inside"><a href="a2.html">Apartament Dwupoziomowy nr 2</a></li>
-                        <li class="list-disc list-inside"><a href="a3.html">Apartament Dwupoziomowy nr 3</a></li>
-                        <li class="list-disc list-inside"><a href="a4.html">Apartament Dwupoziomowy nr 4</a></li>
-                        <li class="list-disc list-inside"><a href="a5.html">Apartament Dwupokojowy</a></li>
-                        <li class="list-disc list-inside"><a href="domek.html">Domek Drewniany</a></li>
-                    </ul>
-                </div>
-                <div class="flex flex-col justify-start w-96">
-                    <h3 class="text-2xl my-2">Strony:</h3>
-                    <ul>
-                        <li class="list-disc list-inside"><a href="index.html">Strona Główna</a></li>
-                        <li class="list-disc list-inside"><a href="galeria.html">Galeria</a></li>
-                        <li class="list-disc list-inside"><a href="cennik.html">Cennik</a></li>
-                        <li class="list-disc list-inside"><a href="kontakt.html">Kontakt</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
-        
-        <div class="p-2">
-            <p>&copy; 2024 Apartamenty CichyZakątek. Wszelkie prawa zastrzeżone.</p>
-        </div>
-    </footer>
+    <my-footer></my-footer>
 </body>
 </html>
