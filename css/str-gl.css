@@ -11,6 +11,9 @@
 .image {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.541) 55%, rgba(0, 0, 0, 0.096) 0%), url(https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR3747.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 

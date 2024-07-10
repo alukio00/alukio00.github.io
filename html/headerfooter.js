@@ -6,7 +6,7 @@ class Header extends HTMLElement {
                     <div class="nav-bar-icons"><a href="index.html"><i class="material-symbols-outlined">home</i></a><div class="sidebar-child">
                         <p>Strona Główna</p>
                     </div></div>
-                    <div class="nav-bar-icons"><a href="apartamenty.html"><i class="material-symbols-outlined">apartment</i></a><div class="sidebar-child">
+                    <div class="nav-bar-icons"><a href="a1.html"><i class="material-symbols-outlined">apartment</i></a><div class="sidebar-child">
                         <p>Apartamenty</p>
                     </div></div>
                     <div class="nav-bar-icons"><a href="galeria.html"><i class="material-symbols-outlined">photo_library</i></a><div class="sidebar-child">
