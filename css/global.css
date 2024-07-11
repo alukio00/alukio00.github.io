@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+
 * {
     box-sizing: border-box;
 }
@@ -65,4 +66,7 @@ section {
 .mobile-menu-a {
     display: flex;
     gap: 5px;
+}
+.shadow-div {
+    box-shadow: 5px 0px 8px 0px #1f29374d;
 }

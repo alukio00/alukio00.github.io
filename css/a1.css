@@ -1,0 +1,60 @@
+.divider-p p {
+    background-color: white;
+    padding: 6px 16px;
+    border: solid 2px #1f2937;
+    border-radius: 16px;
+    box-shadow: 2px 2px 8px 0px #1f293723;
+}
+
+
+.ikonki1 .material-symbols-outlined {
+    font-size: 35px;
+    display: flex;
+    padding: 4px;
+}
+.img-div img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 0px #0000003b;
+    cursor: pointer;
+
+}
+.img-div {
+    position: relative;
+}
+.left,.right {
+    animation-timing-function: ease-in;
+    animation-duration: 250ms;
+}
+
+.left {
+    animation-name: slideInRight;
+
+}
+.right {
+    animation-name: slideInLeft;
+
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
