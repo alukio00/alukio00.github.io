@@ -2,10 +2,10 @@ const galery1 = document.getElementById("galery-1"),
 galery2 = document.getElementById("galery-2"),
 galery3 = document.getElementById("galery-3"),
 zoomDiv = document.getElementById("zoom-div"),
-popupDiv = document.getElementById("popup-btn")
-;
-const liczba = screen.width > 1340 ? 3 : screen.width > 768 ? 1 : 0;
+popupDiv = document.getElementById("popup-div");
 
+const liczba = screen.width > 1340 ? 3 : screen.width > 768 ? 1 : 0;
+let currentZoom = ""
 
 let galery = [
     {
@@ -59,7 +59,7 @@ let galery = [
 ]
 
 const zoom = (galeria, index) => {
-    zoomDiv.classList.remove("hidden");
+    currentZoom = [galeria, index]
     popupDiv.classList.remove("hidden");
     zoomDiv.innerHTML = `
         <img src="${galery[galeria].url[index]}" alt="Powiększony obraz obiektu" class="mx-auto my-auto rounded-2xl shadow-xl object-cover max-w-80% max-h-80vh">
@@ -67,10 +67,21 @@ const zoom = (galeria, index) => {
 }
 
 const closeZoom = () => {
-    zoomDiv.classList.add("hidden");
     popupDiv.classList.add("hidden");
     zoomDiv.innerHTML = "";
 }
+
+const zoomRight = () => {
+    if (galery[currentZoom[0]].url.length > currentZoom[1]) {
+        zoom(currentZoom[0], currentZoom[1] + 1)
+    }
+}
+const zoomLeft = () => {
+    if (0 < currentZoom[1]) {
+        zoom(currentZoom[0], currentZoom[1] - 1)
+    }
+}
+
 
 const generator = (galeria, indexStart=0) => {
     galery[galeria].html.innerHTML = "";
