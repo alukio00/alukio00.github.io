@@ -3,18 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartamenty Cichy Zakątek</title>
+    <title>Galeria</title>
     <script src="/html/headerfooter.js"></script>
     <link href="/css/global.css" rel="stylesheet">
     <link href="/src/output.css" rel="stylesheet">
-    <link href="/css/str-gl.css" rel="stylesheet">
+    <link href="/css/galeria.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="galeria.js" defer></script>
 
 </head>
 <body>
     <my-header></my-header>
     <main>
-        <a class="" href="index.html">Str gl</a>
+        <div id="popup-div" class="hidden fixed w-full h-full flex gap-5 justify-center align-middle flex-row z-30 bg-black bg-opacity-50">
+            <div class="my-auto">
+                <button onclick="zoomLeft()" type="button" class="border hover:bg-gray-900 flex p-2 cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle"><i class="material-symbols-outlined">chevron_left</i></button>
+            </div>
+            <div id="zoom-div" class="my-auto"></div>
+            <div class="my-auto">
+                <button onclick="zoomRight()" type="button" class="border hover:bg-gray-900 cursor-pointer p-2 flex bg-gray-800 rounded-md text-white justify-center align-middle"><i class="material-symbols-outlined">chevron_right</i></button>
+            </div>
+          
+            <div id="popup-btn" class="flex z-40 fixed top-14 right-14">
+                <button class="text-white material-symbols-outlined p-2 rounded-lg border bg-gray-800" type="button" onclick="closeZoom()">close</button>
+            </div>
+        </div>
+        <section>
+            <h1 class="text-5xl font-semibold text-center my-6">Galeria</h1>
+        </section>
+        <section class="space-y-8">
+            <h2 class="text-4xl">Wnętrze</h2>
+            <hr class="border-2 h-0.5 w-2/6 mb-6 border-gray-800">
+            <div id="galeria-1" class="grid-img">
+
+            </div>
+        </section>
+        <section class="space-y-8">
+            <h2 class="text-4xl">Okolica</h2>
+            <hr class="border-2 h-0.5 w-2/6 mb-6 border-gray-800">
+            <div id="galeria-2" class="grid-img">
+                
+            </div>
+        </section>
+        
     </main>
     <my-footer></my-footer>
 </body>

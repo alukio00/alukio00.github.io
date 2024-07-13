@@ -1,0 +1,13 @@
+.grid-img img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.151);
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 20px;
+}

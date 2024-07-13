@@ -72,7 +72,7 @@ const closeZoom = () => {
 }
 
 const zoomRight = () => {
-    if (galery[currentZoom[0]].url.length > currentZoom[1]) {
+    if (galery[currentZoom[0]].url.length > currentZoom[1] + 1) {
         zoom(currentZoom[0], currentZoom[1] + 1)
     }
 }
