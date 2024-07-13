@@ -70,3 +70,54 @@ section {
 .shadow-div {
     box-shadow: 5px 0px 8px 0px #1f29374d;
 }
+.popup-ap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+.popup-link {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.205);
+    border: solid 4px #1f2937;
+    transition-duration: 250ms;
+    width: 400px;
+    max-width: 30%;
+    animation: growIn 400ms ease-in-out;
+}
+
+.popup-link:hover {
+    transform: scale(1.03);
+}
+@media (max-width: 1024px) {
+    .popup-link {
+        max-width: 90%;
+    }
+}
+
+.popup-ap .material-symbols-outlined {
+    color: #1f2937;
+    font-size: 25px;
+}
+.popup-ap li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    
+}
+#lista-show a {
+    text-decoration: underline;
+    text-decoration-color: #1f2937;
+}
+@keyframes growIn {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

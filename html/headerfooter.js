@@ -6,7 +6,7 @@ class Header extends HTMLElement {
                     <div class="nav-bar-icons"><a href="index.html"><i class="material-symbols-outlined">home</i></a><div class="sidebar-child">
                         <p>Strona Główna</p>
                     </div></div>
-                    <div class="nav-bar-icons"><a href="a1.html"><i class="material-symbols-outlined">apartment</i></a><div class="sidebar-child">
+                    <div class="nav-bar-icons"><i id="icon-show-popup" class="material-symbols-outlined cursor-pointer popup-activate">apartment</i><div class="sidebar-child">
                         <p>Apartamenty</p>
                     </div></div>
                     <div class="nav-bar-icons"><a href="galeria.html"><i class="material-symbols-outlined">photo_library</i></a><div class="sidebar-child">
@@ -28,8 +28,8 @@ class Header extends HTMLElement {
                         <a class="mobile-menu-a" href="index.html">
                             <i class="material-symbols-outlined">home</i><p>Strona Główna</p>
                         </a>
-                        <a class="mobile-menu-a" href="apartamenty.html">
-                            <i class="material-symbols-outlined">apartment</i><p>Apartamenty</p>
+                        <a class="mobile-menu-a popup-activate">
+                            <i id="icon-show-popup2" class="material-symbols-outlined">apartment</i><p>Apartamenty</p>
                         </a>
                         <a class="mobile-menu-a" href="galeria.html">
                             <i class="material-symbols-outlined">photo_library</i><p>Galeria Zdjęć</p>
@@ -59,7 +59,6 @@ class Header extends HTMLElement {
     }
 }
 customElements.define("my-header", Header);
-
 
 class Footer extends HTMLElement {
     connectedCallback() {
@@ -107,3 +106,82 @@ class Footer extends HTMLElement {
 }
 
 customElements.define("my-footer", Footer);
+
+class PopupAparts extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+            <div id="popup-aparts" class="hidden z-30 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-row justify-center items-center gap-8 max-lg:flex-col">
+                <i id="p-close" class="fixed top-5 right-5 cursor-pointer text-white material-symbols-outlined p-2 rounded-lg border bg-gray-800">close</i>
+                <div id="changing-div" class="popup-ap popup-link pb-0 cursor-pointer">
+                    <h3 class="text-2xl font-medium text-wrap">Apartament Dwupoziomowy</h3>
+                    <hr class="border-2 h-0.5 w-8/12 border-gray-800">
+                    <ul id="lista-hide" class="text-gray-700">
+                        <li><i class="material-symbols-outlined">table</i>Łóżko małżeńskie</li>
+                        <li><i class="material-symbols-outlined"></i>Łóżko dziecięce</li>
+                        <li><i class="material-symbols-outlined">skillet</i>Aneks Kuchenny</li>
+                    </ul>
+                    <ul id="lista-show" class="hidden cursor-pointer">
+                        <li><i class="material-symbols-outlined">apartment</i><a href="/html/a1.html">Apartament Nr 1</li>
+                        <li><i class="material-symbols-outlined">apartment</i><a href="/html/a2.html">Apartament Nr 2</li>
+                        <li><i class="material-symbols-outlined">apartment</i><a href="/html/a3.html">Apartament Nr 3</li>
+                        <li><i class="material-symbols-outlined">apartment</i><a href="/html/a4.html">Apartament Nr 4</li>
+                    </ul>
+                </div>
+                <a class="popup-link" href="/html/a5.html"><div class="popup-ap">
+                    <h3 class="text-2xl font-medium text-wrap">Apartament Dwupokojowy</h3>
+                    <hr class="border-2 h-0.5 w-8/12 border-gray-800">
+                    <ul class="text-gray-700">
+                        <li><i class="material-symbols-outlined"></i>Łóżko małżeńskie</li>
+                        <li><i class="material-symbols-outlined"></i>Łóżko dziecięce</li>
+                        <li><i class="material-symbols-outlined">skillet</i>Aneks Kuchenny</li>
+                    </ul>
+                </div></a>
+                <a class="popup-link" href="/html/domek.html"><div class="popup-ap">
+                    <h3 class="text-2xl font-medium text-wrap">Domek Drewniany</h3>
+                    <hr class="border-2 h-0.5 w-8/12 border-gray-800">
+                    <ul class="text-gray-700">
+                        <li><i class="material-symbols-outlined"></i>Łóżko małżeńskie</li>
+                        <li><i class="material-symbols-outlined"></i>Łóżko dziecięce (Piętrowe)</li>
+                        <li><i class="material-symbols-outlined">skillet</i>Aneks Kuchenny</li>
+                    </ul>
+                </div></a>
+            </div>
+        `;
+        const close = this.querySelector("#p-close"),
+        popupDiv = this.querySelector("#popup-aparts"),
+        popupBtn1 = document.querySelectorAll(".popup-activate"),
+        changingDiv = this.querySelector("#changing-div"),
+        hideOther = this.querySelectorAll("a.popup-link"),
+        listaHide = this.querySelector("#lista-hide"),
+        listaShow = this.querySelector("#lista-show");
+
+        changingDiv.addEventListener("click", () => {
+            hideOther.forEach(item => {
+                item.classList.add("hidden");
+            })
+            listaShow.classList.remove("hidden");
+            listaHide.classList.add("hidden");
+            changingDiv.classList.remove("cursor-pointer")
+        })
+
+
+
+        close.addEventListener("click", () => {
+            popupDiv.classList.add("hidden");
+        })
+        const removeH = () => {
+            popupDiv.classList.remove("hidden");
+            hideOther.forEach(item => {
+                item.classList.remove("hidden");
+            })
+            listaShow.classList.add("hidden");
+            listaHide.classList.remove("hidden");
+            changingDiv.classList.add("cursor-pointer")
+        }
+        popupBtn1.forEach(item => {
+            item.addEventListener("click", removeH);
+        })
+        
+    };
+}
+customElements.define("my-popup-ap", PopupAparts);
