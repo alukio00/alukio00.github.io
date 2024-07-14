@@ -63,7 +63,7 @@ customElements.define("my-header", Header);
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-                    <footer class="bg-gradient-to-bl from-gray-700 to-gray-800 text-white flex flex-col">
+                    <footer class="bg-gradient-to-bl from-gray-700 to-gray-800 text-white gap-5 flex flex-col">
                         <div class="p-10 flex flex-col justify-start w-11/12 max-xl:w-full">
                             <h2 class="text-3xl">Apartamenty Cichy Zakątek</h2>
                             <hr class="border-2 h-0.5 w-4/12 my-4 border-white">
@@ -76,22 +76,24 @@ class Footer extends HTMLElement {
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Apartamenty:</h3>
-                                    <ul>
-                                        <li class="list-disc list-inside"><a href="a1.html">Apartament Dwupoziomowy nr 1</a></li>
-                                        <li class="list-disc list-inside"><a href="a2.html">Apartament Dwupoziomowy nr 2</a></li>
-                                        <li class="list-disc list-inside"><a href="a3.html">Apartament Dwupoziomowy nr 3</a></li>
-                                        <li class="list-disc list-inside"><a href="a4.html">Apartament Dwupoziomowy nr 4</a></li>
-                                        <li class="list-disc list-inside"><a href="a5.html">Apartament Dwupokojowy</a></li>
-                                        <li class="list-disc list-inside"><a href="domek.html">Domek Drewniany</a></li>
+                                    <ul class="list-disc list-inside">
+                                        <li><a href="a1.html">Apartament Dwupoziomowy nr 1</a></li>
+                                        <li><a href="a2.html">Apartament Dwupoziomowy nr 2</a></li>
+                                        <li><a href="a3.html">Apartament Dwupoziomowy nr 3</a></li>
+                                        <li><a href="a4.html">Apartament Dwupoziomowy nr 4</a></li>
+                                        <li><a href="a5.html">Apartament Dwupokojowy</a></li>
+                                        <li><a href="domek.html">Domek Drewniany</a></li>
                                     </ul>
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Strony:</h3>
-                                    <ul>
-                                        <li class="list-disc list-inside"><a href="index.html">Strona Główna</a></li>
-                                        <li class="list-disc list-inside"><a href="galeria.html">Galeria</a></li>
-                                        <li class="list-disc list-inside"><a href="cennik.html">Cennik</a></li>
-                                        <li class="list-disc list-inside"><a href="kontakt.html">Kontakt</a></li>
+                                    <ul class="list-disc list-inside">
+                                        <li><a href="index.html">Strona Główna</a></li>
+                                        <li><a href="galeria.html">Galeria</a></li>
+                                        <li><a href="cennik.html">Cennik</a></li>
+                                        <li><a href="kontakt.html">Kontakt</a></li>
+                                        <li><a href="regulamin.html">Regulamin</a></li>
+                                        <li><a href="polityka-prywatnosci.html">Polityka Prywatności</a></li>
                                     </ul>
                                 </div>
                                 

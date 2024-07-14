@@ -97,11 +97,11 @@ const generator = (galeria, indexStart=0) => {
 }
 
 const animation = (html, right) => {
-    html.classList.remove("left");
-    html.classList.remove("right");
     if (right) {
+        html.classList.remove("right");
         html.classList.add("right");
     } else {
+        html.classList.remove("left");
         html.classList.add("left");
     }
 }

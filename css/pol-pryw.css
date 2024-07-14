@@ -1,0 +1,12 @@
+ol {
+    list-style-type: decimal;
+}
+ul {
+    list-style: disc;
+}
+.inner {
+    margin-left: 30px;
+}
+.inner-o {
+    margin-left: 30px;
+}

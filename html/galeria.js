@@ -7,12 +7,14 @@ const obrazy = [
     {
         html: galeria1,
         url: [
-            "https://www.cichyzakatek.com.pl/gallery/1_thumb.png",
-            "https://www.cichyzakatek.com.pl/gallery/5_thumb.png",
-            "https://www.cichyzakatek.com.pl/gallery/4_thumb.png",
-            "https://www.cichyzakatek.com.pl/gallery/8_thumb_yvqmfw05.png",
-            "https://www.cichyzakatek.com.pl/gallery/3_thumb.png",
-            "https://www.cichyzakatek.com.pl/gallery/53-kudowa-zdroj-cichy-zakatek_thumb_udhnv6wo.png",
+            "https://www.cichyzakatek.com.pl/gallery/55-kudowa-zdroj-cichy-zakatek_osnfgd4a.jpg", 
+            "https://www.cichyzakatek.com.pl/gallery/DSC_kacz2.jpg",
+            "https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR4493.jpg",
+            "https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR4739.jpg",
+            "https://www.cichyzakatek.com.pl/gallery/pomniejszone_KADR3747.jpg",
+            "https://www.cichyzakatek.com.pl/gallery/DJI_0909.jpg",
+            "https://www.cichyzakatek.com.pl/gallery/163-kudowa-zdroj-cichy-zakatek.jpg",
+            "https://www.cichyzakatek.com.pl/gallery/164-kudowa-zdroj-cichy-zakatek.jpg",
         ]
     },
     {

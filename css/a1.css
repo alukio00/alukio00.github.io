@@ -33,6 +33,9 @@
 .img-div {
     position: relative;
 }
+#popup-div .material-symbols-outlined {
+    font-size: 40px;
+}
 .left,.right {
     animation-timing-function: ease-in;
     animation-duration: 250ms;
