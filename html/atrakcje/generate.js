@@ -20,7 +20,7 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
         <link href="/src/output.css" rel="stylesheet">
         <link href="/css/atrakcje.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <script src="./atrakcje.js" defer></script>
+        <script src="/html/atrakcje/atrakcje.js" defer></script>
 
     </head>
 
@@ -63,8 +63,52 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
     </body>
 </html>
     `;
- 
-    fs.writeFile(pageUrl, content, function (err) {
+    
+    fs.writeFile("./id/" + pageUrl, content, function (err) {
+        if (err) throw err;
+    });
+}
+
+const makeList = (array) => {
+
+    const list = array.slice(0, 2).map(el => {
+        return `<a href="./id/${el.pageUrl}" class="text-xl p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 hover:scale-105 duration-200">${el.h1.length > 50 ? el.h1.slice(0, 50) + "..." : el.h1}</a>`;
+    }).join("")
+
+    const content = `
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atrakcje Turysteczne</title>
+        <script src="/html/headerfooter.js"></script>
+        <link href="/css/global.css" rel="stylesheet">
+        <link href="/src/output.css" rel="stylesheet">
+        <link href="/css/atrakcje-lista.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    </head>
+
+    <body>
+        <my-header></my-header>
+        <main>
+            <section class="flex flex-col gap-14">
+                <div class="flex flex-col gap-8">
+                    <h1 class="text-5xl">Atrakcje Turystyczne</h1>
+                    <hr class="h-0.5 bg-gray-800 w-2/5 border border-gray-800">
+                </div>
+                <div id="div-list" class="grid-list">
+                    ${list}
+                </div>
+            </section>
+        </main>
+        <my-footer></my-footer>
+    </body>
+</html>
+`;
+    fs.writeFile("./atrakcje.html", content, function (err) {
         if (err) throw err;
     });
 }
@@ -73,10 +117,10 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
 
 
 
-
-
 const handleArray = (dataArr) => {
   const urlArr = JSON.parse(dataArr);
+  makeList(urlArr)
+
   urlArr.slice(0, 2).forEach(element => {
     handleData(element)
   });
