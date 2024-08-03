@@ -7,7 +7,7 @@ const images = Array.from(galeria1).map(el => el.getAttribute("src"))
 let currentZoom;
  
 const zoomIn = (indexUrl) => {
-    console.log("działa")
+    console.log(indexUrl)
     const index = images.findIndex((idx) => idx == indexUrl)
     currentZoom = index
     popupDiv.classList.remove("hidden");
@@ -30,6 +30,6 @@ const zoomRight = () => {
 }
 const zoomLeft = () => {
     if (0 < currentZoom) {
-        zoomIn(currentZoom - 1)
+        zoomIn(images[currentZoom - 1])
     } 
 }

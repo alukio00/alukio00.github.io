@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snieżka z Pec pod Sněžkou - 66 km - Cichy Zakątek</title>
+        <script src="/html/headerfooter.js"></script>
+        <link href="/css/global.css" rel="stylesheet">
+        <link href="/src/output.css" rel="stylesheet">
+        <link href="/css/atrakcje.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="/html/atrakcje/atrakcje.js" defer></script>
+
+    </head>
+
+    <body>
+        <div id="popup-div" class="hidden fixed left-0 w-full h-full flex justify-between items-center flex-row z-30 bg-black bg-opacity-50">
+            <div>
+                <button onclick="zoomLeft()" type="button" class="border-2 hover:bg-gray-900 mx-4 flex cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle"><i class="material-symbols-outlined">chevron_left</i></button>
+            </div>
+            <div id="zoom-div" class="flex items-center justify-center mx-0"></div>
+            <div>
+                <button onclick="zoomRight()" type="button" class="border-2 hover:bg-gray-900 mx-4 cursor-pointer flex bg-gray-800 rounded-md text-white justify-center align-middle"><i class="material-symbols-outlined">chevron_right</i></button>
+            </div>
+          
+            <div id="popup-btn" class="flex z-40 fixed top-14 right-14">
+                <button class="text-white material-symbols-outlined rounded-lg border-2 bg-gray-800" type="button" onclick="closeZoom()">close</button>
+            </div>
+        </div>
+        <my-header></my-header>
+        <main>
+            <section class="flex flex-col gap-14">
+                <div class="flex flex-col gap-8">
+                    <h1 class="text-4xl">Snieżka z Pec pod Sněžkou - 66 km - Cichy Zakątek</h1>
+                    <hr class="h-0.5 bg-gray-800 w-2/5 border border-gray-800">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-3xl">Więcej Informacji:</h2>
+                    <div class="flex flex-col gap-3" id="links">
+                        <a class="url-atrakcje" rel="nofollow" target="_blank" href="https://www.snezkalanovka.cz/pl/">https://www.snezkalanovka.cz/pl/</a><a class="url-atrakcje" rel="nofollow" target="_blank" href="https://gorsko.eu/szlak-na-sniezke-czechy-pec/">https://gorsko.eu/szlak-na-sniezke-czechy-pec/</a>
+                    </div>
+                 </div>
+                 <div class="flex flex-col gap-4">
+                    <h2 class="text-3xl">Zdjęcia:</h2>
+                    <div class="grid-img" id="galeria-1">
+                        <img class="img-atrakcje" onclick="zoomIn('/gallery/299897212_10228677636916234_7544938628614847212_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299897212_10228677636916234_7544938628614847212_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299804459_10228677637636252_5080346684295425528_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299804459_10228677637636252_5080346684295425528_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299673476_10228677637796256_4177030803138175318_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299673476_10228677637796256_4177030803138175318_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299732248_10228677636996236_2825964206637700885_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299732248_10228677636996236_2825964206637700885_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/300032376_10228677638876283_6271285330098467052_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/300032376_10228677638876283_6271285330098467052_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/300052495_10228677664716929_5550628256010221496_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/300052495_10228677664716929_5550628256010221496_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299891083_10228677664876933_8142101844933500118_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299891083_10228677664876933_8142101844933500118_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299687249_10228677641236342_4601237458170664700_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299687249_10228677641236342_4601237458170664700_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299665715_10228677688637527_4987905925797265417_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299665715_10228677688637527_4987905925797265417_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/300000044_10228677635916209_2944116479320651799_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/300000044_10228677635916209_2944116479320651799_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299783867_10228677667717004_8342071487592584766_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299783867_10228677667717004_8342071487592584766_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299921328_10228677636156215_1471505934893422122_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299921328_10228677636156215_1471505934893422122_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299923366_10228677667877008_458725671744865570_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299923366_10228677667877008_458725671744865570_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299929610_10228677636756230_7892085228076364296_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299929610_10228677636756230_7892085228076364296_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299955592_10228677636396221_5367596450910554267_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299955592_10228677636396221_5367596450910554267_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299899778_10228677645476448_4303330336416035859_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299899778_10228677645476448_4303330336416035859_n_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/299760425_10228677667797006_1862053978671711094_n_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/299760425_10228677667797006_1862053978671711094_n_thumb.png">
+                    </div>
+                 </div>
+            </section>
+        </main>
+        <my-footer></my-footer>
+    </body>
+</html>
+    

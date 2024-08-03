@@ -1,8 +1,13 @@
 const fs = require('fs');
 
+
 const handleData = ({ h1, img, urls, pageUrl }) => {
     const zdjecia = img.map(el => {
-        return `<img class="img-atrakcje" onclick="zoomIn('/img/pomniejszone_KADR4492.jpg')" loading="lazy" alt="Zdjęcie atrakcji" src="/img/pomniejszone_KADR4492.jpg">`;
+        const regex = /images/;
+        const zmienna = el.replace(regex, "gallery");
+        console.log(zmienna)
+        
+        return `<img class="img-atrakcje" onclick="zoomIn('/${zmienna}')" loading="lazy" alt="Zdjęcie atrakcji" src="/${zmienna}">`;
     }).join("")
     const linki = urls.map(url => {
         return `<a class="url-atrakcje" rel="nofollow" target="_blank" href="${url}">${url}</a>`;
@@ -13,6 +18,7 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>${h1}</title>
         <script src="/html/headerfooter.js"></script>
@@ -71,7 +77,7 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
 
 const makeList = (array) => {
 
-    const list = array.slice(0, 2).map(el => {
+    const list = array.map(el => {
         return `<a href="./id/${el.pageUrl}" class="text-xl p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 hover:scale-105 duration-200">${el.h1.length > 50 ? el.h1.slice(0, 50) + "..." : el.h1}</a>`;
     }).join("")
 
@@ -114,14 +120,11 @@ const makeList = (array) => {
 }
 
 
-
-
-
 const handleArray = (dataArr) => {
   const urlArr = JSON.parse(dataArr);
   makeList(urlArr)
 
-  urlArr.slice(0, 2).forEach(element => {
+  urlArr.forEach(element => {
     handleData(element)
   });
   
