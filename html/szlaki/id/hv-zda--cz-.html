@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hvězda (CZ) - Cichy Zakątek</title>
+        <script src="/html/headerfooter.js"></script>
+        <link href="/css/global.css" rel="stylesheet">
+        <link href="/src/output.css" rel="stylesheet">
+        <link href="/css/atrakcje.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="/html/szlaki/szlaki.js" defer></script>
+
+    </head>
+
+    <body>
+        <div id="popup-div" class="hidden fixed left-0 w-full h-full flex justify-between items-center flex-row z-30 bg-black bg-opacity-50">
+            <div>
+                <button onclick="zoomLeft()" type="button" class="border-2 hover:bg-gray-900 mx-4 flex cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle"><i class="material-symbols-outlined">chevron_left</i></button>
+            </div>
+            <div id="zoom-div" class="flex items-center justify-center mx-0"></div>
+            <div>
+                <button onclick="zoomRight()" type="button" class="border-2 hover:bg-gray-900 mx-4 cursor-pointer flex bg-gray-800 rounded-md text-white justify-center align-middle"><i class="material-symbols-outlined">chevron_right</i></button>
+            </div>
+          
+            <div id="popup-btn" class="flex z-40 fixed top-14 right-14">
+                <button class="text-white material-symbols-outlined rounded-lg border-2 bg-gray-800" type="button" onclick="closeZoom()">close</button>
+            </div>
+        </div>
+        <my-header></my-header>
+        <main>
+            <section class="flex flex-col gap-14">
+                <div class="flex flex-col gap-8">
+                    <h1 class="text-4xl">Hvězda (CZ) - Cichy Zakątek</h1>
+                    <hr class="h-0.5 bg-gray-800 w-2/5 border border-gray-800">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-3xl">Więcej Informacji:</h2>
+                    <div class="flex flex-col gap-3" id="links">
+                        <a class="url-atrakcje" rel="nofollow" target="_blank" href="https://en.mapy.cz/zakladni?planovani-trasy&dim=5bcb148f40a0139a9d81bdbd&x=16.2747639&y=50.5608157&z=14">https://en.mapy.cz/zakladni?planovani-trasy&dim=5bcb148f40a0139a9d81bdbd&x=16.2747639&y=50.5608157&z=14</a><a class="url-atrakcje" rel="nofollow" target="_blank" href="https://en.mapy.cz/zakladni?id=16.2669493119%2C50.5650873503&source=coor&x=16.2671854572&y=50.5644596204&z=17">https://en.mapy.cz/zakladni?id=16.2669493119%2C50.5650873503&source=coor&x=16.2671854572&y=50.5644596204&z=17</a><a class="url-atrakcje" rel="nofollow" target="_blank" href="https://hasajacezajace.com/broumovske-steny-hvezda/">https://hasajacezajace.com/broumovske-steny-hvezda/</a>
+                    </div>
+                 </div>
+                 <div class="flex flex-col gap-4">
+                    <h2 class="text-3xl">Zdjęcia:</h2>
+                    <div class="grid-img" id="galeria-1">
+                        <img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0348_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0348_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0391_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0391_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0358_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0358_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0370_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0370_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0436_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0436_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0398_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0398_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0426_60v79958_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0426_60v79958_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0419_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0419_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0418_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0418_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0417_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0417_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0410_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0410_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0428_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0428_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0389_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0389_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0373_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0373_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0388_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0388_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/DSC_0384_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/DSC_0384_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/HVEZDA.jpg')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/HVEZDA.jpg"><img class="img-atrakcje" onclick="zoomIn('/gallery/dojazdHvezda.jpg')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/dojazdHvezda.jpg">
+                    </div>
+                 </div>
+            </section>
+        </main>
+        <my-footer></my-footer>
+    </body>
+</html>
+    

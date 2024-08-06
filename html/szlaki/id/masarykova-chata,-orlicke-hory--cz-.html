@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Masarykova Chata, Orlicke Hory (CZ) - Cichy Zakątek</title>
+        <script src="/html/headerfooter.js"></script>
+        <link href="/css/global.css" rel="stylesheet">
+        <link href="/src/output.css" rel="stylesheet">
+        <link href="/css/atrakcje.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="/html/szlaki/szlaki.js" defer></script>
+
+    </head>
+
+    <body>
+        <div id="popup-div" class="hidden fixed left-0 w-full h-full flex justify-between items-center flex-row z-30 bg-black bg-opacity-50">
+            <div>
+                <button onclick="zoomLeft()" type="button" class="border-2 hover:bg-gray-900 mx-4 flex cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle"><i class="material-symbols-outlined">chevron_left</i></button>
+            </div>
+            <div id="zoom-div" class="flex items-center justify-center mx-0"></div>
+            <div>
+                <button onclick="zoomRight()" type="button" class="border-2 hover:bg-gray-900 mx-4 cursor-pointer flex bg-gray-800 rounded-md text-white justify-center align-middle"><i class="material-symbols-outlined">chevron_right</i></button>
+            </div>
+          
+            <div id="popup-btn" class="flex z-40 fixed top-14 right-14">
+                <button class="text-white material-symbols-outlined rounded-lg border-2 bg-gray-800" type="button" onclick="closeZoom()">close</button>
+            </div>
+        </div>
+        <my-header></my-header>
+        <main>
+            <section class="flex flex-col gap-14">
+                <div class="flex flex-col gap-8">
+                    <h1 class="text-4xl">Masarykova Chata, Orlicke Hory (CZ) - Cichy Zakątek</h1>
+                    <hr class="h-0.5 bg-gray-800 w-2/5 border border-gray-800">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-3xl">Więcej Informacji:</h2>
+                    <div class="flex flex-col gap-3" id="links">
+                        <a class="url-atrakcje" rel="nofollow" target="_blank" href="https://en.mapy.cz/zakladni?planovani-trasy&dim=5bab73000abe938f7df0044a&x=16.3818618&y=50.3293168&z=14">https://en.mapy.cz/zakladni?planovani-trasy&dim=5bab73000abe938f7df0044a&x=16.3818618&y=50.3293168&z=14</a><a class="url-atrakcje" rel="nofollow" target="_blank" href="https://en.mapy.cz/zakladni?id=16.3919147715%2C50.3224379581&source=coor&x=16.3915632004&y=50.3231690316&z=17">https://en.mapy.cz/zakladni?id=16.3919147715%2C50.3224379581&source=coor&x=16.3915632004&y=50.3231690316&z=17</a><a class="url-atrakcje" rel="nofollow" target="_blank" href="http://gdziebytudalej.pl/masarykova-chata/">http://gdziebytudalej.pl/masarykova-chata/</a>
+                    </div>
+                 </div>
+                 <div class="flex flex-col gap-4">
+                    <h2 class="text-3xl">Zdjęcia:</h2>
+                    <div class="grid-img" id="galeria-1">
+                        <img class="img-atrakcje" onclick="zoomIn('/gallery/Masarykova-chata-na--erlichu1_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/Masarykova-chata-na--erlichu1_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/IMG_20190718_143153_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/IMG_20190718_143153_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/1678223923926_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/1678223923926_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/IMG_20190718_142557_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/IMG_20190718_142557_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/1678223934255_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/1678223934255_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/1678223876819_thumb.png')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/1678223876819_thumb.png"><img class="img-atrakcje" onclick="zoomIn('/gallery/masarykowa11.jpg')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/masarykowa11.jpg"><img class="img-atrakcje" onclick="zoomIn('/gallery/Masarykova_Mapycz.jpg')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/Masarykova_Mapycz.jpg">
+                    </div>
+                 </div>
+            </section>
+        </main>
+        <my-footer></my-footer>
+    </body>
+</html>
+    

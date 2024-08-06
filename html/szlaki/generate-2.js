@@ -26,7 +26,7 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
         <link href="/src/output.css" rel="stylesheet">
         <link href="/css/atrakcje.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <script src="/html/atrakcje/atrakcje.js" defer></script>
+        <script src="/html/szlaki/szlaki.js" defer></script>
 
     </head>
 
@@ -87,7 +87,7 @@ const makeList = (array) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Atrakcje Turysteczne</title>
+        <title>Szlaki Turysteczne</title>
         <script src="/html/headerfooter.js"></script>
         <link href="/css/global.css" rel="stylesheet">
         <link href="/src/output.css" rel="stylesheet">
@@ -102,7 +102,7 @@ const makeList = (array) => {
         <main>
             <section class="flex flex-col gap-14">
                 <div class="flex flex-col gap-8">
-                    <h1 class="text-5xl">Atrakcje Turystyczne</h1>
+                    <h1 class="text-5xl">Szlaki Turystyczne</h1>
                     <hr class="h-0.5 bg-gray-800 w-2/5 border border-gray-800">
                 </div>
                 <div id="div-list" class="grid-list">
@@ -114,7 +114,7 @@ const makeList = (array) => {
     </body>
 </html>
 `;
-    fs.writeFile("./atrakcje.html", content, function (err) {
+    fs.writeFile("./szlaki.html", content, function (err) {
         if (err) throw err;
     });
 }
@@ -130,7 +130,7 @@ const handleArray = (dataArr) => {
   
 }
 
-fs.readFile('./obiekty.txt', 'utf8', (err, data) => {
+fs.readFile('./szlaki.txt', 'utf8', (err, data) => {
   if (err) {
     console.error(err);
     return;
