@@ -3,18 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartamenty Cichy Zakątek</title>
+    <title>Cennik</title>
+    <meta name="description" content="Apartamenty Cichy Zakątek - Cennik">
     <script src="/html/headerfooter.js"></script>
     <link href="/css/global.css" rel="stylesheet">
     <link href="/src/output.css" rel="stylesheet">
-    <link href="/css/str-gl.css" rel="stylesheet">
+    <link href="/css/kontakt.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 <body>
     <my-header></my-header>
     <main>
+        <section class="space-y-20">
+            <h1 class="text-5xl font-semibold text-center mt-10">Cennik</h1>
+            <div class="flex flex-row max-xl:flex-col max-md:w-full items-start gap-8 w-11/12 mx-auto">
+                <div class="bg-white shadow-lg rounded-3xl p-8 max-md:p-6 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
+                    <h2 class="text-4xl">Informacje</h2>
+                    <hr class="border border-gray-800 h-0.5 w-2/3 bg-gray-800">
+                    <p class="text-lg text-wrap">
+                        <strong>Pobyt w apartamencie lub domku:</strong>
+                        <br>- Osoba dorosła 100-160zł / doba
+                        <br>- Dziecko 60-90zł / doba
+                        <br>(Podane ceny nie dotyczą Sylwestra i Majówki)
+                        <br><br>
+                        <strong>Minimalna długość pobytu:</strong><br>
+                        Wakacje - 6 nocy<br>
+                        Ferie Zimowe, majówka i sylwester - 5 nocy<br><br>
+                        Szczegółowych informacji udzielamy telefonicznie lub e-mail.
+                    </p>
+                </div>
+                <form class="bg-white shadow-lg max-md:p-6 rounded-3xl p-8 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
+                    <h2 class="text-4xl">Sprawdź Dostępność</h2>
+                    <hr class="border border-gray-800 h-0.5 w-2/3 bg-gray-800">
+                     <!--<div class="flex flex-row max-sm:flex-col gap-8 justify-between">
+                        <div class="w-full gap-3 flex flex-col">
+                            <label for="name2">Imię:</label>
+                            <input class="w-full" type="text" id="name2" name="name2" required>
+                        </div>
+                        <div class="w-full gap-3 flex flex-col">
+                            <label for="last-name2">Nazwisko:</label>
+                            <input class="w-full" type="text" id="last-name2" name="last-name2" required>
+                        </div>
+                    </div>-->
+                    <div class="flex flex-row max-sm:flex-col gap-8 justify-between">
+                        <div class="w-full gap-3 flex flex-col">
+                            <label for="date2">Data Przyjazdu:</label>
+                            <input type="date" name="date2" id="date2"> 
+                        </div>
+                        <div class="w-full gap-3 flex flex-col">
+                            <label for="date-to2">Data Odjazdu:</label>
+                            <input type="date" name="date-to2" id="date-to2">
+                        </div>
+                    </div>
+                    <div class="w-full gap-3 flex max-lg:flex-col flex-row">
+                        <div class="flex flex-col gap-3 w-full">
+                            <label for="adults-input">Dorośli:</label>
+                            <input id="adults-input" name="adults-input" step="1" type="number">
+                        </div>
+                        <div class="flex flex-col gap-3 w-full">
+                            <label for="kids-input">Dzieci:</label>
+                            <input id="kids-input" name="kids-input" step="1" type="number">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 w-full">
+                        <label for="kids-age-input">Wiek Dzieci:</label>
+                        <input id="kids-age-input" name="kids-age-input" type="text">
+                    </div>
 
+                    <div class="w-full gap-3 flex flex-col">
+                        <label for="email2">Email:</label>
+                        <input type="email" id="email2" name="email2" required>
+                    </div>
+                    <!--<div class="w-full gap-3 flex flex-col">
+                        <label for="message2">Wiadomość: (Opcjonalne)</label>
+                        <textarea rows="4" id="message2" name="message2"></textarea>
+                    </div>-->
+                
+                    <button class="mt-8 mx-auto bg-gray-800 text-white p-2 px-10 rounded-xl shadow-md text-lg" type="submit">Prześlij</button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="mx-auto flex justify-center my-20" data-href="https://www.facebook.com/cichyzakatek.kudowa/" data-height="500" data-width="450" data-adapt-container-width="true" 
+            data-small-header="false" data-hide-cover="false" data-show-facepile="true" data-show-posts="true" fb-xfbml-state="rendered" 
+            fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=442&amp;height=500&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fcichyzakatek.kudowa%2F&amp;locale=pl_PL&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;small_header=false&amp;width=450"><span 
+            style="vertical-align: bottom; width: 442px; height: 500px;"><iframe name="f33e14f1ccadacaf1" width="450px" height="500px" data-testid="fb:page Facebook Social Plugin" 
+            title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" 
+            src="https://www.facebook.com/v3.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df856af4fd309d6ebe%26domain%3Dwww.cichyzakatek.com.pl%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.cichyzakatek.com.pl%252Ffb7c412addcbd2864%26relation%3Dparent.parent&amp;container_width=442&amp;height=500&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fcichyzakatek.kudowa%2F&amp;locale=pl_PL&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;small_header=false&amp;width=450" 
+            style="border: none; visibility: visible; width: 442px; height: 500px; max-width: 100%; border-radius: 10px; box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.305);" 
+            ></iframe></span></div>
+        </section>
     </main>
     <my-footer></my-footer>
     <my-popup-ap></my-popup-ap>

@@ -76,11 +76,11 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
 }
 
 const makeList = (array) => {
-
     const list = array.map(el => {
-        return `<a href="./id/${el.pageUrl}" class="text-xl p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 hover:scale-105 duration-200">${el.h1.length > 50 ? el.h1.slice(0, 50) + "..." : el.h1}</a>`;
+        const h1 = el.h1
+        return `<a href="./id/${el.pageUrl}" class="text-xl p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 hover:scale-105 duration-200">${h1.length > 45 ? h1.slice(0, 45) + "..." : h1}</a>`;
     }).join("")
-
+ 
     const content = `
 <!DOCTYPE html>
 <html lang="pl">

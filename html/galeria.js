@@ -34,7 +34,7 @@ const zoomIn = (index, indexUrl) => {
     currentZoom = [index, indexUrl]
     popupDiv.classList.remove("hidden");
     zoomDiv.innerHTML = `
-        <img src="${obrazy[index].url[indexUrl]}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl shadow-xl object-cover max-h-60vh">
+        <img src="${obrazy[index].url[indexUrl]}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl shadow-xl object-cover w-auto h-screen max-xl:h-min max-xl:w-11/12">
     `;
 }
 
