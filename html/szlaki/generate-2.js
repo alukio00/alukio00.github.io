@@ -65,6 +65,7 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
                  </div>
             </section>
         </main>
+        <my-popup-ap></my-popup-ap>
         <my-footer></my-footer>
     </body>
 </html>
@@ -110,6 +111,7 @@ const makeList = (array) => {
                 </div>
             </section>
         </main>
+        <my-popup-ap></my-popup-ap>
         <my-footer></my-footer>
     </body>
 </html>
