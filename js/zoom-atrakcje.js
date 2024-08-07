@@ -12,7 +12,7 @@ const zoomIn = (indexUrl) => {
     currentZoom = index
     popupDiv.classList.remove("hidden");
     zoomDiv.innerHTML = `
-        <img src="${indexUrl}" alt="Powiększony obraz szlaku" class="my-auto rounded-2xl shadow-xl object-cover max-h-60vh">
+        <img src="${indexUrl}" alt="Powiększony obraz" class="my-auto rounded-2xl shadow-xl object-cover max-h-60vh">
     `;
     console.log(index)
 }

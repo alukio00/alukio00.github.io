@@ -5,7 +5,7 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
     const zdjecia = img.map(el => {
         const regex = /images/;
         const zmienna = el.replace(regex, "gallery");
-        console.log(zmienna)
+
         
         return `<img class="img-atrakcje" onclick="zoomIn('/${zmienna}')" loading="lazy" alt="Zdjęcie atrakcji" src="/${zmienna}">`;
     }).join("")
@@ -18,15 +18,14 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>${h1}</title>
-        <script src="/html/headerfooter.js"></script>
+        <script src="/js/headerfooter.js"></script>
         <link href="/css/global.css" rel="stylesheet">
         <link href="/src/output.css" rel="stylesheet">
         <link href="/css/atrakcje.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <script src="/html/szlaki/szlaki.js" defer></script>
+        <script src="/js/zoom-atrakcje.js" defer></script>
 
     </head>
 
@@ -89,15 +88,12 @@ const makeList = (array) => {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Szlaki Turysteczne</title>
-        <script src="/html/headerfooter.js"></script>
+        <script src="/js/headerfooter.js"></script>
         <link href="/css/global.css" rel="stylesheet">
         <link href="/src/output.css" rel="stylesheet">
         <link href="/css/atrakcje-lista.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-
     </head>
-
     <body>
         <my-header></my-header>
         <main>
