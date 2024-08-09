@@ -62,7 +62,7 @@ const zoom = (galeria, index) => {
     currentZoom = [galeria, index]
     popupDiv.classList.remove("hidden");
     zoomDiv.innerHTML = `
-        <img src="${galery[galeria].url[index]}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl shadow-xl object-cover max-h-70vh">
+        <img src="${galery[galeria].url[index]}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-75vh max-lg:w-screen">
     `;
 }
 

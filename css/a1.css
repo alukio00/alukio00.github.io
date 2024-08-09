@@ -35,6 +35,13 @@
 }
 #popup-div .material-symbols-outlined {
     font-size: 40px;
+    padding: 8px;
+}
+@media (max-width: 640px) {
+    #popup-div .material-symbols-outlined {
+        font-size: 30px;
+        padding: 6px;
+    }
 }
 .left,.right {
     animation-timing-function: ease-in;

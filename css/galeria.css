@@ -15,7 +15,7 @@
     font-size: 40px;
     padding: 8px;
 }
-@media (max-width: 500px) {
+@media (max-width: 640px) {
     #popup-div .material-symbols-outlined {
         font-size: 30px;
         padding: 6px;

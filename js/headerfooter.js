@@ -16,7 +16,7 @@ class Header extends HTMLElement {
                         <p>Cennik</p>
                     </div></div>
                     <div class="nav-bar-icons"><a href="/html/kontakt.html"><i class="material-symbols-outlined">chat</i></a><div class="sidebar-child">
-                        <p>Kontakt</p>
+                        <p>Rezerwacja</p>
                     </div></div>
                 </div>
             </header>
@@ -38,7 +38,7 @@ class Header extends HTMLElement {
                             <i class="material-symbols-outlined">payments</i><p>Cennik</p>
                         </a>
                         <a class="mobile-menu-a" href="/html/kontakt.html">
-                            <i class="material-symbols-outlined">chat</i><p>Kontakt</p>
+                            <i class="material-symbols-outlined">chat</i><p>Rezerwacja</p>
                         </a>
                     </div>
                 </div>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
+<!--             todo - regulamin           -->
 <body>
     <my-header></my-header>
     <main class="space-y-8">
@@ -21,8 +22,7 @@
                 <div class="bg-white shadow-lg rounded-3xl p-10 max-md:p-6 flex flex-col gap-6 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
                     <h2 class="text-4xl">Informacje</h2>
                     <hr class="border border-gray-800 h-0.5 w-2/3 bg-gray-800">
-                    <p class="text-lg text-wrap">W celu rezerwacji prosimy o wypełnienie formy obok, a w razie pytań można wypełnić forme na dole strony.
-                        <br><br>
+                    <p class="text-lg text-wrap">
                         <strong>Zaliczka:</strong><br>
                         W celu otwierdzenia rezerwacji uprzejmie prosimy o wpłatę zaliczki w uzgodnionej wysokości, tytuł przelewu: "Rezerwacja pobytu od dnia .........  na nazwisko ......... ,
                         w terminie do 24 godzin od rezerwacji telefonicznej, po tym czasie rezerwacja zostanie anulowana. Pozostałą kwotę należy uregulować na miejscu w dniu przyjazdu.
@@ -41,74 +41,33 @@
                     </p>
                 </div>
                 <form class="bg-white shadow-lg max-md:p-6 rounded-3xl p-10 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
-                    <div class="flex flex-row max-sm:flex-col gap-8 justify-between">
+                    <h2 class="text-4xl">Kontakt w razie pytań</h2>
+                    <hr class="border border-gray-800 h-0.5 w-2/3 bg-gray-800">
+                    <div class="flex flex-row max-md:flex-col gap-8 justify-between">
                         <div class="w-full gap-3 flex flex-col">
-                            <label for="name2">Imię:</label>
-                            <input class="w-full" type="text" id="name2" name="name2" required>
+                            <label for="name">Imię:</label>
+                            <input class="w-full" type="text" id="name" name="name" required>
                         </div>
                         <div class="w-full gap-3 flex flex-col">
-                            <label for="last-name2">Nazwisko:</label>
-                            <input class="w-full" type="text" id="last-name2" name="last-name2" required>
-                        </div>
-                    </div>
-                    <div class="w-full gap-3 flex flex-col">
-                        <label for="email2">Email:</label>
-                        <input type="email" id="email2" name="email2" required>
-                    </div>
-                    <div class="flex flex-row max-sm:flex-col gap-8 justify-between">
-                        <div class="w-full gap-3 flex flex-col">
-                            <label for="date2">Data Przyjazdu:</label>
-                            <input type="date" name="date2" id="date2"> 
-                        </div>
-                        <div class="w-full gap-3 flex flex-col">
-                            <label for="date-to2">Data Odjazdu:</label>
-                            <input type="date" name="date-to2" id="date-to2">
+                            <label for="last-name">Nazwisko:</label>
+                            <input class="w-full" type="text" id="last-name" name="last-name" required>
                         </div>
                     </div>
                     <div class="w-full gap-3 flex flex-col">
-                        <label for="select">Apartament</label>
-                        <select id="select" name="select">
-                            <option value="Apartament Dwupoziomowy Nr 1" selected>Apartament Dwupoziomowy Nr 1</option>
-                            <option value="Apartament Dwupoziomowy Nr 2">Apartament Dwupoziomowy Nr 2</option>
-                            <option value="Apartament Dwupoziomowy Nr 3">Apartament Dwupoziomowy Nr 3</option>
-                            <option value="Apartament Dwupoziomowy Nr 4">Apartament Dwupoziomowy Nr 4</option>
-                            <option value="Apartament Dwupokojowy">Apartament Dwupokojowy</option>
-                            <option value="Domek Drewniany">Domek Drewniany</option>
-                        </select>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="w-full gap-3 flex flex-col">
-                        <label for="message2">Wiadomość: (Opcjonalne)</label>
-                        <textarea rows="4" id="message2" name="message2"></textarea>
+                        <label for="message">Wiadomość:</label>
+                        <textarea rows="4" id="message" name="message" required></textarea>
                     </div>
                 
                     <button class="mt-8 mx-auto bg-gray-800 text-white p-2 px-10 rounded-xl shadow-md text-lg" type="submit">Prześlij</button>
                 </form>
             </div>
         </section>
-        <section class="space-y-14">
-            <h2 class="text-4xl text-center">Kontakt w razie pytań</h2>
-            <form class="bg-white shadow-lg rounded-3xl max-md:p-6 p-10 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
-                <div class="flex flex-row max-md:flex-col gap-8 justify-between">
-                    <div class="w-full gap-3 flex flex-col">
-                        <label for="name">Imię:</label>
-                        <input class="w-full" type="text" id="name" name="name" required>
-                    </div>
-                    <div class="w-full gap-3 flex flex-col">
-                        <label for="last-name">Nazwisko:</label>
-                        <input class="w-full" type="text" id="last-name" name="last-name" required>
-                    </div>
-                </div>
-                <div class="w-full gap-3 flex flex-col">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="w-full gap-3 flex flex-col">
-                    <label for="message">Wiadomość:</label>
-                    <textarea rows="4" id="message" name="message" required></textarea>
-                </div>
-            
-                <button class="mt-8 mx-auto bg-gray-800 text-white p-2 px-10 rounded-xl shadow-md text-lg" type="submit">Prześlij</button>
-            </form>
+        <section class="my-20">
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4464090223983!2d16.25040211203447!3d50.451411371473895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e6f3db0cec145%3A0x24eb0e0ed1c3b027!2sApartamenty%20Cichy%20Zak%C4%85tek!5e0!3m2!1spl!2spl!4v1720964171641!5m2!1spl!2spl" width="600" class="mx-auto rounded-2xl shadow-lg max-w-full" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </section>
     </main>
     <my-footer></my-footer>
