@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Poppins;
     margin: 0px;
@@ -21,7 +22,7 @@ main {
 }
 
 section {
-    padding: 40px;
+    padding: 25px;
 }
 
 
@@ -71,7 +72,7 @@ section {
     gap: 5px;
 }
 .shadow-div {
-    box-shadow: 5px 0px 8px 0px #1f29374d;
+    box-shadow: 3px 0px 10px 0px #1f29374d;
 }
 .popup-ap {
     display: flex;
@@ -89,6 +90,7 @@ section {
     max-width: 30%;
     animation: growIn 400ms ease-in-out;
 }
+
 
 .popup-link:hover {
     transform: scale(1.03);

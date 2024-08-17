@@ -4,7 +4,8 @@ galery3 = document.getElementById("galery-3"),
 zoomDiv = document.getElementById("zoom-div"),
 popupDiv = document.getElementById("popup-div");
 
-const liczba = screen.width > 1340 ? 3 : screen.width > 768 ? 1 : 0;
+const screenW = screen.width
+const liczba = screenW > 1340 ? 3 : screenW > 1000 ? 2 : screenW > 700 ? 1 : 0;
 let currentZoom = ""
 
 let galery = [

@@ -91,7 +91,7 @@ class Footer extends HTMLElement {
                                         <li><a href="index.html">Strona Główna</a></li>
                                         <li><a href="galeria.html">Galeria</a></li>
                                         <li><a href="cennik.html">Cennik</a></li>
-                                        <li><a href="kontakt.html">Kontakt</a></li>
+                                        <li><a href="kontakt.html">Rezerwacja</a></li>
                                         <li><a href="regulamin.html">Regulamin</a></li>
                                         <li><a href="polityka-prywatnosci.html">Polityka Prywatności</a></li>
                                     </ul>
@@ -112,10 +112,10 @@ customElements.define("my-footer", Footer);
 class PopupAparts extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <div id="popup-aparts" class="hidden z-30 fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-row justify-center items-center gap-8 max-lg:flex-col">
+            <div id="popup-aparts" class="hidden z-30 fixed top-0 left-0 w-full py-4 h-full bg-black bg-opacity-50 flex flex-row justify-center items-center max-lg:gap-3 gap-6 max-lg:flex-col">
                 <i id="p-close" class="fixed top-5 right-5 cursor-pointer text-white material-symbols-outlined p-2 rounded-lg border bg-gray-800">close</i>
                 <div id="changing-div" class="popup-ap popup-link pb-0 cursor-pointer">
-                    <h3 class="text-2xl font-medium text-wrap">Apartament Dwupoziomowy</h3>
+                    <h3 class="text-2xl max-sm:text-xl font-medium text-wrap">Apartament Dwupoziomowy</h3>
                     <hr class="border-2 h-0.5 w-8/12 border-gray-800">
                     <ul id="lista-hide" class="text-gray-700">
                         <li><i class="material-symbols-outlined">table</i>Łóżko małżeńskie</li>
@@ -130,7 +130,7 @@ class PopupAparts extends HTMLElement {
                     </ul>
                 </div>
                 <a class="popup-link" href="/html/a5.html"><div class="popup-ap">
-                    <h3 class="text-2xl font-medium text-wrap">Apartament Dwupokojowy</h3>
+                    <h3 class="text-2xl max-sm:text-xl font-medium text-wrap">Apartament Dwupokojowy</h3>
                     <hr class="border-2 h-0.5 w-8/12 border-gray-800">
                     <ul class="text-gray-700">
                         <li><i class="material-symbols-outlined"></i>Łóżko małżeńskie</li>
@@ -139,7 +139,7 @@ class PopupAparts extends HTMLElement {
                     </ul>
                 </div></a>
                 <a class="popup-link" href="/html/domek.html"><div class="popup-ap">
-                    <h3 class="text-2xl font-medium text-wrap">Domek Drewniany</h3>
+                    <h3 class="text-2xl max-sm:text-xl font-medium text-wrap">Domek Drewniany</h3>
                     <hr class="border-2 h-0.5 w-8/12 border-gray-800">
                     <ul class="text-gray-700">
                         <li><i class="material-symbols-outlined"></i>Łóżko małżeńskie</li>

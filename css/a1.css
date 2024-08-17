@@ -2,7 +2,7 @@
     background-color: white;
     padding: 6px 16px;
     border: solid 2px #1f2937;
-    border-radius: 16px;
+    border-radius: 10px;
     box-shadow: 2px 2px 8px 0px #1f293723;
     display: flex;
     flex-direction: row;
@@ -13,6 +13,9 @@
     color: #1f2937;
     font-size: 28px;
     
+}
+.list-disc li {
+    font-size: 18px;
 }
 
 

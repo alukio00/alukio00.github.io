@@ -35,7 +35,7 @@
 }
 .room {
     border: solid 2px #1f2937;
-    padding: 20px;
+    padding: 18px;
     display: flex;
     flex-direction: row;
     gap: 10px;
