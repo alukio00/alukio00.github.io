@@ -7,7 +7,7 @@ class Header extends HTMLElement {
                         <p>Strona Główna</p>
                     </div></div>
                     <div class="nav-bar-icons"><i id="icon-show-popup" class="material-symbols-outlined cursor-pointer popup-activate">apartment</i><div class="sidebar-child">
-                        <p>Apartamenty</p>
+                        <p>Nasza Oferta</p>
                     </div></div>
                     <div class="nav-bar-icons"><a href="/html/galeria.html"><i class="material-symbols-outlined">photo_library</i></a><div class="sidebar-child">
                         <p>Galeria Zdjęć</p>
@@ -29,7 +29,7 @@ class Header extends HTMLElement {
                             <i class="material-symbols-outlined">home</i><p>Strona Główna</p>
                         </a>
                         <a class="mobile-menu-a popup-activate">
-                            <i id="icon-show-popup2" class="material-symbols-outlined">apartment</i><p>Apartamenty</p>
+                            <i id="icon-show-popup2" class="material-symbols-outlined">apartment</i><p>Nasza Oferta</p>
                         </a>
                         <a class="mobile-menu-a" href="/html/galeria.html">
                             <i class="material-symbols-outlined">photo_library</i><p>Galeria Zdjęć</p>
@@ -69,20 +69,22 @@ class Footer extends HTMLElement {
                             <hr class="border-2 h-0.5 w-4/12 my-4 border-white">
                             <div class="flex flex-row justify-between flex-wrap gap-8">
                                 <div class="flex flex-col justify-start w-96">
-                                    <h3 class="text-2xl my-2">Informacje:</h3>
-                                    <p><strong>Adres:</strong> Tadeusza Kościuszki Kudowa-Zdrój</p>
-                                    <p><strong>Telefon:</strong> 123 456 789</p>
-                                    <p><strong>Email:</strong> kontakt@hotel-luksusowy.pl</p>
+                                    <h3 class="text-2xl my-2">Kontakt:</h3>
+                                    
+                                    <p><strong>Telefon:</strong> 505 720 041</p>
+                                    <p><strong>Email:</strong> info@cichyzakatek.com.pl</p>
+                                    
+                                    <p><strong>Adres:</strong> ul. Tadeusza Kościuszki 112C <br>57-350 Kudowa-Zdrój</p>
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
-                                    <h3 class="text-2xl my-2">Apartamenty:</h3>
+                                    <h3 class="text-2xl my-2">Nasza Oferta:</h3>
                                     <ul class="list-disc list-inside">
                                         <li><a href="a1.html">Apartament Dwupoziomowy nr 1</a></li>
                                         <li><a href="a2.html">Apartament Dwupoziomowy nr 2</a></li>
                                         <li><a href="a3.html">Apartament Dwupoziomowy nr 3</a></li>
                                         <li><a href="a4.html">Apartament Dwupoziomowy nr 4</a></li>
-                                        <li><a href="a5.html">Apartament Dwupokojowy</a></li>
-                                        <li><a href="domek.html">Domek Drewniany</a></li>
+                                        <li><a href="a5.html">Apartament z 2 sypialniami</a></li>
+                                        <li><a href="domek.html">Domek z 2 sypialniami</a></li>
                                     </ul>
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
