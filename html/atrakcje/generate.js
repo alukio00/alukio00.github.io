@@ -6,6 +6,7 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
         const regex = /images/;
         const zmienna = el.replace(regex, "gallery");
         
+        
         return `<img class="img-atrakcje" onclick="zoomIn('/${zmienna}')" loading="lazy" alt="Zdjęcie atrakcji" src="/${zmienna}">`;
     }).join("")
     const linki = urls.map(url => {
@@ -66,9 +67,21 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
 
 const makeList = (array) => {
     const list = array.map(el => {
-        const h1 = el.h1.replace(" - Cichy Zakątek", "")
-        return `<a href="./id/${el.pageUrl}" class="text-xl p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 hover:scale-105 duration-200">${h1.length > 45 ? h1.slice(0, 45) + "..." : h1}</a>`;
-    }).join("")
+        const findIndx = el.h1.indexOf("-")
+        const h1 = el.h1.slice(0, findIndx)
+        const km = el.h1.slice(findIndx)
+ 
+        const regex = /[k|m|\-|\s]/g
+        const sliced = km.replace("- Cichy Zakątek", "").replace(regex, "").replace(",", ".")
+    
+
+
+        return [`<a href="./id/${el.pageUrl}" class="text-xl flex flex-col gap-2 p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 hover:scale-105 duration-200">
+        <span>${h1.length > 45 ? h1.slice(0, 45) + "..." : h1}</span>
+        <span class="text-base"><strong>Odległość: </strong>${sliced} km</span>
+
+        </a>`, sliced];
+    }).sort((a, b) => a[1] - b[1]).map(el => el[0]).join("")
  
     const content = `
 <!DOCTYPE html>
