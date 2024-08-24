@@ -97,14 +97,14 @@ const generator = (galeria, indexStart=0) => {
     galery[galeria].index = indexStart;
 }
 
-const animation = (html, right) => {
-    if (right) {
-        html.classList.remove("right");
-        html.classList.add("right");
-    } else {
-        html.classList.remove("left");
-        html.classList.add("left");
-    }
+const animation = (html) => {
+    const classL = html.classList;
+
+    classL.add("animate")
+
+    setTimeout(() => {
+        classL.remove("animate")
+    }, 200);
 }
 const alternator = (nr, boomelan) => {
     let { index, url, html } = galery[nr]
@@ -123,7 +123,7 @@ const alternator = (nr, boomelan) => {
         }
     }
     generator(nr, index)
-    animation(html, boomelan)
+    animation(html)
 }
 
 generator(0)

@@ -9,6 +9,20 @@
     width: 300px;
     max-width: 90%;
 }
+@keyframes slide-in-up {
+    0% {
+        transform: translateY(200%);
+    } 
+    100% {
+        transform: translateY(0%);
+    }
+}
+.slide-in-up {
+    animation: slide-in-up 500ms ease-in;
+}
+
+
+
 .image {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 55%, rgba(0, 0, 0, 0.2) 0%), url("/img/pomniejszone_KADR3747.jpg");
     background-size: cover;

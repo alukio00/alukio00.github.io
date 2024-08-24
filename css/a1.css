@@ -12,17 +12,17 @@
 .divider-p .material-symbols-outlined {
     color: #1f2937;
     font-size: 28px;
+
     
 }
 .list-disc li {
     font-size: 18px;
 }
-
-
 .ikonki1 .material-symbols-outlined {
     font-size: 35px;
     display: flex;
     padding: 4px;
+   
 }
 .img-div img {
     width: 250px;
@@ -46,37 +46,17 @@
         padding: 6px;
     }
 }
-.left,.right {
-    animation-timing-function: ease-in;
-    animation-duration: 250ms;
+.animate {
+    animation-timing-function: ease-in-out;
+    animation-duration: 200ms;
+    animation-name: fadeIn;
 }
 
-.left {
-    animation-name: slideInRight;
-
-}
-.right {
-    animation-name: slideInLeft;
-
-}
-
-@keyframes slideInLeft {
+@keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateX(100%);
-    }
+          }
     100% {
         opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes slideInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
     }
 }
