@@ -33,8 +33,9 @@ let currentZoom;
 const zoomIn = (index, indexUrl) => {
     currentZoom = [index, indexUrl]
     popupDiv.classList.remove("hidden");
+    zoomDiv.classList.remove("full-screen-animation-fade")
     zoomDiv.innerHTML = `
-        <img src="${obrazy[index].url[indexUrl]}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-80vh max-lg:w-screen">
+        <img src="${obrazy[index].url[indexUrl]}" alt="Powiększony obraz obiektu" class="full-screen-animation my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-80vh max-lg:w-screen">
     `;
 }
 
@@ -46,19 +47,31 @@ const closeZoom = () => {
 
 const zoomRight = () => {
     if (obrazy[currentZoom[0]].url.length > currentZoom[1] + 1) {
-        zoomIn(currentZoom[0], currentZoom[1] + 1)
+        
+        zoomDiv.classList.add("full-screen-animation-fade")
+
+        setTimeout(() => {zoomIn(currentZoom[0], currentZoom[1] + 1)}, 300);
     } else {
         if (obrazy[currentZoom[0] + 1]) {
-            zoomIn(currentZoom[0] + 1, 0)
+
+            zoomDiv.classList.add("full-screen-animation-fade")
+
+            setTimeout(() => {zoomIn(currentZoom[0] + 1, 0)}, 300);
         } 
     }
 }
 const zoomLeft = () => {
     if (0 < currentZoom[1]) {
-        zoomIn(currentZoom[0], currentZoom[1] - 1)
+        zoomDiv.classList.add("full-screen-animation-fade")
+
+        setTimeout(() => {zoomIn(currentZoom[0], currentZoom[1] - 1)}, 300);
+        
     } else {
         if (obrazy[currentZoom[0] - 1]) {
-            zoomIn(currentZoom[0] - 1, obrazy[currentZoom[0] - 1].url.length - 1)
+            zoomDiv.classList.add("full-screen-animation-fade")
+
+            setTimeout(() => {zoomIn(currentZoom[0] - 1, obrazy[currentZoom[0] - 1].url.length - 1)}, 300);
+            
         } 
     }
 }

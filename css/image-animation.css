@@ -1,0 +1,29 @@
+.full-screen-animation {
+    animation-timing-function: ease-in;
+    animation-duration: 300ms;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+          }
+    100% {
+        opacity: 1;
+    }
+}
+.full-screen-animation-fade {
+    animation-timing-function: ease-in;
+    animation-duration: 300ms;
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+          }
+    100% {
+        opacity: 0;
+    }
+}
+
