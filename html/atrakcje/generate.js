@@ -4,7 +4,9 @@ const fs = require('fs');
 const handleData = ({ h1, img, urls, pageUrl }) => {
     const zdjecia = img.map(el => {
         const regex = /images/;
-        const zmienna = el.replace(regex, "gallery");
+        const regex2 = /_thumb.png/;
+        const zmienna = el.replace(regex, "gallery").replace(regex2, ".jpg");
+        console.log(zmienna)
         
         
         return `<img class="img-atrakcje" onclick="zoomIn('/${zmienna}')" loading="lazy" alt="Zdjęcie atrakcji" src="/${zmienna}">`;
