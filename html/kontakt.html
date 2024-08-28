@@ -10,6 +10,7 @@
     <link href="/src/output.css" rel="stylesheet">
     <link href="/css/kontakt.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="/js/rezerwacja.js"></script>
 
 </head>
 <body>
@@ -39,7 +40,7 @@
                         IBAN: <strong>PL54109028350000000153201446</strong>
                     </p>
                 </div>
-                <form class="bg-white shadow-lg max-md:p-6 rounded-3xl p-10 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
+                <form onsubmit="sendEmail(event)" class="bg-white shadow-lg max-md:p-6 rounded-3xl p-10 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
                     <h2 class="text-4xl">Kontakt w razie pytań</h2>
                     <hr class="border border-gray-800 h-0.5 w-2/3 bg-gray-800">
                     <div class="flex flex-row max-md:flex-col gap-8 justify-between">
