@@ -81,10 +81,10 @@ section {
 }
 .popup-link {
     background-color: white;
-    padding: 20px;
+    padding: 16px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.205);
-    border: solid 4px #1f2937;
+    border: solid 3px #1f2937;
     transition-duration: 250ms;
     width: 400px;
     max-width: 30%;

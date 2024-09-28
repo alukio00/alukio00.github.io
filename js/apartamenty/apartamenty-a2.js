@@ -8,43 +8,28 @@ let currentZoom = "";
 
 const galleryData = [
     [
-        "https://www.cichyzakatek.com.pl/gallery/52-kudowa-zdroj-cichy-zakatek_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/1AA3LUST_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/56-kudowa-zdroj-cichy-zakatek_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/EC3A5304_thumb.png",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A3959.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/EC3A5271.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4031.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4041.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4027.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/CB6A8143.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/163-kudowa-zdroj-cichy-zakatek.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/164-kudowa-zdroj-cichy-zakatek.jpg",
+        '/img/a2/10.jpg',
+        '/img/a2/11.jpg',
+        '/img/a2/12.jpg',
+        '/img/a2/157-kudowa-zdroj-cichy-zakatek.jpg',
+        '/img/a2/158-kudowa-zdroj-cichy-zakatek.jpg',
+        '/img/a2/1B0A4027.jpg',
+        '/img/a2/1B0A4031 (1).jpg',
+        '/img/a2/1B0A4041.jpg',
+        '/img/a2/1B0A4056.jpg',
+        '/img/a2/1B0A4057k.jpg',
+        '/img/a2/EC3A5304lustr.jpg',
+        '/img/a2/EC3A5311.jpg',
+        '/img/a2/EC3A5321.jpg'
     ],
     [
-        "https://www.cichyzakatek.com.pl/gallery/1AA3LUST_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/56-kudowa-zdroj-cichy-zakatek_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/EC3A5304_thumb.png",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A3959.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/EC3A5271.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4031.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4041.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4027.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/CB6A8143.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/163-kudowa-zdroj-cichy-zakatek.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/164-kudowa-zdroj-cichy-zakatek.jpg",
-    ],
-    [
-        "https://www.cichyzakatek.com.pl/gallery/56-kudowa-zdroj-cichy-zakatek_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/EC3A5304_thumb.png",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A3959.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/EC3A5271.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4031.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4041.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4027.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/CB6A8143.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/163-kudowa-zdroj-cichy-zakatek.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/164-kudowa-zdroj-cichy-zakatek.jpg",
+        '/img/wspólne/160-kudowa-zdroj-cichy-zakatek.jpg',
+        '/img/wspólne/161-kudowa-zdroj-cichy-zakatek.jpg',
+        '/img/wspólne/162-kudowa-zdroj-cichy-zakatek.jpg',
+        '/img/wspólne/CB6A8164_xw06xfow.jpg',
+        '/img/wspólne/CB6A8174.jpg',
+        '/img/galeria/DJI_0909.jpg'
+
     ],
 ];
 
@@ -59,33 +44,28 @@ const generateGallery = (galleryIndex, startIndex = 0) => {
     galleries[galleryIndex].dataset.index = startIndex;
 };
 
+
 const zoom = (galleryIndex, imageIndex) => {
     currentZoom = { galleryIndex, imageIndex };
     popupDiv.classList.remove("hidden");
     zoomDiv.innerHTML = `<img src="${galleryData[galleryIndex][imageIndex]}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-75vh max-lg:w-screen">`;
 };
-
-
 const closeZoom = () => {
     popupDiv.classList.add("hidden");
     zoomDiv.innerHTML = "";
 };
-
-
 const zoomRight = () => {
     const { galleryIndex, imageIndex } = currentZoom;
     if (imageIndex < galleryData[galleryIndex].length - 1) {
         zoom(galleryIndex, imageIndex + 1);
     }
 };
-
 const zoomLeft = () => {
     const { galleryIndex, imageIndex } = currentZoom;
     if (imageIndex > 0) {
         zoom(galleryIndex, imageIndex - 1);
     }
 };
-
 
 const scrollGallery = (galleryIndex, forward = true) => {
     const galleryElement = galleries[galleryIndex];

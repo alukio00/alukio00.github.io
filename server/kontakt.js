@@ -13,10 +13,12 @@ app.post("/api/sendEmail", (req, res) => {
 
 
     const transporter = mailer.createTransport({
-        service: "gmail",
+        host: "smtp.cichyzakatek.com.pl",
+        port: 465,
+        secure: true,
         auth: {
-            user: "ntnrmedia@gmail.com",
-            pass: process.env.EMAIL_PASS
+            user: "info@cichyzakatek.com.pl",
+            pass: process.env.EMAIL_PASS // złe skopiowałem
         }
     })
 
@@ -39,4 +41,4 @@ app.post("/api/sendEmail", (req, res) => {
 })
 
 
-app.listen(64878, "127.0.0.1", () => {})
+app.listen(64878, () => {})

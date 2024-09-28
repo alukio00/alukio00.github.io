@@ -8,44 +8,32 @@ let currentZoom = "";
 
 const galleryData = [
     [
-        "https://www.cichyzakatek.com.pl/gallery/52-kudowa-zdroj-cichy-zakatek_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/1AA3LUST_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/56-kudowa-zdroj-cichy-zakatek_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/EC3A5304_thumb.png",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A3959.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/EC3A5271.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4031.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4041.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4027.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/CB6A8143.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/163-kudowa-zdroj-cichy-zakatek.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/164-kudowa-zdroj-cichy-zakatek.jpg",
+        '/img/domek/163-kudowa-zdroj-cichy-zakatek.jpg',
+        '/img/domek/164-kudowa-zdroj-cichy-zakatek.jpg',
+        '/img/domek/3_4tvfcj2f.jpg',
+        '/img/domek/4_cemggisy.jpg',
+        '/img/domek/63-kudowa-zdroj-cichy-zakatek_a623324t.jpg',
+        '/img/domek/CB6A8155.jpg',
+        '/img/domek/CB6A8157.jpg',
+        '/img/domek/CB6A8158.jpg',
+        '/img/domek/CB6A8160.jpg',
+        '/img/domek/IMG_20240704_151722pow.jpg',
+        '/img/domek/IMG_20240704_15183POW.jpg',
+        '/img/domek/KADR4707KOREKT2800.jpg',
+        '/img/domek/pomniejszone_KADR3749.jpg',
+        '/img/domek/pomniejszone_KADR4422.jpg',
+        '/img/domek/pomniejszone_KADR4457.jpg',
+        '/img/domek/pomniejszone_KADR4739.jpg'
     ],
     [
-        "https://www.cichyzakatek.com.pl/gallery/1AA3LUST_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/56-kudowa-zdroj-cichy-zakatek_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/EC3A5304_thumb.png",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A3959.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/EC3A5271.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4031.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4041.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4027.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/CB6A8143.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/163-kudowa-zdroj-cichy-zakatek.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/164-kudowa-zdroj-cichy-zakatek.jpg",
-    ],
-    [
-        "https://www.cichyzakatek.com.pl/gallery/56-kudowa-zdroj-cichy-zakatek_thumb.png",
-        "https://www.cichyzakatek.com.pl/gallery/EC3A5304_thumb.png",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A3959.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/EC3A5271.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4031.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4041.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/1B0A4027.jpg",
-        "https://www.cichyzakatek.com.pl/pluginAppObj/pluginAppObj_13/CB6A8143.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/163-kudowa-zdroj-cichy-zakatek.jpg",
-        "https://www.cichyzakatek.com.pl/gallery/164-kudowa-zdroj-cichy-zakatek.jpg",
-    ],
+        '/img/wspólne/160-kudowa-zdroj-cichy-zakatek.jpg',
+        '/img/wspólne/161-kudowa-zdroj-cichy-zakatek.jpg',
+        '/img/wspólne/162-kudowa-zdroj-cichy-zakatek.jpg',
+        '/img/wspólne/CB6A8164_xw06xfow.jpg',
+        '/img/wspólne/CB6A8174.jpg',
+        '/img/galeria/DJI_0909.jpg'
+
+    ]
 ];
 
 const generateGallery = (galleryIndex, startIndex = 0) => {
