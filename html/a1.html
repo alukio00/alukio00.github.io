@@ -117,18 +117,27 @@
 
             <div class="flex flex-col gap-8 ">
                 <h3 class="text-3xl ml-5">Obiekt:</h3>
-                <div class="flex flex-row justify-center gap-4 align-middle max-sm:w-full w-11/12 max-w-1200 mx-auto">
+                <div class="flex flex-row max-sm:flex-col justify-center gap-4 align-middle w-11/12 max-sm:w-full max-w-1200 mx-auto">
 
-                    <div class="my-auto">
-                        <button class="border hover:bg-gray-900 cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle z-50" type="button" onclick="scrollGallery(1, false)"><i class="material-symbols-outlined"">chevron_left</i></button>
+                    <div class="my-auto max-sm:hidden block">
+                        <button class="border hover:bg-gray-900 cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle z-50" type="button" onclick="scrollGallery(1, false)"><i class="material-symbols-outlined">chevron_left</i></button>
                     </div>
                     
-                    <div id="galery-2" class="img-div flex flex-row gap-6 justify-center">
+                    <div id="galery-1" class="img-div flex flex-row gap-6 justify-center">
 
                     </div>
 
-                    <div class="my-auto">
-                        <button class="border hover:bg-gray-900 cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle z-50" type="button" onclick="scrollGallery(1, true)"><i class="material-symbols-outlined"">chevron_right</i></button>
+                    <div class="my-auto max-sm:hidden block">
+                        <button class="border hover:bg-gray-900 cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle z-50" type="button" onclick="scrollGallery(1, true)"><i class="material-symbols-outlined">chevron_right</i></button>
+                    </div>
+                    <div class="max-sm:flex hidden gap-4 mx-auto justify-center">
+                        <div>
+                            <button onclick="scrollGallery(1, false)" type="button" class="border-2 flex px-4 py-2 text-xl cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle">Wróć</button>
+                        </div>
+                                    
+                        <div>
+                            <button onclick="scrollGallery(1, true)" type="button" class="border-2 flex px-4 py-2 text-xl cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle">Dalej</button>
+                        </div>
                     </div>
                 </div>
             </div>
