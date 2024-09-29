@@ -8,30 +8,30 @@ let currentZoom = "";
 
 const galleryData = [
     [
-        '/img/a4/157-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/a4/158-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/a4/159-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/a4/1B0A4027.jpg',
-        '/img/a4/1B0A4031 (1).jpg',
-        '/img/a4/1B0A4041.jpg',
-        '/img/a4/1B0A4056.jpg',
-        '/img/a4/59-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/a4/61-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/a4/63-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/a4/CB6A8139-Edit.jpg',
-        '/img/a4/CB6A8143.jpg',
-        '/img/a4/CB6A8145-Edit.jpg',
-        '/img/a4/EC3A5304lustr.jpg',
-        '/img/a4/EC3A5321.jpg',
-        '/img/a4/_DSC0780.jpg'
+        '/apartamenty/img/a4/157-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/a4/158-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/a4/159-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/a4/1B0A4027.jpg',
+        '/apartamenty/img/a4/1B0A4031 (1).jpg',
+        '/apartamenty/img/a4/1B0A4041.jpg',
+        '/apartamenty/img/a4/1B0A4056.jpg',
+        '/apartamenty/img/a4/59-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/a4/61-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/a4/63-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/a4/CB6A8139-Edit.jpg',
+        '/apartamenty/img/a4/CB6A8143.jpg',
+        '/apartamenty/img/a4/CB6A8145-Edit.jpg',
+        '/apartamenty/img/a4/EC3A5304lustr.jpg',
+        '/apartamenty/img/a4/EC3A5321.jpg',
+        '/apartamenty/img/a4/_DSC0780.jpg'
     ],
     [
-        '/img/wspólne/160-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/wspólne/161-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/wspólne/162-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/wspólne/CB6A8164_xw06xfow.jpg',
-        '/img/wspólne/CB6A8174.jpg',
-        '/img/galeria/DJI_0909.jpg'
+        '/apartamenty/img/wspólne/160-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/wspólne/161-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/wspólne/162-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/wspólne/CB6A8164_xw06xfow.jpg',
+        '/apartamenty/img/wspólne/CB6A8174.jpg',
+        '/apartamenty/img/galeria/DJI_0909.jpg'
 
     ],
 ];

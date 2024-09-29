@@ -8,29 +8,29 @@ let currentZoom = "";
 
 const galleryData = [
     [
-        '/img/a5/1.jpg',
-        '/img/a5/2.jpg',
-        '/img/a5/3.jpg',
-        '/img/a5/4.jpg',
-        '/img/a5/5.jpg',
-        '/img/a5/53-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/a5/55-kudowa-zdroj-cichy-zakatek_q26cm0xb.jpg',
-        '/img/a5/56-kudowa-zdroj-cichy-zakatek_t920yj9s.jpg',
-        '/img/a5/6.jpg',
-        '/img/a5/61-kudowa-zdroj-cichy-zakatek_31tu4e7d.jpg',
-        '/img/a5/7.jpg',
-        '/img/a5/8_1ryyvtpb.jpg',
-        '/img/a5/IMG20240602204958.jpg',
-        '/img/a5/IMG20240603184114.jpg',
-        '/img/a5/kaczKadr.jpg'
+        '/apartamenty/img/a5/1.jpg',
+        '/apartamenty/img/a5/2.jpg',
+        '/apartamenty/img/a5/3.jpg',
+        '/apartamenty/img/a5/4.jpg',
+        '/apartamenty/img/a5/5.jpg',
+        '/apartamenty/img/a5/53-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/a5/55-kudowa-zdroj-cichy-zakatek_q26cm0xb.jpg',
+        '/apartamenty/img/a5/56-kudowa-zdroj-cichy-zakatek_t920yj9s.jpg',
+        '/apartamenty/img/a5/6.jpg',
+        '/apartamenty/img/a5/61-kudowa-zdroj-cichy-zakatek_31tu4e7d.jpg',
+        '/apartamenty/img/a5/7.jpg',
+        '/apartamenty/img/a5/8_1ryyvtpb.jpg',
+        '/apartamenty/img/a5/IMG20240602204958.jpg',
+        '/apartamenty/img/a5/IMG20240603184114.jpg',
+        '/apartamenty/img/a5/kaczKadr.jpg'
       ],
       [
-        '/img/wspólne/160-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/wspólne/161-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/wspólne/162-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/wspólne/CB6A8164_xw06xfow.jpg',
-        '/img/wspólne/CB6A8174.jpg',
-        '/img/galeria/DJI_0909.jpg'
+        '/apartamenty/img/wspólne/160-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/wspólne/161-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/wspólne/162-kudowa-zdroj-cichy-zakatek.jpg',
+        '/apartamenty/img/wspólne/CB6A8164_xw06xfow.jpg',
+        '/apartamenty/img/wspólne/CB6A8174.jpg',
+        '/apartamenty/img/galeria/DJI_0909.jpg'
 
     ]
 ];
