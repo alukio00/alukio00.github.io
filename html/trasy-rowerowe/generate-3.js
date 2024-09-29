@@ -8,7 +8,7 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
         const regex3 = /gallery/;
         const zmienna = el.replace(regex3, "gallery3").replace(regex, "gallery3").replace(regex2, ".jpg")
         
-        return `<img class="img-atrakcje" onclick="zoomIn('/${zmienna}')" loading="lazy" alt="Zdjęcie atrakcji" src="/${zmienna}">`;
+        return `<img class="img-atrakcje" onclick="zoomIn('/${zmienna}')" loading="lazy" alt="Zdjęcie atrakcji" src="/apartamenty/${zmienna}">`;
     }).join("")
     const linki = urls.map(url => {
         return `<a class="url-atrakcje" rel="nofollow" target="_blank" href="${url}">${url}</a>`;
@@ -22,13 +22,13 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="${h1}">
         <title>${h1}</title>
-        <script src="/js/headerfooter.js"></script>
-        <link href="/css/global.css" rel="stylesheet">
-        <link href="/src/output.css" rel="stylesheet">
-        <link href="/css/atrakcje.css" rel="stylesheet">
+        <script src="/apartamenty/js/headerfooter.js"></script>
+        <link href="/apartamenty/css/global.css" rel="stylesheet">
+        <link href="/apartamenty/src/output.css" rel="stylesheet">
+        <link href="/apartamenty/css/atrakcje.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <script src="/js/zoom-atrakcje.js" defer></script>
-        <script src="/js/img-zoom-popup.js"></script>
+        <script src="/apartamenty/js/zoom-atrakcje.js" defer></script>
+        <script src="/apartamenty/js/img-zoom-popup.js"></script>
 
     </head>
 
@@ -79,10 +79,10 @@ const makeList = (array) => {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trasy Rowerowe</title>
-        <script src="/js/headerfooter.js"></script>
-        <link href="/css/global.css" rel="stylesheet">
-        <link href="/src/output.css" rel="stylesheet">
-        <link href="/css/atrakcje-lista.css" rel="stylesheet">
+        <script src="/apartamenty/js/headerfooter.js"></script>
+        <link href="/apartamenty/css/global.css" rel="stylesheet">
+        <link href="/apartamenty/src/output.css" rel="stylesheet">
+        <link href="/apartamenty/css/atrakcje-lista.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
