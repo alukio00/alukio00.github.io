@@ -40,17 +40,17 @@
                         IBAN: <strong>PL54109028350000000153201446</strong>
                     </p>
                 </div>
-                <form onsubmit="sendEmail(event)" class="bg-white shadow-lg max-md:p-6 rounded-3xl p-10 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
+                <form onsubmit="sendEmail(event)" enctype="multipart/form-data" id="email-form" class="bg-white shadow-lg max-md:p-6 rounded-3xl p-10 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
                     <h2 class="text-4xl">Kontakt w razie pytań</h2>
                     <hr class="border border-gray-800 h-0.5 w-2/3 bg-gray-800">
                     <div class="flex flex-row max-md:flex-col gap-8 justify-between">
                         <div class="w-full gap-3 flex flex-col">
                             <label for="name">Imię:</label>
-                            <input class="w-full" type="text" id="name" name="name" required>
+                            <input class="w-full" type="text" id="name" name="firstName" required>
                         </div>
                         <div class="w-full gap-3 flex flex-col">
                             <label for="last-name">Nazwisko:</label>
-                            <input class="w-full" type="text" id="last-name" name="last-name" required>
+                            <input class="w-full" type="text" id="last-name" name="lastName" required>
                         </div>
                     </div>
                     <div class="w-full gap-3 flex flex-col">
@@ -61,6 +61,7 @@
                         <label for="message">Wiadomość:</label>
                         <textarea rows="4" id="message" name="message" required></textarea>
                     </div>
+                    <div class="hidden" id="errors-div"></div>
                 
                     <button class="mt-8 mx-auto bg-gray-800 text-white p-2 px-10 rounded-xl shadow-md text-lg" type="submit">Prześlij</button>
                 </form>
