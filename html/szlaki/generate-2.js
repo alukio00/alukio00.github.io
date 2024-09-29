@@ -121,7 +121,7 @@ const handleArray = (dataArr) => {
   
 }
 
-fs.readFile('./szlaki.txt', 'utf8', (err, data) => {
+fs.readFile('./szlaki.json', 'utf8', (err, data) => {
   if (err) {
     console.error(err);
     return;
