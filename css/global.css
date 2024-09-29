@@ -7,7 +7,7 @@
 
 body::before {
     content: "";
-    background: linear-gradient(rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)), url("/apartamenty/img/galeria/back-main.jpg");
+    background: linear-gradient(rgb(255, 255, 255, 0.75), rgb(255, 255, 255, 0.75)), url("/apartamenty/img/galeria/back-main.jpg");
     background-size: cover;
     height: 100vh;
     width: 100vw;

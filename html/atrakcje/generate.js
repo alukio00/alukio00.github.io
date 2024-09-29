@@ -78,7 +78,7 @@ const makeList = (array) => {
     
 
 
-        return [`<a href="./id/${el.pageUrl}" class="text-xl flex flex-col gap-2 p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 hover:scale-105 duration-200">
+        return [`<a href="./id/${el.pageUrl}" class="text-xl flex flex-col gap-2 p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 bg-white hover:scale-105 duration-200">
         <span>${h1.length > 45 ? h1.slice(0, 45) + "..." : h1}</span>
         <span class="text-base"><strong>Odległość: </strong>${sliced} km</span>
 
@@ -129,9 +129,9 @@ const handleArray = (dataArr) => {
   const urlArr = JSON.parse(dataArr);
   makeList(urlArr)
 
-  urlArr.forEach(element => {
+  /*urlArr.forEach(element => {
     handleData(element)
-  });
+  });*/
   
 }
 

@@ -69,7 +69,7 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
 const makeList = (array) => {
     const list = array.map(el => {
         const h1 = el.h1.replace(" - Cichy Zakątek", "")
-        return `<a href="./id/${el.pageUrl}" class="text-xl p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 hover:scale-105 duration-200">${h1.length > 45 ? h1.slice(0, 45) + "..." : h1}</a>`;
+        return `<a href="./id/${el.pageUrl}" class="text-xl p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 bg-white hover:scale-105 duration-200">${h1.length > 45 ? h1.slice(0, 45) + "..." : h1}</a>`;
     }).join("")
  
     const content = `
@@ -113,9 +113,9 @@ const handleArray = (dataArr) => {
   const urlArr = JSON.parse(dataArr);
   makeList(urlArr)
 
-  urlArr.forEach(element => {
+  /*urlArr.forEach(element => {
     handleData(element)
-  });
+  });*/
   
 }
 
