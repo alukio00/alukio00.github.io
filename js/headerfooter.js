@@ -28,12 +28,34 @@ class Header extends HTMLElement {
                         <a class="mobile-menu-a" href="/apartamenty/html/index.html">
                             <i class="material-symbols-outlined">home</i><p>Strona Główna</p>
                         </a>
-                        <a class="mobile-menu-a popup-activate">
-                            <i id="icon-show-popup2" class="material-symbols-outlined">apartment</i><p>Nasza Oferta</p>
-                        </a>
                         <a class="mobile-menu-a" href="/apartamenty/html/galeria.html">
                             <i class="material-symbols-outlined">photo_library</i><p>Galeria Zdjęć</p>
                         </a>
+                        <div class="flex flex-col gap-4">
+                            <a id="apartamenty-drop-btn" class="mobile-menu-a" >
+                                <i class="material-symbols-outlined">apartment</i><p>Nasza Oferta</p><i id="apartamenty-drop" class="material-symbols-outlined">keyboard_arrow_down</i>
+                            </a>
+                            <div id="apartamenty-drop-div" class="hidden flex-col gap-2 ml-4">
+                                <a href="/apartamenty/html/a1.html">Apartament Dwupoziomowy Nr. 1</a>
+                                <a href="/apartamenty/html/a2.html">Apartament Dwupoziomowy Nr. 2</a>
+                                <a href="/apartamenty/html/a3.html">Apartament Dwupoziomowy Nr. 3</a>
+                                <a href="/apartamenty/html/a4.html">Apartament Dwupoziomowy Nr. 4</a>
+                                <a href="/apartamenty/html/a5.html">Apartament z 2 Sypialniami</a>
+                                <a href="/apartamenty/html/domek.html">Domek Drewniany</a>
+                    
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col gap-4">
+                            <a id="atrakcje-btn" class="mobile-menu-a" >
+                                <i class="material-symbols-outlined">hiking</i><p>Atrakcje w Okolicy</p><i id="atrakcje-drop" class="material-symbols-outlined">keyboard_arrow_down</i>
+                            </a>
+                            <div id="atrakcje-div" class="hidden flex-col gap-2 ml-4">
+                                <a href="/apartamenty/html/atrakcje/atrakcje.html">Atrakcje Turystyczne</a>
+                                <a href="/apartamenty/html/szlaki/szlaki.html">Szlaki Piesze</a>
+                                <a href="/apartamenty/html/trasy-rowerowe/trasy-rowerowe.html">Trasy Rowerowe</a>
+                            </div>
+                        </div>
                         <a class="mobile-menu-a" href="/apartamenty/html/cennik.html">
                             <i class="material-symbols-outlined">payments</i><p>Cennik</p>
                         </a>
@@ -56,6 +78,24 @@ class Header extends HTMLElement {
                 menuIcon.textContent = "close";
             }
         });
+        const atrakcjeBtn = this.querySelector("#atrakcje-btn")
+        const atrakcjeDiv = this.querySelector("#atrakcje-div")
+        const atrakcjeArrow = this.querySelector("#atrakcje-drop")
+
+        atrakcjeBtn.addEventListener("click", () => {
+            atrakcjeDiv.classList.toggle("hidden")
+            atrakcjeDiv.classList.toggle("flex")
+            atrakcjeArrow.classList.toggle("rotate-180")
+        })
+        const apartamentyBtn = this.querySelector("#apartamenty-drop-btn")
+        const apartamentyDiv = this.querySelector("#apartamenty-drop-div")
+        const apartamentyArrow = this.querySelector("#apartamenty-drop")
+
+        apartamentyBtn.addEventListener("click", () => {
+            apartamentyDiv.classList.toggle("hidden")
+            apartamentyDiv.classList.toggle("flex")
+            apartamentyArrow.classList.toggle("rotate-180")
+        })
     }
 }
 customElements.define("my-header", Header);
