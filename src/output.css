@@ -756,6 +756,18 @@ video {
   height: 100vh;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[55\] {
+  height: 55;
+}
+
+.h-\[55\%\] {
+  height: 55%;
+}
+
 .max-h-\[\] {
   max-height: ;
 }
