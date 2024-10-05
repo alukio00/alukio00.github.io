@@ -16,11 +16,11 @@
 <body>
     <my-header></my-header>
     <main class="space-y-8">
-        <section class="space-y-20">
+        <section class="space-y-20 max-md:space-y-10 max-md:p-3">
             <h1 class="text-5xl font-semibold text-center mt-10">Rezerwacja</h1>
             <div class="flex flex-row max-xl:flex-col max-md:w-full items-start gap-8 w-11/12 mx-auto">
                 <div class="bg-white shadow-lg rounded-3xl p-10 max-md:p-6 flex flex-col gap-6 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
-                    <h2 class="text-4xl">Informacje</h2>
+                    <h2 class="text-3xl">Informacje</h2>
                     <hr class="border border-gray-800 h-0.5 w-2/3 bg-gray-800">
                     <p class="text-lg text-wrap">
                         <strong>Zaliczka:</strong><br>
@@ -37,7 +37,7 @@
                         <strong>54 1090 2835 0000 0001 5320 1446</strong><br><br>
                         Dla Przelewów zagranicznych:<br>
                         Kod SWIFT/BIC: <strong>WBKPPLPP</strong><br>
-                        IBAN: <strong>PL54109028350000000153201446</strong>
+                        IBAN: <strong class="flex gap-0 max-sm:flex-col"><span>PL541090283500</span><span>00000153201446</span></strong>
                     </p>
                 </div>
                 <form onsubmit="sendEmail(event)" enctype="multipart/form-data" id="email-form" class="bg-white shadow-lg max-md:p-6 rounded-3xl p-10 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
@@ -67,9 +67,9 @@
                 </form>
             </div>
         </section>
-        <section class="w-full mx-auto my-20 flex flex-col gap-4">
-            <div class="flex flex-col gap-8 p-8 shadow-xl bg-white rounded-3xl">
-                <h2 class="text-4xl font-medium text-center">Regulamin Pobytu</h2>
+        <section class="w-11-12 max-md:w-full mx-auto my-20 flex flex-col gap-4">
+            <div class="flex flex-col gap-8 p-8 shadow-xl bg-white border-2 border-gray-800 rounded-3xl">
+                <h2 class="text-3xl font-medium text-center">Regulamin Pobytu</h2>
                 <ol class="list-decimal list-inside text-lg gap-2 flex flex-col">
                     <li>Doba noclegowa trwa od godziny <strong>15.00</strong> w dniu przyjazdu, do <strong>10.00</strong> w dniu wyjazdu.</li>
                     <li>Należność za pobyt pobierana jest <strong>w dniu przyjazdu</strong>, zgodnie z ustalonym przez Państwa terminem rezerwacji pokoju. W przypadku wcześniejszego wyjazdu niż w rezerwowanym przez Państwa terminie, należność za całość pobytu nie ulega zmianie.</li>

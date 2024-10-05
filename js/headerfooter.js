@@ -110,15 +110,16 @@ class Footer extends HTMLElement {
                             <div class="flex flex-row justify-between flex-wrap gap-8">
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Kontakt:</h3>
-                                    
-                                    <p><strong>Telefon:</strong> 505 720 041</p>
-                                    <p><strong>Email:</strong> info@cichyzakatek.com.pl</p>
-                                    
-                                    <p><strong>Adres:</strong> ul. Tadeusza Kościuszki 112C <br>57-350 Kudowa-Zdrój</p>
+                                    <div class="flex flex-col gap-2">
+                                        <p><strong>Telefon:</strong> 505 720 041</p>
+                                        <p><strong>Email:</strong> info@cichyzakatek.com.pl</p>
+                                        
+                                        <p><strong>Adres:</strong> ul. Tadeusza Kościuszki 112C <br>57-350 Kudowa-Zdrój</p>
+                                    </div>
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Nasza Oferta:</h3>
-                                    <ul class="list-disc list-inside">
+                                    <ul class="list-disc list-inside gap-2">
                                         <li><a href="/apartamenty/html/a1.html">Apartament Dwupoziomowy nr 1</a></li>
                                         <li><a href="/apartamenty/html/a2.html">Apartament Dwupoziomowy nr 2</a></li>
                                         <li><a href="/apartamenty/html/a3.html">Apartament Dwupoziomowy nr 3</a></li>
@@ -129,7 +130,7 @@ class Footer extends HTMLElement {
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Strony:</h3>
-                                    <ul class="list-disc list-inside">
+                                    <ul class="list-disc list-inside gap-2">
                                         <li><a href="/apartamenty/html/index.html">Strona Główna</a></li>
                                         <li><a href="/apartamenty/html/galeria.html">Galeria</a></li>
                                         <li><a href="/apartamenty/html/cennik.html">Cennik</a></li>
@@ -141,7 +142,7 @@ class Footer extends HTMLElement {
                                 
                             </div>
                         </div>
-                        <div class="p-2">
+                        <div class="p-3">
                             <p>&copy; 2024 Apartamenty CichyZakątek. Wszelkie prawa zastrzeżone.</p>
                         </div>
                     </footer>

@@ -16,11 +16,11 @@
 <body>
     <my-header></my-header>
     <main>
-        <section class="space-y-20">
+        <section class="space-y-20 max-md:space-y-10 max-md:p-3">
             <h1 class="text-5xl font-semibold text-center mt-10">Cennik</h1>
             <div class="flex flex-row max-xl:flex-col max-md:w-full items-start gap-8 w-11/12 mx-auto">
-                <div class="bg-white shadow-lg rounded-3xl p-8 max-md:p-6 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
-                    <h2 class="text-4xl">Informacje</h2>
+                <div class="bg-white shadow-lg rounded-3xl p-8 max-md:p-6 flex flex-col gap-8 w-full max-w-700 mx-auto border-2 border-gray-800">
+                    <h2 class="text-3xl font-medium">Informacje</h2>
                     <hr class="border border-gray-800 h-0.5 w-2/3 bg-gray-800">
                     <p class="text-lg text-wrap">
                         <strong>Informacje Kontaktowe:</strong><br>
@@ -37,8 +37,8 @@
                         Szczegółowych informacji udzielamy telefonicznie lub e-mail.
                     </p>
                 </div>
-                <form onsubmit="sendAskEmail(event)" id="email-form" enctype="multipart/form-data" class="bg-white shadow-lg max-md:p-6 rounded-3xl p-8 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-gray-800">
-                    <h2 class="text-4xl">Sprawdź Dostępność</h2>
+                <form onsubmit="sendAskEmail(event)" id="email-form" enctype="multipart/form-data" class="bg-white shadow-lg max-md:p-6 rounded-3xl p-8 flex flex-col gap-8 w-full max-w-700 mx-auto border-2 border-gray-800">
+                    <h2 class="text-3xl font-medium">Sprawdź Dostępność</h2>
                     <hr class="border border-gray-800 h-0.5 w-2/3 bg-gray-800">
                      
                     <div class="flex flex-row max-sm:flex-col gap-8 justify-between">
