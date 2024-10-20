@@ -6,10 +6,9 @@
     display: flex;
     gap: 8px;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    max-width: 90%;
-    margin: 0px auto;
+
     background-color: white;
+    font-size: 18px;
 }
 @keyframes slide-in-up {
     0% {
@@ -52,14 +51,14 @@
 }
 .room {
     border: solid 2px #1f2937;
-    padding: 18px;
+    padding: 12px;
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow:  5px 5px 15px -3px rgba(0, 0, 0, 0.199);
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
     max-width: 800px;
     margin: 0px auto;
     background-color: #ffffff;
