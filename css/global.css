@@ -38,7 +38,7 @@ main {
 }
 
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
     body {
         padding-left: 0px;
     }
@@ -97,48 +97,54 @@ section {
 .shadow-div {
     box-shadow: 3px 0px 10px 0px #1f29374d;
 }
-.popup-ap {
+
+.popup-link div {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+  
 }
 .popup-link {
     background-color: white;
-    padding: 16px;
-    border-radius: 20px;
+    border-radius: 12px;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.205);
-    border: solid 3px #1f2937;
     transition-duration: 250ms;
     width: 400px;
-    max-width: 30%;
-    animation: growIn 400ms ease-in-out;
+    max-width: 33%;
+    animation: growIn 200ms ease-in-out;
+}
+.popup-link img {
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    height: 250px;
+  
 }
 
 
 .popup-link:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
-@media (max-width: 1024px) {
-    .popup-link {
-        max-width: 90%;
-    }
-}
-
-.popup-ap .material-symbols-outlined {
-    color: #1f2937;
-    font-size: 25px;
-}
-.popup-ap li {
+#lista-show li {
     display: flex;
     flex-direction: row;
+    gap: 2px;
     align-items: center;
-    gap: 5px;
-    
+    font-size: 18px;
 }
 #lista-show a {
     text-decoration: underline;
-    text-decoration-color: #1f2937;
+    text-decoration-color: var(--my-color);
 }
+
+
+@media (max-width: 1024px) {
+    .popup-link {
+        width: 90%;
+        max-width: 500px;
+
+    }
+}
+
+
 @keyframes growIn {
     0% {
         transform: translateY(200%);

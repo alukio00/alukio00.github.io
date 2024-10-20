@@ -1,7 +1,7 @@
 class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <header class="z-10 fixed left-0 h-full text-white flex flex-row justify-start max-md:hidden shadow-div">
+            <header class="z-10 fixed left-0 h-full text-white flex flex-row justify-start max-lg:hidden shadow-div">
                 <div class="flex flex-col align-middle justify-center gap-5 bg-gray-800 h-full w-16">
                     <div class="nav-bar-icons"><a href="/apartamenty/html/index.html"><i class="material-symbols-outlined">home</i></a><div class="sidebar-child">
                         <p>Strona Główna</p>
@@ -21,7 +21,7 @@ class Header extends HTMLElement {
                 </div>
             </header>
 
-            <header class="hidden z-10 fixed left-0 h-full max-md:flex text-white flex-row justify-start">
+            <header class="hidden z-10 fixed left-0 h-full max-lg:flex text-white flex-row justify-start">
                 <div class="w-full">
                     <i id="menu-icon" class="material-symbols-outlined fixed top-3 left-3 z-20 p-1.5 rounded-lg border flex bg-gray-800">menu</i>
                     <div id="mobile-drop-right" class="hidden flex flex-col justify-start py-24 gap-6 bg-gray-800 bg-opacity-95 h-full w-72 min-w-60 max-w-60% p-3 animate-slideInRight origin-left">
@@ -155,49 +155,48 @@ customElements.define("my-footer", Footer);
 class PopupAparts extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <div id="popup-aparts" class="hidden z-30 fixed top-0 left-0 w-full py-4 h-full bg-black bg-opacity-50 flex flex-row justify-center items-center max-lg:gap-3 gap-4 max-lg:flex-col">
+            <div id="popup-aparts" class="hidden z-30 fixed top-0 left-0 w-full py-4 h-full bg-black bg-opacity-50 flex flex-row justify-center items-center gap-5 max-xl:gap-3">
                 <i id="p-close" class="fixed top-5 right-5 cursor-pointer text-white material-symbols-outlined p-2 rounded-lg border bg-gray-800">close</i>
-                <div id="changing-div" class="popup-ap popup-link pb-0 cursor-pointer">
-                    <h3 class="text-2xl max-sm:text-xl font-medium text-wrap">Apartamenty Dwupoziomowe</h3>
-                    <hr class="border-2 h-0.5 w-8/12 border-gray-800">
-                    <ul id="lista-hide" class="text-gray-700">
-                        <li><i class="material-symbols-outlined">table</i>Łóżko małżeńskie</li>
-                        <li><i class="material-symbols-outlined"></i>Łóżko dziecięce</li>
-                        <li><i class="material-symbols-outlined">skillet</i>Aneks Kuchenny</li>
-                    </ul>
-                    <ul id="lista-show" class="hidden cursor-pointer">
+                
+                <div id="changing-div" class="popup-link cursor-pointer">
+                    <div class="justify-start">
+                        <img id="lista-hide" loading="lazy" src="/apartamenty/img/a1/1B0A3938.jpg" alt="Atrakcje Turystyczne zdjęcie">
+                        <h3 class="text-xl font-medium p-4">Apartamenty Dwupoziomowe</h3>
+                      
+                    </div>
+                </div>
+                <a  href="/apartamenty/html/a5.html" class="popup-link">
+                    <div>
+                        <img loading="lazy" src="/apartamenty/img/a5/1.jpg" alt="Atrakcje Turystyczne zdjęcie">
+                        <h3 class="text-xl font-medium p-4">Apartament z 2 sypialniami</h3>
+                    </div>
+                </a>
+    
+                <a  href="/apartamenty/html/domek.html" class="popup-link">
+                    <div>
+                        <img loading="lazy" src="/apartamenty/img/domek/163-kudowa-zdroj-cichy-zakatek.jpg" alt="Atrakcje Turystyczne zdjęcie">
+                        <h3 class="text-xl font-medium p-4">Domek Drewniany</h3>
+                    </div>
+                </a>
+                <div id="lista-show" class="hidden bg-white flex items-start flex-col gap-4 w-500 rounded-xl p-4">
+                    <h3 class="text-2xl font-medium">Apartamenty Dwupoziomowe</h3>
+                     <hr class="w-full h-0.5 border border-gray-800 bg-gray-800">
+                    <ul class="flex gap-1 flex-col">
+                       
                         <li><i class="material-symbols-outlined">apartment</i><a href="/apartamenty/html/a1.html">Apartament Nr 1</li>
                         <li><i class="material-symbols-outlined">apartment</i><a href="/apartamenty/html/a2.html">Apartament Nr 2</li>
                         <li><i class="material-symbols-outlined">apartment</i><a href="/apartamenty/html/a3.html">Apartament Nr 3</li>
                         <li><i class="material-symbols-outlined">apartment</i><a href="/apartamenty/html/a4.html">Apartament Nr 4</li>
                     </ul>
                 </div>
-                <a class="popup-link" href="/apartamenty/html/a5.html"><div class="popup-ap">
-                    <h3 class="text-2xl max-sm:text-xl font-medium text-wrap">Apartament z 2 sypialniami</h3>
-                    <hr class="border-2 h-0.5 w-8/12 border-gray-800">
-                    <ul class="text-gray-700">
-                        <li><i class="material-symbols-outlined"></i>Łóżko małżeńskie</li>
-                        <li><i class="material-symbols-outlined"></i>Łóżko dziecięce</li>
-                        <li><i class="material-symbols-outlined">skillet</i>Aneks Kuchenny</li>
-                    </ul>
-                </div></a>
-                <a class="popup-link" href="/apartamenty/html/domek.html"><div class="popup-ap">
-                    <h3 class="text-2xl max-sm:text-xl font-medium text-wrap">Domek Drewniany</h3>
-                    <hr class="border-2 h-0.5 w-8/12 border-gray-800">
-                    <ul class="text-gray-700">
-                        <li><i class="material-symbols-outlined"></i>Łóżko małżeńskie</li>
-                        <li><i class="material-symbols-outlined"></i>Łóżko dziecięce (Piętrowe)</li>
-                        <li><i class="material-symbols-outlined">skillet</i>Aneks Kuchenny</li>
-                    </ul>
-                </div></a>
             </div>
         `;
+       
         const close = this.querySelector("#p-close"),
         popupDiv = this.querySelector("#popup-aparts"),
         popupBtn1 = document.querySelectorAll(".popup-activate"),
         changingDiv = this.querySelector("#changing-div"),
-        hideOther = this.querySelectorAll("a.popup-link"),
-        listaHide = this.querySelector("#lista-hide"),
+        hideOther = this.querySelectorAll(".popup-link"),
         listaShow = this.querySelector("#lista-show");
 
         changingDiv.addEventListener("click", () => {
@@ -205,8 +204,7 @@ class PopupAparts extends HTMLElement {
                 item.classList.add("hidden");
             })
             listaShow.classList.remove("hidden");
-            listaHide.classList.add("hidden");
-            changingDiv.classList.remove("cursor-pointer")
+
         })
 
 
@@ -220,8 +218,8 @@ class PopupAparts extends HTMLElement {
                 item.classList.remove("hidden");
             })
             listaShow.classList.add("hidden");
-            listaHide.classList.remove("hidden");
-            changingDiv.classList.add("cursor-pointer")
+ 
+  
         }
         popupBtn1.forEach(item => {
             item.addEventListener("click", removeH);
