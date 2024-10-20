@@ -119,7 +119,7 @@ class Footer extends HTMLElement {
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Nasza Oferta:</h3>
-                                    <ul class="list-disc list-inside gap-2">
+                                    <ul class="list-disc list-inside gap-2 flex flex-col">
                                         <li><a href="/apartamenty/html/a1.html">Apartament Dwupoziomowy nr 1</a></li>
                                         <li><a href="/apartamenty/html/a2.html">Apartament Dwupoziomowy nr 2</a></li>
                                         <li><a href="/apartamenty/html/a3.html">Apartament Dwupoziomowy nr 3</a></li>
@@ -130,7 +130,7 @@ class Footer extends HTMLElement {
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Strony:</h3>
-                                    <ul class="list-disc list-inside gap-2">
+                                    <ul class="list-disc list-inside flex flex-col gap-2">
                                         <li><a href="/apartamenty/html/index.html">Strona Główna</a></li>
                                         <li><a href="/apartamenty/html/galeria.html">Galeria</a></li>
                                         <li><a href="/apartamenty/html/cennik.html">Cennik</a></li>

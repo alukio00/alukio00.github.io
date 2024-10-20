@@ -8,13 +8,20 @@ const deleteErrorMessage = () => {
 const sendEmail = async (event) => {
     event.preventDefault()
     
-    const form = document.getElementById("email-form")
-    const formData = new FormData(form)
+    const email = document.getElementById("email").value
+    const firstName = document.getElementById("name").value
+    const lastName = document.getElementById("last-name").value
+    const message = document.getElementById("message").value
+    
+    const formData = JSON.stringify({email, firstName, lastName, message})
     try {
       
-        const res = await fetch("http://localhost:4000/api/sendEmail", {
+        const res = await fetch("https://europe-central2-light-scarab-439115-h3.cloudfunctions.net/function-1", {
             body: formData,
-            method: "POST"
+            method: "POST",
+            headers: {
+                "Content-type": "application/json"
+            }
         })
         const data = await res.json()
 
@@ -41,13 +48,22 @@ const sendEmail = async (event) => {
 const sendAskEmail = async (event) => {
     event.preventDefault()
     
-    const form = document.getElementById("email-form")
-    const formData = new FormData(form)
+    const dateFrom = document.getElementById("date2").value
+    const dateTo = document.getElementById("date-to2").value
+    const adults = document.getElementById("adults-input").value
+    const kids = document.getElementById("kids-input").value
+    const kidsAge = document.getElementById("kids-age-input").value
+    const email = document.getElementById("email2").value
+    
+    const formData = JSON.stringify({email, dateFrom, dateTo, adults, kids, kidsAge})
     try {
       
-        const res = await fetch("http://localhost:4000/api/sendAskEmail", {
+        const res = await fetch("https://europe-central2-light-scarab-439115-h3.cloudfunctions.net/function-1", {
             body: formData,
-            method: "POST"
+            method: "POST",
+            headers: {
+                "Content-type": "application/json"
+            }
         })
         const data = await res.json()
 
