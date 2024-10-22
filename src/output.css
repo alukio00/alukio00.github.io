@@ -1519,6 +1519,10 @@ video {
     margin-top: 45vh;
   }
 
+  .max-sm\:mt-\[60vh\] {
+    margin-top: 60vh;
+  }
+
   .max-sm\:h-60vh {
     height: 60vh;
   }
@@ -1561,6 +1565,10 @@ video {
 
   .max-sm\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .max-sm\:pt-32 {
+    padding-top: 8rem;
   }
 
   .max-sm\:text-3xl {
