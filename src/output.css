@@ -1491,6 +1491,14 @@ video {
     display: none;
   }
 
+  .max-sm\:h-60 {
+    height: 15rem;
+  }
+
+  .max-sm\:h-60vh {
+    height: 60vh;
+  }
+
   .max-sm\:w-full {
     width: 100%;
   }

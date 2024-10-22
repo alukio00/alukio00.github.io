@@ -15,7 +15,7 @@ class Header extends HTMLElement {
                     <div class="nav-bar-icons"><a href="/apartamenty/html/cennik/"><i class="material-symbols-outlined">payments</i></a><div class="sidebar-child">
                         <p>Cennik</p>
                     </div></div>
-                    <div class="nav-bar-icons"><a href="/apartamenty/html/kontakt/"><i class="material-symbols-outlined">chat</i></a><div class="sidebar-child">
+                    <div class="nav-bar-icons"><a href="/apartamenty/html/rezerwacja/"><i class="material-symbols-outlined">chat</i></a><div class="sidebar-child">
                         <p>Rezerwacja</p>
                     </div></div>
                 </div>
@@ -59,7 +59,7 @@ class Header extends HTMLElement {
                         <a class="mobile-menu-a" href="/apartamenty/html/cennik/">
                             <i class="material-symbols-outlined">payments</i><p>Cennik</p>
                         </a>
-                        <a class="mobile-menu-a" href="/apartamenty/html/kontakt/">
+                        <a class="mobile-menu-a" href="/apartamenty/html/rezerwacja/">
                             <i class="material-symbols-outlined">chat</i><p>Rezerwacja</p>
                         </a>
                     </div>
@@ -134,7 +134,7 @@ class Footer extends HTMLElement {
                                         <li><a href="/apartamenty/html/">Strona Główna</a></li>
                                         <li><a href="/apartamenty/html/galeria/">Galeria</a></li>
                                         <li><a href="/apartamenty/html/cennik/">Cennik</a></li>
-                                        <li><a href="/apartamenty/html/kontakt/">Rezerwacja</a></li>
+                                        <li><a href="/apartamenty/html/rezerwacja/">Rezerwacja</a></li>
                                         <li><a href="/apartamenty/html/regulamin/">Regulamin</a></li>
                                         <li><a href="/apartamenty/html/polityka-prywatnosci/">Polityka Prywatności</a></li>
                                     </ul>

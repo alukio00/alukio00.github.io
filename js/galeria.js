@@ -17,7 +17,6 @@ const obrazy = [
     '/apartamenty/img/wspólne/CB6A8174.jpg',
     '/apartamenty/img/galeria/DJI_0909.jpg',
     '/apartamenty/img/galeria/DSC_0246.jpg',
-    '/apartamenty/img/galeria/DSC_0389orgFULL1EDYC (1).jpg',
     '/apartamenty/img/galeria/DSC_0849.jpg',
     '/apartamenty/img/galeria/DSC_1220.jpg',
     '/apartamenty/img/galeria/DSC_kacz2.jpg',
