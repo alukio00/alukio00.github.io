@@ -16,7 +16,7 @@ const galleryData = [
         '/apartamenty/img/a1/1B0A3947.jpg',
         '/apartamenty/img/a1/1B0A3959.jpg',
         '/apartamenty/img/a1/1B0A3976.jpg',
-        '/apartamenty/img/a1/1B0A3980-HDR.jpg',
+        '/apartamenty/img/a1/1B0A3980-HDR.jpg', 
         '/apartamenty/img/a1/1B0A3986.jpg',
         '/apartamenty/img/a1/37-kudowa-zdr-j-cichy-zak-tek.jpg',
         '/apartamenty/img/a1/EC3A5271.jpg',
@@ -28,7 +28,7 @@ const galleryData = [
         '/apartamenty/img/wspólne/CB6A8164_xw06xfow.jpg',
         '/apartamenty/img/wspólne/CB6A8174.jpg',
         '/apartamenty/img/galeria/DJI_0909.jpg'
-];
+]
 
 const generateGallery = () => {
     
