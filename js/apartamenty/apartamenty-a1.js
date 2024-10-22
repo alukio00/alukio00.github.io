@@ -8,7 +8,7 @@ const screenW = screen.width;
 let currentZoom = "";
 let currentTel = 0
 
-let galleryData = []
+
 const selectPictuires = [ 
     [
         '/apartamenty/img/a1/151-kudowa-zdroj-cichy-zakatekBOK.jpg',
@@ -140,6 +140,7 @@ const selectPictuires = [
         '/apartamenty/img/galeria/DJI_0909.jpg'
     ]
 ]
+const galleryData = selectPictuires[Number(document.querySelector("main").dataset.number)]
 
 const generateGallery = () => {
     
@@ -194,9 +195,7 @@ const zoomLeft = () => {
         zoom(currentZoom - 1);
     }
 };
-const setValues = (val) => {
-    galleryData = selectPictuires[val]
-}
+
 
 
 
