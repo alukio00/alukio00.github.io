@@ -1523,6 +1523,10 @@ video {
     margin-top: 60vh;
   }
 
+  .max-sm\:hidden {
+    display: none;
+  }
+
   .max-sm\:h-60vh {
     height: 60vh;
   }

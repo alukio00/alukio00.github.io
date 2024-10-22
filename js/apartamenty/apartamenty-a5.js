@@ -22,9 +22,7 @@ const galleryData = [
         '/apartamenty/img/a5/8_1ryyvtpb.jpg',
         '/apartamenty/img/a5/IMG20240602204958.jpg',
         '/apartamenty/img/a5/IMG20240603184114.jpg',
-        '/apartamenty/img/a5/kaczKadr.jpg'
-      ],
-      [
+        '/apartamenty/img/a5/kaczKadr.jpg',
         '/apartamenty/img/wspólne/160-kudowa-zdroj-cichy-zakatek.jpg',
         '/apartamenty/img/wspólne/161-kudowa-zdroj-cichy-zakatek.jpg',
         '/apartamenty/img/wspólne/162-kudowa-zdroj-cichy-zakatek.jpg',

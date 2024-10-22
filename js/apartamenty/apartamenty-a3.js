@@ -15,9 +15,7 @@ const galleryData = [
         '/apartamenty/img/a3/54-kudowa-zdroj-cichy-zakatek.jpg',
         '/apartamenty/img/a3/55-kudowa-zdroj-cichy-zakatek.jpg',
         '/apartamenty/img/a3/56-kudowa-zdroj-cichy-zakatek.jpg',
-        '/apartamenty/img/a3/58-kudowa-zdroj-cichy-zakatek.jpg'
-    ],
-    [
+        '/apartamenty/img/a3/58-kudowa-zdroj-cichy-zakatek.jpg',
         '/apartamenty/img/wspólne/160-kudowa-zdroj-cichy-zakatek.jpg',
         '/apartamenty/img/wspólne/161-kudowa-zdroj-cichy-zakatek.jpg',
         '/apartamenty/img/wspólne/162-kudowa-zdroj-cichy-zakatek.jpg',
