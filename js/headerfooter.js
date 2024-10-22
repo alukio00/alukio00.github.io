@@ -3,7 +3,7 @@ class Header extends HTMLElement {
         this.innerHTML = `
             <header class="z-10 fixed left-0 h-full text-white flex flex-row justify-start max-lg:hidden shadow-div">
                 <div class="flex flex-col align-middle justify-center gap-5 bg-gray-800 h-full w-16">
-                    <div class="nav-bar-icons"><a href="html/"><i class="material-symbols-outlined">home</i></a><div class="sidebar-child">
+                    <div class="nav-bar-icons"><a href=""><i class="material-symbols-outlined">home</i></a><div class="sidebar-child">
                         <p>Strona Główna</p>
                     </div></div>
                     <div class="nav-bar-icons"><i id="icon-show-popup" class="material-symbols-outlined cursor-pointer popup-activate">apartment</i><div class="sidebar-child">
@@ -25,7 +25,7 @@ class Header extends HTMLElement {
                 <div class="w-full">
                     <i id="menu-icon" class="material-symbols-outlined fixed top-3 left-3 z-20 p-1.5 rounded-lg border flex bg-gray-800">menu</i>
                     <div id="mobile-drop-right" class="hidden flex flex-col justify-start py-24 gap-6 bg-gray-800 bg-opacity-95 h-full w-72 min-w-60 max-w-60% p-3 animate-slideInRight origin-left">
-                        <a class="mobile-menu-a" href="html/">
+                        <a class="mobile-menu-a" href="">
                             <i class="material-symbols-outlined">home</i><p>Strona Główna</p>
                         </a>
                         <a class="mobile-menu-a" href="galeria/">
@@ -131,7 +131,7 @@ class Footer extends HTMLElement {
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Strony:</h3>
                                     <ul class="list-disc list-inside flex flex-col gap-2">
-                                        <li><a href="html/">Strona Główna</a></li>
+                                        <li><a href="">Strona Główna</a></li>
                                         <li><a href="galeria/">Galeria</a></li>
                                         <li><a href="cennik/">Cennik</a></li>
                                         <li><a href="kontakt/">Rezerwacja</a></li>
