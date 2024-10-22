@@ -1459,16 +1459,16 @@ video {
     flex-direction: column;
   }
 
+  .max-md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .max-md\:gap-12 {
     gap: 3rem;
   }
 
   .max-md\:gap-8 {
     gap: 2rem;
-  }
-
-  .max-md\:gap-10 {
-    gap: 2.5rem;
   }
 
   .max-md\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1491,7 +1491,51 @@ video {
 }
 
 @media not all and (min-width: 640px) {
+  .max-sm\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .max-sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .max-sm\:mt-\[\] {
+    margin-top: ;
+  }
+
+  .max-sm\:mt-\[30\] {
+    margin-top: 30;
+  }
+
+  .max-sm\:mt-\[30vh\] {
+    margin-top: 30vh;
+  }
+
+  .max-sm\:mt-\[40vh\] {
+    margin-top: 40vh;
+  }
+
+  .max-sm\:mt-\[45vh\] {
+    margin-top: 45vh;
+  }
+
   .max-sm\:h-60vh {
+    height: 60vh;
+  }
+
+  .max-sm\:h-40vh {
+    height: 40vh;
+  }
+
+  .max-sm\:h-\[40vh\] {
+    height: 40vh;
+  }
+
+  .max-sm\:h-\[50vh\] {
+    height: 50vh;
+  }
+
+  .max-sm\:h-\[60vh\] {
     height: 60vh;
   }
 
@@ -1509,6 +1553,14 @@ video {
 
   .max-sm\:p-5 {
     padding: 1.25rem;
+  }
+
+  .max-sm\:pt-40 {
+    padding-top: 10rem;
+  }
+
+  .max-sm\:pt-20 {
+    padding-top: 5rem;
   }
 
   .max-sm\:text-3xl {
