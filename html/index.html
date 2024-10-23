@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apartamenty Cichy Zakątek</title>
     <script src="/apartamenty/js/headerfooter.js"></script>
+    <script src="/apartamenty/js/img-zoom-popup.js"></script>
     <link href="/apartamenty/css/global.css" rel="stylesheet">
     <link href="/apartamenty/src/output.css" rel="stylesheet">
     <link href="/apartamenty/css/str-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="/apartamenty/js/strona-gl.js" defer></script>
     <script src="/apartamenty/js/rezerwacja.js" defer></script>
+    
  
 
 </head>
 <body>
+    <popup-image-zoom></popup-image-zoom>
     <my-header></my-header>
+    
     <main class="space-y-10">
         <section class="image max-sm:h-[60vh] h-screen flex flex-col justify-center">
             <div class="max-sm:mt-[60vh] p-5 bg-gray-800 border-white border-2 border-opacity-55 bg-opacity-80 max-xl:bg-opacity-95 text-white border-solid rounded-3xl shadow-xl flex flex-col gap-4 w-5/12 max-w-full max-xl:max-w-xl max-xl:w-full">
@@ -36,8 +40,19 @@
                         <p>Zapewniamy także wysoki komfort wypoczynku oferując gościom wygodne i przestronne apartamenty z aneksami kuchennymi.</p>
                     </div>
                 </div>
-                <div class="max-xl:w-full w-2/5">
-                    <img loading="lazy" class="w-full bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/galeria/pomniejszone_KADR4493.jpg" alt="zdjęcie obiektu">
+                <div id="auto-slider" class="max-xl:w-full w-2/5 flex overflow-hidden">
+                    <img onclick="zoom(0)" class="w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/galeria/CB6A8164.jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(1)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/a4/CB6A8139-Edit.jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(2)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/a1/1B0A3959.jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(3)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/a1/EC3A5271.jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(4)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/a4/1B0A4031 (1).jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(5)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/a2/1B0A4041.jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(6)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/a2/1B0A4027.jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(7)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/a2/EC3A5321.jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(8)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/a4/158-kudowa-zdroj-cichy-zakatek.jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(9)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/a4/CB6A8145-Edit.jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(10)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/a4/CB6A8143.jpg" alt="zdjęcie obiektu">
+                    <img onclick="zoom(11)" class="hidden w-full slider-show cursor-pointer bg-cover rounded-3xl shadow-lg h-full" src="/apartamenty/img/wspólne/CB6A8174.jpg" alt="zdjęcie obiektu">
                 </div>
             </div>
         </section>
@@ -149,16 +164,16 @@
                 <div class="flex flex-row max-md:flex-col gap-8 justify-between">
                     <div class="w-full gap-3 flex flex-col">
                         <label for="name">Imię:</label>
-                        <input class="w-full" type="text" id="name" name="firstName" required>
+                        <input autocomplete="given-name" class="w-full" type="text" id="name" name="firstName" required>
                     </div>
                     <div class="w-full gap-3 flex flex-col">
                         <label for="last-name">Nazwisko:</label>
-                        <input class="w-full" type="text" id="last-name" name="lastName" required>
+                        <input autocomplete="family-name" class="w-full" type="text" id="last-name" name="lastName" required>
                     </div>
                 </div>
                 <div class="w-full gap-3 flex flex-col">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input autocomplete="email" type="email" id="email" name="email" required>
                 </div>
                 <div class="w-full gap-3 flex flex-col">
                     <label for="message">Wiadomość:</label>
@@ -176,5 +191,6 @@
     </main>
     <my-footer></my-footer>
     <my-popup-ap></my-popup-ap>
+    
 </body>
 </html>
