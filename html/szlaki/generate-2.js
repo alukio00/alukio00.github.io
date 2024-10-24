@@ -70,8 +70,21 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
 
 const makeList = (array) => {
     const list = array.map(el => {
+
+        const rawPhoto =  el.img[0]
+        const regex = /images/;
+        const regex3 = /gallery/;
+        const regex2 = /_thumb.png/;
+        const photo = rawPhoto.replace(regex3, "gallery2").replace(regex, "gallery2").replace(regex2, ".jpg")
+     
+
         const h1 = el.h1.replace(" - Cichy Zakątek", "")
-        return `<a href="./id/${el.pageUrl}" class="text-xl p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 bg-white hover:scale-105 duration-200">${h1.length > 45 ? h1.slice(0, 45) + "..." : h1}</a>`;
+        return `<a href="./id/${el.pageUrl}" class="text-xl flex flex-col gap-2 rounded-xl max-w-full shadow-lg bg-white hover:scale-105 duration-200">
+            <img class="object-cover rounded-tl-xl rounded-tr-xl h-40" loading="lazy" src="/apartamenty/${photo}" alt="Atrakcje Turystyczne zdjęcie">
+            <div class="rounded-b-xl p-4">
+                <h3 class="text-xl font-medium">${h1.length > 45 ? h1.slice(0, 45) + "..." : h1}</h4>
+            </div>
+        </a>`;
     }).join("")
  
     const content = `
@@ -105,7 +118,7 @@ const makeList = (array) => {
     </body>
 </html>
 `;
-    fs.writeFile("./szlaki.html", content, function (err) {
+    fs.writeFile("./index.html", content, function (err) {
         if (err) throw err;
     });
 }

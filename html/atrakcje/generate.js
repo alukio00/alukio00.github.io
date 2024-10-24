@@ -75,13 +75,21 @@ const makeList = (array) => {
  
         const regex = /[k|m|\-|\s]/g
         const sliced = km.replace("- Cichy Zakątek", "").replace(regex, "").replace(",", ".")
+
+        const rawPhoto =  el.img[0]
+        const regexImg = /images/;
+        const regexImg2 = /_thumb.png/;
+        const photo = rawPhoto.replace(regexImg, "gallery").replace(regexImg2, ".jpg");
+      
+            
     
 
-
-        return [`<a href="./id/${el.pageUrl}" class="text-xl flex flex-col gap-2 p-4 rounded-xl max-w-full shadow-lg border-2 border-gray-800 bg-white hover:scale-105 duration-200">
-        <span>${h1.length > 45 ? h1.slice(0, 45) + "..." : h1}</span>
-        <span class="text-base"><strong>Odległość: </strong>${sliced} km</span>
-
+        return [`<a href="./id/${el.pageUrl}" class="text-xl flex flex-col gap-2 rounded-xl max-w-full shadow-lg bg-white hover:scale-105 duration-200">
+            <img class="object-cover rounded-tl-xl rounded-tr-xl h-40" loading="lazy" src="/apartamenty/${photo}" alt="Atrakcje Turystyczne zdjęcie">
+            <div class="flex flex-col rounded-b-xl gap-2 p-4">
+                <h3 class="text-xl font-medium">${h1.length > 45 ? h1.slice(0, 45) + "..." : h1}</h4>
+                <h4 class="text-base"><strong>Odległość: </strong>${sliced} km</h4>
+            </div>
         </a>`, sliced];
     }).sort((a, b) => a[1] - b[1]).map(el => el[0]).join("")
  
@@ -119,7 +127,7 @@ const makeList = (array) => {
     </body>
 </html>
 `;
-    fs.writeFile("./atrakcje.html", content, function (err) {
+    fs.writeFile("./index.html", content, function (err) {
         if (err) throw err;
     });
 }
