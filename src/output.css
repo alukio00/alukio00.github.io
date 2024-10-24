@@ -1369,6 +1369,10 @@ video {
 }
 
 @media not all and (min-width: 1024px) {
+  .max-lg\:mt-\[60vh\] {
+    margin-top: 60vh;
+  }
+
   .max-lg\:flex {
     display: flex;
   }
@@ -1384,6 +1388,10 @@ video {
   .max-lg\:h-min {
     height: -moz-min-content;
     height: min-content;
+  }
+
+  .max-lg\:h-\[60vh\] {
+    height: 60vh;
   }
 
   .max-lg\:max-h-75vh {
@@ -1432,6 +1440,22 @@ video {
 
   .max-lg\:rounded-none {
     border-radius: 0px;
+  }
+
+  .max-lg\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .max-lg\:pt-\[\] {
+    padding-top: ;
+  }
+
+  .max-lg\:pt-\[30\] {
+    padding-top: 30;
+  }
+
+  .max-lg\:pt-\[30vh\] {
+    padding-top: 30vh;
   }
 }
 
