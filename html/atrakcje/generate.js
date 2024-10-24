@@ -9,7 +9,7 @@ const handleData = ({ h1, img, urls, pageUrl }) => {
         console.log(zmienna)
         
         
-        return `<img class="img-atrakcje" onclick="zoomIn('/${zmienna}')" loading="lazy" alt="Zdjęcie atrakcji" src="/apartamenty/${zmienna}">`;
+        return `<img class="img-atrakcje" onclick="zoomIn('/apartamenty/${zmienna}')" loading="lazy" alt="Zdjęcie atrakcji" src="/apartamenty/${zmienna}">`;
     }).join("")
     const linki = urls.map(url => {
         return `<a class="url-atrakcje" rel="nofollow" target="_blank" href="${url}">${url}</a>`;
@@ -137,9 +137,9 @@ const handleArray = (dataArr) => {
   const urlArr = JSON.parse(dataArr);
   makeList(urlArr)
 
-  /*urlArr.forEach(element => {
+  urlArr.forEach(element => {
     handleData(element)
-  });*/
+  });
   
 }
 
