@@ -109,9 +109,9 @@
 #gallery-tel img {
     border-radius: 10px;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.226);
-    width: 100%;
+    width: 400px;
     aspect-ratio: 25/15;
-    max-width: 300px;
+    max-width: 100%;
     margin: 0px auto;
     object-fit: cover;
     cursor: pointer;

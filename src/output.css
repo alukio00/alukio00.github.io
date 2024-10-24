@@ -663,10 +663,6 @@ video {
   margin-bottom: auto;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -739,16 +735,12 @@ video {
   height: 95vh;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
 .h-\[60vh\] {
   height: 60vh;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-1\/2 {
@@ -789,10 +781,6 @@ video {
 
 .w-4\/12 {
   width: 33.333333%;
-}
-
-.w-5\/12 {
-  width: 41.666667%;
 }
 
 .w-500 {
@@ -843,6 +831,10 @@ video {
   max-width: 700px;
 }
 
+.max-w-800 {
+  max-width: 800px;
+}
+
 .max-w-96 {
   max-width: 24rem;
 }
@@ -853,14 +845,6 @@ video {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-500 {
-  max-width: 500px;
-}
-
-.max-w-800 {
-  max-width: 800px;
 }
 
 .origin-left {
@@ -1022,17 +1006,6 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
-}
-
-.divide-gray-800 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgb(31 41 55 / var(--tw-divide-opacity));
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1137,16 +1110,12 @@ video {
   --tw-bg-opacity: 0.6;
 }
 
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
 }
 
 .bg-opacity-95 {
   --tw-bg-opacity: 0.95;
-}
-
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
 }
 
 .bg-gradient-to-bl {
@@ -1217,6 +1186,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1261,8 +1235,8 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.pt-\[30vh\] {
-  padding-top: 30vh;
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-center {
@@ -1353,6 +1327,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:bg-gray-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -1365,14 +1344,6 @@ video {
 
   .max-xl\:max-w-1000 {
     max-width: 1000px;
-  }
-
-  .max-xl\:max-w-lg {
-    max-width: 32rem;
-  }
-
-  .max-xl\:max-w-xl {
-    max-width: 36rem;
   }
 
   .max-xl\:grid-cols-1 {
@@ -1397,10 +1368,6 @@ video {
 }
 
 @media not all and (min-width: 1024px) {
-  .max-lg\:mt-\[60vh\] {
-    margin-top: 60vh;
-  }
-
   .max-lg\:flex {
     display: flex;
   }
@@ -1416,10 +1383,6 @@ video {
   .max-lg\:h-min {
     height: -moz-min-content;
     height: min-content;
-  }
-
-  .max-lg\:h-\[60vh\] {
-    height: 60vh;
   }
 
   .max-lg\:max-h-75vh {
@@ -1446,6 +1409,10 @@ video {
     width: 100vw;
   }
 
+  .max-lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .max-lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1468,22 +1435,6 @@ video {
 
   .max-lg\:rounded-none {
     border-radius: 0px;
-  }
-
-  .max-lg\:pt-32 {
-    padding-top: 8rem;
-  }
-
-  .max-lg\:pt-\[\] {
-    padding-top: ;
-  }
-
-  .max-lg\:pt-\[30\] {
-    padding-top: 30;
-  }
-
-  .max-lg\:pt-\[30vh\] {
-    padding-top: 30vh;
   }
 }
 
@@ -1516,6 +1467,10 @@ video {
 
   .max-md\:w-full {
     width: 100%;
+  }
+
+  .max-md\:flex-row {
+    flex-direction: row;
   }
 
   .max-md\:flex-col {
@@ -1554,16 +1509,8 @@ video {
 }
 
 @media not all and (min-width: 640px) {
-  .max-sm\:mt-\[60vh\] {
-    margin-top: 60vh;
-  }
-
   .max-sm\:hidden {
     display: none;
-  }
-
-  .max-sm\:h-\[60vh\] {
-    height: 60vh;
   }
 
   .max-sm\:w-full {
@@ -1578,16 +1525,8 @@ video {
     flex-direction: column;
   }
 
-  .max-sm\:bg-opacity-90 {
-    --tw-bg-opacity: 0.9;
-  }
-
   .max-sm\:p-5 {
     padding: 1.25rem;
-  }
-
-  .max-sm\:pt-32 {
-    padding-top: 8rem;
   }
 
   .max-sm\:text-3xl {
@@ -1598,6 +1537,11 @@ video {
   .max-sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .max-sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
