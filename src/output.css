@@ -1533,6 +1533,10 @@ video {
     flex-direction: column;
   }
 
+  .max-sm\:bg-opacity-100 {
+    --tw-bg-opacity: 1;
+  }
+
   .max-sm\:p-5 {
     padding: 1.25rem;
   }
