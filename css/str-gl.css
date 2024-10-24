@@ -28,7 +28,7 @@
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0.3) 0%), url("/apartamenty/img/galeria/pomniejszone_KADR3747\ \(1\).jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position:bottom;
+    background-position:center;
     background-repeat: no-repeat;
 
 }
