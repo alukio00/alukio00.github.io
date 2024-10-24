@@ -25,7 +25,7 @@
 
 
 .image {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 55%, rgba(0, 0, 0, 0.2) 0%), url("/apartamenty/img/galeria/pomniejszone_KADR3747\ \(1\).jpg");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0.3) 0%), url("/apartamenty/img/galeria/pomniejszone_KADR3747\ \(1\).jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position:bottom;
@@ -35,9 +35,7 @@
 
 @media (max-width: 1280px) {
     .image {
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 55%, rgba(0, 0, 0, 0.1) 0%), url("/apartamenty/img/galeria/pomniejszone_KADR3747\ \(1\).jpg");
-        background-position: center;
-        background-size: cover;
+      
         background-attachment: scroll;
 
     }
