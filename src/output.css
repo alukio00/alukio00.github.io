@@ -1002,6 +1002,17 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
+.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+}
+
+.divide-gray-800 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(31 41 55 / var(--tw-divide-opacity));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1513,6 +1524,14 @@ video {
 
   .max-sm\:bg-opacity-100 {
     --tw-bg-opacity: 1;
+  }
+
+  .max-sm\:bg-opacity-0 {
+    --tw-bg-opacity: 0;
+  }
+
+  .max-sm\:bg-opacity-90 {
+    --tw-bg-opacity: 0.9;
   }
 
   .max-sm\:p-5 {
