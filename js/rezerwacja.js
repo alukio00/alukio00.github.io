@@ -58,7 +58,7 @@ const sendAskEmail = async (event) => {
     const formData = JSON.stringify({email, dateFrom, dateTo, adults, kids, kidsAge})
     try {
       
-        const res = await fetch("https://europe-central2-light-scarab-439115-h3.cloudfunctions.net/function-1", {
+        const res = await fetch("https://europe-central2-light-scarab-439115-h3.cloudfunctions.net/function-2", {
             body: formData,
             method: "POST",
             headers: {
