@@ -11,25 +11,30 @@ let currentTel = 0
 
 const selectPictuires = [ 
     [
-        '/img/a1/151-kudowa-zdroj-cichy-zakatekBOK.jpg',
         '/img/a1/156-kudowa-zdroj-cichy-zakatek.jpg',
-        '/img/a1/1B0A3938.jpg',
-        '/img/a1/1B0A3941.jpg',
-        '/img/a1/1B0A3947.jpg',
+        '/img/a1/151-kudowa-zdroj-cichy-zakatekBOK.jpg',
         '/img/a1/1B0A3959.jpg',
-        '/img/a1/1B0A3976.jpg',
-        '/img/a1/1B0A3980-HDR.jpg', 
-        '/img/a1/1B0A3986.jpg',
-        '/img/a1/37-kudowa-zdr-j-cichy-zak-tek.jpg',
+        '/img/a1/1B0A3947.jpg',
         '/img/a1/EC3A5271.jpg',
+        '/img/a1/1B0A3938.jpg',
         '/img/a1/EC3A5276.jpg',
+        '/img/a1/1B0A3941.jpg',
+        '/img/a1/1B0A3986.jpg',
+        
+        '/img/a1/1B0A3980-HDR.jpg', 
         '/img/a1/EC3A5304.jpg',
+        '/img/a1/1B0A3976.jpg',
+        
+        
+        '/img/a1/37-kudowa-zdr-j-cichy-zak-tek.jpg',
+        
+       
         '/img/wspólne/160-kudowa-zdroj-cichy-zakatek.jpg',
         '/img/wspólne/161-kudowa-zdroj-cichy-zakatek.jpg',
         '/img/wspólne/162-kudowa-zdroj-cichy-zakatek.jpg',
         '/img/wspólne/CB6A8164_xw06xfow.jpg',
         '/img/wspólne/CB6A8174.jpg',
-        '/img/galeria/DJI_0909.jpg'
+       
     ],
     [
         '/img/a2/10.jpg',
