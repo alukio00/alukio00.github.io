@@ -31,21 +31,21 @@
 
         <section class="ikonki1 space-y-20 max-md:space-y-10">
     
-            <div>
+            <div class="w-full">
                 <div class="grid-img max-md:hidden" id="gallery"></div>
 
-                <div class=" md:hidden max-md:flex flex-col gap-4">
-                    <div id="gallery-tel"></div>
+                <div class="md:hidden max-md:flex justify-center items-center relative gap-4 max-w-[520px] w-full mx-auto">
                     
-                    <div class="flex gap-2 justify-center">
-                        <div>
-                            <button onclick="prev()" type="button" class="border-2 flex px-4 py-2 text-xl cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle">Wróć</button>
-                        </div>
-                                    
-                        <div>
-                            <button onclick="next()" type="button" class="border-2 flex px-4 py-2 text-xl cursor-pointer bg-gray-800 rounded-md text-white justify-center align-middle">Dalej</button>
-                        </div>
-                    </div>
+                    
+                    <button onclick="prev()" type="button" class="border-2 absolute left-2 hover:bg-gray-900 flex cursor-pointer bg-gray-800 rounded-full text-white justify-center items-center p-2"><svg class="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></button>
+                    
+        
+                    <div class="max-w-full" id="gallery-tel"></div>
+        
+                    
+                    <button onclick="next()" type="button" class="border-2 absolute right-2 hover:bg-gray-900 cursor-pointer flex bg-gray-800 rounded-full text-white justify-center items-center p-2"><svg class="w-6 h-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg></button>
+                    
+                    
                 </div>
 
             </div>

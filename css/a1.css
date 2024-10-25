@@ -46,13 +46,13 @@
     position: relative;
 }
 #popup-div .material-symbols-outlined {
-    font-size: 40px;
-    padding: 8px;
+    font-size: 45px;
+    padding: 6px;
 }
 @media (max-width: 640px) {
     #popup-div .material-symbols-outlined {
-        font-size: 30px;
-        padding: 6px;
+        font-size: 35px;
+        padding: 4px;
     }
 }
 .animate {
