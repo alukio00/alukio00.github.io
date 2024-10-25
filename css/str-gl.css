@@ -27,22 +27,17 @@
 .image {
    /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0.3) 0%), url("/img/galeria/pomniejszone_KADR3747\ \(1\).jpg");*/
 
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0) 0%), url("/img/galeria/back-main.jpg");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%), url("/img/galeria/back-main.jpg");
     background-size: cover;
    
-    background-position:center;
+    background-position-y: 35%;
+    background-position-x: center;
     background-repeat: no-repeat;
 
 }
 
-@media (max-width: 1280px) {
-    .image {
-      
-        background-attachment: scroll;
 
-    }
 
-}
 .galeria-img {
 
     border-radius: 5px;

@@ -122,3 +122,21 @@
     gap: 30px;
     justify-content: center;
 }
+.gallery-btn {
+    position: absolute;
+    border: solid 2px var(--my-color);
+    cursor: pointer;
+    background-color: #e2e8f0;
+    
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+
+}
+.gallery-btn svg {
+    height: 24px;
+    width: 24px;
+    fill: var(--my-color);
+}
