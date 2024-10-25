@@ -3,19 +3,19 @@ class Header extends HTMLElement {
         this.innerHTML = `
             <header class="z-10 fixed left-0 h-full text-white flex flex-row justify-start max-lg:hidden shadow-div">
                 <div class="flex flex-col align-middle justify-center gap-5 bg-gray-800 h-full w-16">
-                    <div class="nav-bar-icons"><a href="/apartamenty/html/"><i class="material-symbols-outlined">home</i></a><div class="sidebar-child">
+                    <div class="nav-bar-icons"><a href="/html/"><i class="material-symbols-outlined">home</i></a><div class="sidebar-child">
                         <p>Strona Główna</p>
                     </div></div>
                     <div class="nav-bar-icons"><i id="icon-show-popup" class="material-symbols-outlined cursor-pointer popup-activate">apartment</i><div class="sidebar-child">
                         <p>Nasza Oferta</p>
                     </div></div>
-                    <div class="nav-bar-icons"><a href="/apartamenty/html/galeria/"><i class="material-symbols-outlined">photo_library</i></a><div class="sidebar-child">
+                    <div class="nav-bar-icons"><a href="/html/galeria/"><i class="material-symbols-outlined">photo_library</i></a><div class="sidebar-child">
                         <p>Galeria Zdjęć</p>
                     </div></div>
-                    <div class="nav-bar-icons"><a href="/apartamenty/html/cennik/"><i class="material-symbols-outlined">payments</i></a><div class="sidebar-child">
+                    <div class="nav-bar-icons"><a href="/html/cennik/"><i class="material-symbols-outlined">payments</i></a><div class="sidebar-child">
                         <p>Cennik</p>
                     </div></div>
-                    <div class="nav-bar-icons"><a href="/apartamenty/html/rezerwacja/"><i class="material-symbols-outlined">chat</i></a><div class="sidebar-child">
+                    <div class="nav-bar-icons"><a href="/html/rezerwacja/"><i class="material-symbols-outlined">chat</i></a><div class="sidebar-child">
                         <p>Rezerwacja</p>
                     </div></div>
                 </div>
@@ -25,10 +25,10 @@ class Header extends HTMLElement {
                 <div class="w-full">
                     <i id="menu-icon" class="material-symbols-outlined fixed top-3 left-3 z-20 p-1.5 rounded-lg border flex bg-gray-800">menu</i>
                     <div id="mobile-drop-right" class="hidden flex flex-col justify-start py-24 gap-6 bg-gray-800 bg-opacity-95 h-full w-72 min-w-60 max-w-60% p-3 animate-slideInRight origin-left">
-                        <a class="mobile-menu-a" href="/apartamenty/html/">
+                        <a class="mobile-menu-a" href="/html/">
                             <i class="material-symbols-outlined">home</i><p>Strona Główna</p>
                         </a>
-                        <a class="mobile-menu-a" href="/apartamenty/html/galeria/">
+                        <a class="mobile-menu-a" href="/html/galeria/">
                             <i class="material-symbols-outlined">photo_library</i><p>Galeria Zdjęć</p>
                         </a>
                         <div class="flex flex-col gap-4">
@@ -36,12 +36,12 @@ class Header extends HTMLElement {
                                 <i class="material-symbols-outlined">apartment</i><p>Nasza Oferta</p><i id="apartamenty-drop" class="material-symbols-outlined">keyboard_arrow_down</i>
                             </a>
                             <div id="apartamenty-drop-div" class="hidden flex-col gap-2 ml-4">
-                                <a href="/apartamenty/html/apartament-dwupoziomowy-nr1/">Apartament Dwupoziomowy Nr. 1</a>
-                                <a href="/apartamenty/html/apartament-dwupoziomowy-nr2/">Apartament Dwupoziomowy Nr. 2</a>
-                                <a href="/apartamenty/html/apartament-dwupoziomowy-nr3/">Apartament Dwupoziomowy Nr. 3</a>
-                                <a href="/apartamenty/html/apartament-dwupoziomowy-nr4/">Apartament Dwupoziomowy Nr. 4</a>
-                                <a href="/apartamenty/html/apartament-z-2-sypialniami/">Apartament z 2 Sypialniami</a>
-                                <a href="/apartamenty/html/domek-wolnostojacy/">Domek Drewniany</a>
+                                <a href="/html/apartament-dwupoziomowy-nr1/">Apartament Dwupoziomowy Nr. 1</a>
+                                <a href="/html/apartament-dwupoziomowy-nr2/">Apartament Dwupoziomowy Nr. 2</a>
+                                <a href="/html/apartament-dwupoziomowy-nr3/">Apartament Dwupoziomowy Nr. 3</a>
+                                <a href="/html/apartament-dwupoziomowy-nr4/">Apartament Dwupoziomowy Nr. 4</a>
+                                <a href="/html/apartament-z-2-sypialniami/">Apartament z 2 Sypialniami</a>
+                                <a href="/html/domek-wolnostojacy/">Domek Drewniany</a>
                     
                             </div>
                         </div>
@@ -51,15 +51,15 @@ class Header extends HTMLElement {
                                 <i class="material-symbols-outlined">hiking</i><p>Atrakcje w Okolicy</p><i id="atrakcje-drop" class="material-symbols-outlined">keyboard_arrow_down</i>
                             </a>
                             <div id="atrakcje-div" class="hidden flex-col gap-2 ml-4">
-                                <a href="/apartamenty/html/atrakcje/">Atrakcje Turystyczne</a>
-                                <a href="/apartamenty/html/szlaki/">Szlaki Piesze</a>
-                                <a href="/apartamenty/html/trasy-rowerowe/">Trasy Rowerowe</a>
+                                <a href="/html/atrakcje/">Atrakcje Turystyczne</a>
+                                <a href="/html/szlaki/">Szlaki Piesze</a>
+                                <a href="/html/trasy-rowerowe/">Trasy Rowerowe</a>
                             </div>
                         </div>
-                        <a class="mobile-menu-a" href="/apartamenty/html/cennik/">
+                        <a class="mobile-menu-a" href="/html/cennik/">
                             <i class="material-symbols-outlined">payments</i><p>Cennik</p>
                         </a>
-                        <a class="mobile-menu-a" href="/apartamenty/html/rezerwacja/">
+                        <a class="mobile-menu-a" href="/html/rezerwacja/">
                             <i class="material-symbols-outlined">chat</i><p>Rezerwacja</p>
                         </a>
                     </div>
@@ -120,23 +120,23 @@ class Footer extends HTMLElement {
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Nasza Oferta:</h3>
                                     <ul class="list-disc list-inside gap-2 flex flex-col">
-                                        <li><a href="/apartamenty/html/apartament-dwupoziomowy-nr1/">Apartament Dwupoziomowy nr 1</a></li>
-                                        <li><a href="/apartamenty/html/apartament-dwupoziomowy-nr2/">Apartament Dwupoziomowy nr 2</a></li>
-                                        <li><a href="/apartamenty/html/apartament-dwupoziomowy-nr3/">Apartament Dwupoziomowy nr 3</a></li>
-                                        <li><a href="/apartamenty/html/apartament-dwupoziomowy-nr4/">Apartament Dwupoziomowy nr 4</a></li>
-                                        <li><a href="/apartamenty/html/apartament-z-2-sypialniami/">Apartament z 2 sypialniami</a></li>
-                                        <li><a href="/apartamenty/html/domek-wolnostojacy/">Domek z 2 sypialniami</a></li>
+                                        <li><a href="/html/apartament-dwupoziomowy-nr1/">Apartament Dwupoziomowy nr 1</a></li>
+                                        <li><a href="/html/apartament-dwupoziomowy-nr2/">Apartament Dwupoziomowy nr 2</a></li>
+                                        <li><a href="/html/apartament-dwupoziomowy-nr3/">Apartament Dwupoziomowy nr 3</a></li>
+                                        <li><a href="/html/apartament-dwupoziomowy-nr4/">Apartament Dwupoziomowy nr 4</a></li>
+                                        <li><a href="/html/apartament-z-2-sypialniami/">Apartament z 2 sypialniami</a></li>
+                                        <li><a href="/html/domek-wolnostojacy/">Domek z 2 sypialniami</a></li>
                                     </ul>
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Strony:</h3>
                                     <ul class="list-disc list-inside flex flex-col gap-2">
-                                        <li><a href="/apartamenty/html/">Strona Główna</a></li>
-                                        <li><a href="/apartamenty/html/galeria/">Galeria</a></li>
-                                        <li><a href="/apartamenty/html/cennik/">Cennik</a></li>
-                                        <li><a href="/apartamenty/html/rezerwacja/">Rezerwacja</a></li>
-                                        <li><a href="/apartamenty/html/regulamin/">Regulamin</a></li>
-                                        <li><a href="/apartamenty/html/polityka-prywatnosci/">Polityka Prywatności</a></li>
+                                        <li><a href="/html/">Strona Główna</a></li>
+                                        <li><a href="/html/galeria/">Galeria</a></li>
+                                        <li><a href="/html/cennik/">Cennik</a></li>
+                                        <li><a href="/html/rezerwacja/">Rezerwacja</a></li>
+                                        <li><a href="/html/regulamin/">Regulamin</a></li>
+                                        <li><a href="/html/polityka-prywatnosci/">Polityka Prywatności</a></li>
                                     </ul>
                                 </div>
                                 
@@ -160,21 +160,21 @@ class PopupAparts extends HTMLElement {
                 
                 <div id="changing-div" class="popup-link cursor-pointer">
                     <div class="justify-start">
-                        <img id="lista-hide" loading="lazy" src="/apartamenty/img/a1/1B0A3938.jpg" alt="Atrakcje Turystyczne zdjęcie">
+                        <img id="lista-hide" loading="lazy" src="/img/a1/1B0A3938.jpg" alt="Atrakcje Turystyczne zdjęcie">
                         <h3 class="text-xl font-medium p-4">Apartamenty Dwupoziomowe</h3>
                       
                     </div>
                 </div>
-                <a  href="/apartamenty/html/apartament-z-2-sypialniami/" class="popup-link">
+                <a  href="/html/apartament-z-2-sypialniami/" class="popup-link">
                     <div>
-                        <img loading="lazy" src="/apartamenty/img/a5/1.jpg" alt="Atrakcje Turystyczne zdjęcie">
+                        <img loading="lazy" src="/img/a5/1.jpg" alt="Atrakcje Turystyczne zdjęcie">
                         <h3 class="text-xl font-medium p-4">Apartament z 2 sypialniami</h3>
                     </div>
                 </a>
     
-                <a  href="/apartamenty/html/domek-wolnostojacy/" class="popup-link">
+                <a  href="/html/domek-wolnostojacy/" class="popup-link">
                     <div>
-                        <img loading="lazy" src="/apartamenty/img/domek/163-kudowa-zdroj-cichy-zakatek.jpg" alt="Atrakcje Turystyczne zdjęcie">
+                        <img loading="lazy" src="/img/domek/163-kudowa-zdroj-cichy-zakatek.jpg" alt="Atrakcje Turystyczne zdjęcie">
                         <h3 class="text-xl font-medium p-4">Domek Drewniany</h3>
                     </div>
                 </a>
@@ -183,10 +183,10 @@ class PopupAparts extends HTMLElement {
                      <hr class="w-full h-0.5 border border-gray-800 bg-gray-800">
                     <ul class="flex gap-1 flex-col">
                        
-                        <li><i class="material-symbols-outlined">apartment</i><a href="/apartamenty/html/apartament-dwupoziomowy-nr1/">Apartament Nr 1</li>
-                        <li><i class="material-symbols-outlined">apartment</i><a href="/apartamenty/html/apartament-dwupoziomowy-nr2/">Apartament Nr 2</li>
-                        <li><i class="material-symbols-outlined">apartment</i><a href="/apartamenty/html/apartament-dwupoziomowy-nr3/">Apartament Nr 3</li>
-                        <li><i class="material-symbols-outlined">apartment</i><a href="/apartamenty/html/apartament-dwupoziomowy-nr4/">Apartament Nr 4</li>
+                        <li><i class="material-symbols-outlined">apartment</i><a href="/html/apartament-dwupoziomowy-nr1/">Apartament Nr 1</li>
+                        <li><i class="material-symbols-outlined">apartment</i><a href="/html/apartament-dwupoziomowy-nr2/">Apartament Nr 2</li>
+                        <li><i class="material-symbols-outlined">apartment</i><a href="/html/apartament-dwupoziomowy-nr3/">Apartament Nr 3</li>
+                        <li><i class="material-symbols-outlined">apartment</i><a href="/html/apartament-dwupoziomowy-nr4/">Apartament Nr 4</li>
                     </ul>
                 </div>
             </div>
