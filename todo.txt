@@ -1,6 +1,0 @@
-linki - normalne strony i atrakcje turystyczne
-SEO
-titles i descriptions
-usunięcie niepotrzebnych plików
-mimify js i tailwind css
-server
