@@ -657,6 +657,10 @@ video {
   margin-bottom: auto;
 }
 
+.-mt-\[180px\] {
+  margin-top: -180px;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -681,60 +685,12 @@ video {
   margin-top: 3.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-\[60vh\] {
-  margin-top: 60vh;
-}
-
-.-mt-\[60vh\] {
-  margin-top: -60vh;
-}
-
-.-mt-\[3\] {
-  margin-top: -3;
-}
-
-.-mt-\[30px\] {
-  margin-top: -30px;
-}
-
-.-mt-\[30vh\] {
-  margin-top: -30vh;
-}
-
-.-mt-\[220px\] {
-  margin-top: -220px;
-}
-
-.-mt-\[245px\] {
-  margin-top: -245px;
-}
-
-.mt-0 {
-  margin-top: 0px;
-}
-
-.-mt-\[230px\] {
-  margin-top: -230px;
-}
-
-.-mt-\[200px\] {
-  margin-top: -200px;
-}
-
-.-mt-\[180px\] {
-  margin-top: -180px;
 }
 
 .block {
@@ -775,10 +731,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-1 {
-  height: 0.25rem;
 }
 
 .w-1\/2 {
@@ -976,6 +928,10 @@ video {
   gap: 0.375rem;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -1018,10 +974,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1157,10 +1109,6 @@ video {
   --tw-bg-opacity: 0.6;
 }
 
-.bg-opacity-90 {
-  --tw-bg-opacity: 0.9;
-}
-
 .bg-opacity-95 {
   --tw-bg-opacity: 0.95;
 }
@@ -1248,6 +1196,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1271,23 +1224,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
-.pt-\[30vh\] {
-  padding-top: 30vh;
-}
-
-.pt-\[20vh\] {
-  padding-top: 20vh;
 }
 
 .text-center {
@@ -1409,14 +1345,6 @@ video {
 }
 
 @media not all and (min-width: 1280px) {
-  .max-xl\:-mt-\[200px\] {
-    margin-top: -200px;
-  }
-
-  .max-xl\:-mt-\[180px\] {
-    margin-top: -180px;
-  }
-
   .max-xl\:w-full {
     width: 100%;
   }
@@ -1439,18 +1367,6 @@ video {
 
   .max-xl\:gap-3 {
     gap: 0.75rem;
-  }
-
-  .max-xl\:bg-opacity-95 {
-    --tw-bg-opacity: 0.95;
-  }
-
-  .max-xl\:pt-\[60vh\] {
-    padding-top: 60vh;
-  }
-
-  .max-xl\:pt-\[40vh\] {
-    padding-top: 40vh;
   }
 }
 
@@ -1594,18 +1510,6 @@ video {
 
   .max-sm\:p-5 {
     padding: 1.25rem;
-  }
-
-  .max-sm\:pt-\[\] {
-    padding-top: ;
-  }
-
-  .max-sm\:pt-\[60vh\] {
-    padding-top: 60vh;
-  }
-
-  .max-sm\:pt-\[50vh\] {
-    padding-top: 50vh;
   }
 
   .max-sm\:text-3xl {
