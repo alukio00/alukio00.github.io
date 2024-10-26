@@ -78,7 +78,7 @@
     text-align: center;
 }
 .hr-2-3 {
-    border: 2px solid var(--my-color);
+    border: 2px solid black;
     height: 2px;
     width: 66%;
     margin: 16px 0px;
@@ -126,7 +126,7 @@
     position: absolute;
     border: solid 2px var(--my-color);
     cursor: pointer;
-    background-color: #e2e8f0;
+    background-color: rgba(255, 255, 255, 0.533);
     
     padding: 8px;
     display: flex;

@@ -35,7 +35,7 @@ class Header extends HTMLElement {
                             <a id="apartamenty-drop-btn" class="mobile-menu-a" >
                                 <i class="material-symbols-outlined">apartment</i><p>Nasza Oferta</p><i id="apartamenty-drop" class="material-symbols-outlined">keyboard_arrow_down</i>
                             </a>
-                            <div id="apartamenty-drop-div" class="hidden flex-col gap-2 ml-4">
+                            <div id="apartamenty-drop-div" class="hidden flex-col gap-3 ml-2">
                                 <a href="/apartament-dwupoziomowy-nr1/">Apartament Dwupoziomowy Nr. 1</a>
                                 <a href="/apartament-dwupoziomowy-nr2/">Apartament Dwupoziomowy Nr. 2</a>
                                 <a href="/apartament-dwupoziomowy-nr3/">Apartament Dwupoziomowy Nr. 3</a>
@@ -50,7 +50,7 @@ class Header extends HTMLElement {
                             <a id="atrakcje-btn" class="mobile-menu-a" >
                                 <i class="material-symbols-outlined">hiking</i><p>Atrakcje w Okolicy</p><i id="atrakcje-drop" class="material-symbols-outlined">keyboard_arrow_down</i>
                             </a>
-                            <div id="atrakcje-div" class="hidden flex-col gap-2 ml-4">
+                            <div id="atrakcje-div" class="hidden flex-col gap-3 ml-2">
                                 <a href="/atrakcje/">Atrakcje Turystyczne</a>
                                 <a href="/szlaki/">Szlaki Piesze</a>
                                 <a href="/trasy-rowerowe/">Trasy Rowerowe</a>
@@ -103,9 +103,9 @@ customElements.define("my-header", Header);
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-                    <footer class="bg-gradient-to-bl from-gray-700 to-gray-800 text-white gap-5 flex flex-col">
+                    <footer class="bg-gray-800 text-white gap-5 flex flex-col">
                         <div class="p-10 flex flex-col justify-start w-11/12 max-xl:w-full">
-                            <h2 class="text-3xl">Apartamenty Cichy Zakątek</h2>
+                            <h2 class="text-4xl max-sm:text-3xl font-glowna">Apartamenty "Cichy Zakątek"</h2>
                             <hr class="border-2 h-0.5 w-4/12 my-4 border-white">
                             <div class="flex flex-row justify-between flex-wrap gap-8">
                                 <div class="flex flex-col justify-start w-96">
