@@ -14,23 +14,69 @@
     <script src="/js/strona-gl.js" defer></script>
     <script src="/js/rezerwacja.js" defer></script>
     
- 
 
 </head>
 <body>
     <popup-image-zoom></popup-image-zoom>
     <my-header></my-header>
     
-    <main class="space-y-10">
-        <section class="image h-[60vh] flex flex-col justify-center">
-            <div class="mt-[60vh] p-5 bg-gray-800 border-white border-2 border-opacity-55 bg-opacity-90 max-xl:bg-opacity-95 text-white border-solid rounded-3xl shadow-xl flex flex-col gap-4 max-w-800  mx-auto w-full">
-                <h1 class="max-sm:text-3xl text-5xl font-semibold leading-tight">Apartamenty<br>Cichy Zakątek</h1>
-                <hr class="h-0.5 bg-white w-2/6">
-                <p class="w-full text-xl max-sm:text-lg">Apartamenty Cichy Zakątek w Kudowie-Zdroju to idealne miejsce na wypoczynek.</p>
+    <main class="flex flex-col gap-10">
+        <section class="image h-[60vh]">
+           
+            
+        </section>
+        <section>
+            <div class="-mt-[180px] flex gap-8 w-full max-xl:flex-col">
+                <div class="p-6 bg-gray-800 border-white border-2 border-opacity-55 bg-opacity-95 text-white border-solid rounded-3xl shadow-xl flex flex-col gap-6 w-full">
+                    <h1 class="max-sm:text-3xl text-5xl font-semibold leading-tight">Apartamenty<br>Cichy Zakątek</h1>
+                    <hr class="h-0.5 border-white bg-white w-2/6">
+                    <p class="w-full text-xl max-sm:text-lg">Apartamenty Cichy Zakątek w Kudowie-Zdroju to idealne miejsce na wypoczynek.</p>
+                </div>
+
+                <form onsubmit="sendAskEmail(event)" id="email-form" enctype="multipart/form-data" 
+                      class="bg-white bg-opacity-95 shadow-xl rounded-3xl p-6 flex flex-col gap-3 w-full border-2 border-gray-800">
+                    
+                    <div class="flex flex-row max-sm:flex-col gap-4 justify-between">
+                        <div class="w-full gap-2 flex flex-col">
+                            <label for="date2">Data Przyjazdu:</label>
+                            <input type="date" name="dateFrom" id="date2"> 
+                        </div>
+                        <div class="w-full gap-2 flex flex-col">
+                            <label for="date-to2">Data Odjazdu:</label>
+                            <input type="date" name="dateTo" id="date-to2">
+                        </div>
+                    </div>
+                    <div class="flex flex-row max-sm:flex-col gap-4 justify-between">
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="adults-input">Dorośli:</label>
+                            <input id="adults-input" name="adults" step="1" type="number">
+                        </div>
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="kids-input">Dzieci:</label>
+                            <input id="kids-input" name="kids" step="1" type="number">
+                        </div>
+                    </div>
+                    <div class="flex flex-row max-sm:flex-col gap-4 justify-between">
+                        <div class="flex flex-col gap-2 w-full">
+                            <label for="kids-age-input">Wiek Dzieci:</label>
+                            <input id="kids-age-input" name="kidsAge" type="text">
+                        </div>
+    
+                        <div class="w-full gap-2 flex flex-col">
+                            <label for="email2">Email:</label>
+                            <input autocomplete="email" type="email" id="email2" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden" id="errors-div"></div>
+      
+                
+                    <button class=" hover:bg-white hover:border-gray-800 hover:text-gray-800 border-2 duration-200 bg-gray-800 text-white py-2 px-10 rounded-full shadow-md text-lg" type="submit">Sprawdź Dostępność</button>
+                </form>
             </div>
         </section>
         
-        <section class="pb-10 flex flex-col gap-8 pt-32">
+        <section class="py-10 flex flex-col gap-8">
             <h2 class="text-center font-medium text-4xl">O nas</h2>
 
             <div class="flex flex-row gap-6 max-xl:flex-col max-w-10xl max-xl:max-w-1000 mx-auto">
