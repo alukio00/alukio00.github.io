@@ -146,6 +146,17 @@ class Footer extends HTMLElement {
                             <p>&copy; 2024 Apartamenty CichyZakątek. Wszelkie prawa zastrzeżone.</p>
                         </div>
                     </footer>
+                    <div id="cookies-div" class="hidden fixed bottom-5 left-24 max-lg:left-5 flex-col gap-2 bg-white rounded-xl shadow-xl p-4 w-96 max-w-full">
+                        <h3 class="text-3xl font-semibold">Cookies</h3>
+                        <p class="text-base">Ta strona używa plików cookies, w celu obserwowania ruchu na naszej stronie stronie. Aby zarządać swoimi ciasteczkami <a class="underline text-blue-700" href="/polityka-prywatnosci/#cookies">Kliknij Tutaj</a>.</p>
+                        <form onsubmit="acceptCookies(event)" class="flex flex-col gap-4">
+                            <div class="flex gap-4 items-center">
+                                <button data-agreed="1" type="submit" class="w-full rounded-full py-2 bg-gray-800 text-white border-2 border-gray-800 hover:bg-white hover:text-gray-800 duration-200">Zgadzam się</button>
+                                <button data-agreed="0" type="submit" class="w-full rounded-full py-2 bg-white text-gray-800 border-2 border-gray-800 hover:bg-gray-800 hover:text-white duration-200">Nie zgadzam się</button>
+                           
+                            </div>
+                        </form>
+                    </div>
         `
     }
 }
@@ -228,3 +239,34 @@ class PopupAparts extends HTMLElement {
     };
 }
 customElements.define("my-popup-ap", PopupAparts);
+
+
+
+const getCookies = () => {
+    const cookies = document.cookie.split(";");
+    for (const cookie of cookies) {
+        const [name, value] = cookie.trim().split("=");
+        if (name === "acceptedCookies") return;
+    }
+    document.getElementById("cookies-div").classList.replace("hidden", "flex");
+}
+
+setTimeout(getCookies, 100);
+
+const acceptCookies = (event) => {
+    event.preventDefault();
+    const agreed = Number(event.submitter.dataset.agreed);
+
+
+    const expires = new Date();
+    expires.setFullYear(expires.getFullYear() + 1);
+
+    if (agreed) {
+        
+        document.cookie = `acceptedCookies=1; expires=${expires.toUTCString()}; path=/`;
+    } else {
+        document.cookie = `acceptedCookies=0; expires=${expires.toUTCString()}; path=/`;
+    }
+
+    document.getElementById("cookies-div").classList.add("hidden");
+}
