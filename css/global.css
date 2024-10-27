@@ -55,14 +55,13 @@ section {
     display: flex;
     margin: 0 auto;
 }
-.nav-bar-icons .material-symbols-outlined {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nav-bar-icons svg {
     border: 2px solid white;
     border-radius: 50px;
     padding: 7px;
-    font-size: 28px;
+    width: 44px;
+    height: 44px;
+    fill: white;
 
 }
 .nav-bar-icons .sidebar-child {
@@ -94,7 +93,14 @@ section {
 }
 .mobile-menu-a {
     display: flex;
+    align-items: center;
     gap: 5px;
+}
+.mobile-menu-a svg {
+    
+    width: 24px;
+    height: 24px;
+    fill: white;
 }
 .shadow-div {
     box-shadow: 3px 0px 10px 0px #1f29374d;
@@ -122,6 +128,7 @@ section {
 }
 
 
+
 .popup-link:hover {
     transform: scale(1.05);
 }
@@ -137,14 +144,6 @@ section {
     text-decoration-color: var(--my-color);
 }
 
-
-@media (max-width: 1024px) {
-    .popup-link {
-        width: 90%;
-        max-width: 500px;
-
-    }
-}
 
 
 @keyframes growIn {
@@ -174,4 +173,18 @@ section {
      background-repeat: no-repeat;
  
  }
+ .fancy-h1 {
+    text-align: center;
+    color: var(--my-color);
+    font-size: 60px;
+    font-family: "Great Vibes";
+    font-weight: 400;
+
+ }
+ @media (max-width: 640px) {
+    .fancy-h1 {
+        font-size: 45px;
+
+    }
+}
  
