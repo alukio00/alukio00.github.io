@@ -895,10 +895,6 @@ video {
   max-width: 1300px;
 }
 
-.max-w-\[520px\] {
-  max-width: 520px;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -1171,6 +1167,45 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#081747\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 23 71 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#04113b\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(4 17 59 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#061440\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 20 64 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#111c42\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 28 66 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#121e4b\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 30 75 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#091e4f\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(9 30 79 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#0c245c\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 36 92 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1638,12 +1673,6 @@ video {
 
 @media (min-width: 640px) {
   .sm\:hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:hidden {
     display: none;
   }
 }
