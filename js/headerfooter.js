@@ -65,7 +65,7 @@ class Header extends HTMLElement {
                                 <a href="/apartament-dwupoziomowy-nr3/">Apartament Dwupoziomowy Nr. 3</a>
                                 <a href="/apartament-dwupoziomowy-nr4/">Apartament Dwupoziomowy Nr. 4</a>
                                 <a href="/apartament-z-2-sypialniami/">Apartament z 2 Sypialniami</a>
-                                <a href="/domek-wolnostojacy/">Domek Drewniany</a>
+                                <a href="/domek-z-2-sypialniami/">Domek z 2 Sypialniami</a>
                     
                             </div>
                         </div>
@@ -153,7 +153,7 @@ class Footer extends HTMLElement {
                                         <li><a href="/apartament-dwupoziomowy-nr3/">Apartament Dwupoziomowy nr 3</a></li>
                                         <li><a href="/apartament-dwupoziomowy-nr4/">Apartament Dwupoziomowy nr 4</a></li>
                                         <li><a href="/apartament-z-2-sypialniami/">Apartament z 2 sypialniami</a></li>
-                                        <li><a href="/domek-wolnostojacy/">Domek z 2 sypialniami</a></li>
+                                        <li><a href="/domek-z-2-sypialniami/">Domek z 2 sypialniami</a></li>
                                     </ul>
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
@@ -171,7 +171,7 @@ class Footer extends HTMLElement {
                             </div>
                         </div>
                         <div class="p-3">
-                            <p>&copy; 2024 Apartamenty CichyZakątek. Wszelkie prawa zastrzeżone.</p>
+                            <p>&copy; 2024 Apartamenty Cichy Zakątek. Wszelkie prawa zastrzeżone.</p>
                         </div>
                     </footer>
                     <div id="cookies-div" class="hidden fixed bottom-5 left-24 max-lg:left-5 flex-col gap-2 bg-white rounded-xl shadow-xl p-4 w-96 max-w-full">
@@ -212,10 +212,10 @@ class PopupAparts extends HTMLElement {
                         </div>
                     </a>
         
-                    <a  href="/domek-wolnostojacy/" class="popup-link popup-link-aparts">
+                    <a  href="/domek-z-2-sypialniami/" class="popup-link popup-link-aparts">
                         <div>
                             <img loading="lazy" src="/img/domek/163-kudowa-zdroj-cichy-zakatek.jpg" alt="Zdjęcie Domku">
-                            <h3 class="text-xl font-medium p-4">Domek Drewniany</h3>
+                            <h3 class="text-xl font-medium p-4">Domek z 2 Sypialniami</h3>
                         </div>
                     </a>
                     <div id="lista-show" class="hidden bg-white flex items-start flex-col gap-4 w-500 rounded-xl p-4">

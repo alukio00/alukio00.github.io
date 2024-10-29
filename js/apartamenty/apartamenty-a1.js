@@ -68,7 +68,7 @@ const selectPictuires = [
 
     ],
     [
-        '/img/a4/_DSC0780.jpg',
+        '/img/a4/DSC0780.jpg',
         '/img/a4/CB6A8139-Edit.jpg',
         '/img/a4/1B0A4031 (1).jpg',
         '/img/a4/1B0A4056.jpg',
