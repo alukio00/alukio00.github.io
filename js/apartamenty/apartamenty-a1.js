@@ -86,7 +86,7 @@ const setLoop = () => {
 
     interval = setInterval(() => {
         next(true)
-    }, 1000);
+    }, 2500);
 }
 setLoop()
 
