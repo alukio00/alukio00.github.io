@@ -186,4 +186,4 @@ const zoomLeft = () => {
 
 
 
-screenW > 768 ? generateGallery() : generateGalleryTel();
+screenW >= 768 ? generateGallery() : generateGalleryTel();
