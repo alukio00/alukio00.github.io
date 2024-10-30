@@ -11,7 +11,7 @@ let interval
 const galleryData = Array.from(document.querySelectorAll("#gallery img"))
 const galleryUrls = galleryData.map(el => el.src)
 
-const className = "max-md:hidden"
+const className = "max-sm:hidden"
 const prev = () => {
     clearInterval(interval)
     
@@ -82,7 +82,7 @@ const zoomLeft = () => {
 };
 
 const setLoop = () => {
-    if (window.screen.width > 786) return 
+    if (window.screen.width > 640) return 
 
     interval = setInterval(() => {
         next(true)

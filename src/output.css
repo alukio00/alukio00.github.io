@@ -1552,14 +1552,6 @@ video {
     margin-top: 2.5rem;
   }
 
-  .max-md\:flex {
-    display: flex;
-  }
-
-  .max-md\:hidden {
-    display: none;
-  }
-
   .max-md\:w-full {
     width: 100%;
   }
@@ -1600,6 +1592,10 @@ video {
 }
 
 @media not all and (min-width: 640px) {
+  .max-sm\:hidden {
+    display: none;
+  }
+
   .max-sm\:w-full {
     width: 100%;
   }

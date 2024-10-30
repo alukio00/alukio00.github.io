@@ -93,7 +93,7 @@
     background-color: rgba(255, 255, 255, 0.533);
     
     padding: 8px;
-  
+    display: none;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
@@ -110,21 +110,26 @@
     gap: 30px;
     justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     #gallery {
         display: flex;
         gap: 16px;
         align-items: center;
         position: relative;
-        max-width: 520px;
+        max-width: 100%;
+        
         margin: 0px auto;
         width: 100%;
+    }
+    .gallery-btn {
+        display: flex;
     }
     #gallery img {
         border-radius: 10px;
         box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.226);
-        width: 400px;
-        aspect-ratio: 25/15;
+        width: 100%;
+        aspect-ratio: 3/2;
+        height: auto;
         max-width: 100%;
         margin: 0px auto;
         object-fit: cover;
