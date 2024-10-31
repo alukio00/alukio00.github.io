@@ -26,6 +26,15 @@ body::before {
     body::before {
         background: linear-gradient(rgb(255, 255, 255, 0.75), rgb(255, 255, 255, 0.75)), url("/img/galeria/back-main-tel.jpg");
         background-position: center;
+        content: "";
+      
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
     }
 }
 body {
