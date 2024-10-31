@@ -1440,8 +1440,21 @@ video {
 }
 
 @media not all and (min-width: 1280px) {
+  .max-xl\:h-min {
+    height: -moz-min-content;
+    height: min-content;
+  }
+
+  .max-xl\:max-h-95vh {
+    max-height: 95vh;
+  }
+
   .max-xl\:w-full {
     width: 100%;
+  }
+
+  .max-xl\:w-screen {
+    width: 100vw;
   }
 
   .max-xl\:max-w-1000 {
@@ -1462,6 +1475,10 @@ video {
 
   .max-xl\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .max-xl\:rounded-none {
+    border-radius: 0px;
   }
 }
 
