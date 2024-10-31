@@ -1508,6 +1508,10 @@ video {
     max-height: 80vh;
   }
 
+  .max-lg\:max-h-95vh {
+    max-height: 95vh;
+  }
+
   .max-lg\:w-11\/12 {
     width: 91.666667%;
   }
@@ -1613,8 +1617,21 @@ video {
     display: none;
   }
 
+  .max-sm\:h-min {
+    height: -moz-min-content;
+    height: min-content;
+  }
+
+  .max-sm\:max-h-95vh {
+    max-height: 95vh;
+  }
+
   .max-sm\:w-full {
     width: 100%;
+  }
+
+  .max-sm\:w-screen {
+    width: 100vw;
   }
 
   .max-sm\:grid-cols-1 {
@@ -1623,6 +1640,10 @@ video {
 
   .max-sm\:flex-col {
     flex-direction: column;
+  }
+
+  .max-sm\:rounded-none {
+    border-radius: 0px;
   }
 
   .max-sm\:p-5 {
