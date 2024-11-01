@@ -140,7 +140,7 @@ class Footer extends HTMLElement {
                                     <h3 class="text-2xl my-2">Kontakt:</h3>
                                     <div class="flex flex-col gap-2">
                                         <p><strong>Telefon:</strong> 505 720 041</p>
-                                        <p><strong>Email:</strong> dates70@gmail.com</p>
+                                        <p><strong>Email:</strong> info@cichyzakatek.com.pl</p>
                                         
                                         <p><strong>Adres:</strong> ul. Tadeusza Kościuszki 112C <br>57-350 Kudowa-Zdrój</p>
                                     </div>
