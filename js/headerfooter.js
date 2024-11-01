@@ -132,7 +132,7 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
                     <footer class="bg-[#0c245c] text-white gap-5 flex flex-col">
-                        <div class="p-10 flex flex-col justify-start w-11/12 max-xl:w-full">
+                        <div class="p-10 max-sm:p-6 flex flex-col justify-start w-11/12 max-xl:w-full">
                             <h2 class="text-4xl max-sm:text-3xl font-glowna">Apartamenty "Cichy Zakątek"</h2>
                             <hr class="border-2 h-0.5 w-4/12 my-4 border-white">
                             <div class="flex flex-row justify-between flex-wrap gap-8">

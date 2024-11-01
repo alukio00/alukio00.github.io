@@ -26,10 +26,14 @@ const closeZoom = () => {
 const zoomRight = () => {
     if (images.length > currentZoom + 1) {
         zoomIn(images[currentZoom + 1])
-    } 
+    } else {
+        zoomIn(images[0])
+    }
 }
 const zoomLeft = () => {
     if (0 < currentZoom) {
         zoomIn(images[currentZoom - 1])
-    } 
+    } else {
+        zoomIn(images[images.length - 1])
+    }
 }
