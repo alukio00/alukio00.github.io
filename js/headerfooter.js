@@ -174,13 +174,13 @@ class Footer extends HTMLElement {
                             <p>&copy; 2024 Apartamenty Cichy Zakątek. Wszelkie prawa zastrzeżone.</p>
                         </div>
                     </footer>
-                    <div id="cookies-div" class="hidden fixed bottom-5 left-24 max-lg:left-5 flex-col gap-2 bg-white rounded-xl shadow-xl p-4 w-96 max-w-full">
-                        <h3 class="text-3xl font-semibold">Cookies</h3>
-                        <p class="text-base">Ta strona używa plików cookies, w celu obserwowania ruchu na naszej stronie stronie. Aby zarządać swoimi ciasteczkami <a class="underline text-blue-700" href="/polityka-prywatnosci/#cookies">Kliknij Tutaj</a>.</p>
-                        <form onsubmit="acceptCookies(event)" class="flex flex-col gap-4">
-                            <div class="flex gap-4 items-center">
-                                <button data-agreed="1" type="submit" class="w-full rounded-full py-2 bg-gray-800 text-white border-2 border-gray-800 hover:bg-white hover:text-gray-800 duration-200">Zgadzam się</button>
-                                <button data-agreed="0" type="submit" class="w-full rounded-full py-2 bg-white text-gray-800 border-2 border-gray-800 hover:bg-gray-800 hover:text-white duration-200">Nie zgadzam się</button>
+                    <div id="cookies-div" class="hidden fixed bottom-5 left-24 max-lg:left-5 flex-col gap-2 bg-white rounded-xl shadow-2xl p-4 w-96 max-w-[calc(100%-36px)]">
+                        <h3 class="text-2xl font-semibold">Cookies</h3>
+                        <p class="text-sm">Ta strona używa plików cookies, w celu obserwowania ruchu na naszej stronie stronie. Aby zarządać swoimi ciasteczkami <a class="underline text-blue-700" href="/polityka-prywatnosci/#cookies">Kliknij Tutaj</a>.</p>
+                        <form onsubmit="acceptCookies(event)" class="flex flex-col gap-4 mt-2">
+                            <div class="flex gap-4 items-center max-sm:flex-col-reverse">
+                                <button data-agreed="1" type="submit" class="w-full rounded-full py-1.5 bg-gray-800 text-white border-2 border-gray-800 hover:bg-white hover:text-gray-800 duration-200">Zgadzam się</button>
+                                <button data-agreed="0" type="submit" class="w-full rounded-full py-1.5 bg-white text-gray-800 border-2 border-gray-800 hover:bg-gray-800 hover:text-white duration-200">Nie zgadzam się</button>
                            
                             </div>
                         </form>
