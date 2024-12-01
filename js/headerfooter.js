@@ -45,7 +45,11 @@ class Header extends HTMLElement {
 
             <header class="hidden z-10 fixed left-0 h-full max-lg:flex text-white flex-row justify-start">
                 <div class="w-full">
-                    <i id="menu-icon" class="material-symbols-outlined fixed top-3 left-3 z-20 p-1.5 rounded-lg border flex bg-gray-800">menu</i>
+                    <i id="menu-icon" class="justify-center items-center fixed top-3 left-3 z-20 p-2 rounded-lg border flex bg-gray-800">
+                        <svg id="menu-icon-show" class="fill-white w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                        <svg id="menu-icon-close" class="hidden fill-white w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+                        </i>
+                    
                     <div id="mobile-drop-right" class="hidden flex flex-col justify-start py-24 gap-6 bg-gray-800 bg-opacity-95 h-full w-72 min-w-60 max-w-60% p-3 animate-slideInRight origin-left">
                         <a class="mobile-menu-a" href="/">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg><p>Strona Główna</p>
@@ -98,13 +102,13 @@ class Header extends HTMLElement {
         const menuIcon = this.querySelector("#menu-icon");
         const mobileRight = this.querySelector("#mobile-drop-right");
 
+        const menuIconShow = this.querySelector("#menu-icon-show");
+        const menuIconClose = this.querySelector("#menu-icon-close");
+
         menuIcon.addEventListener("click", () => {
             mobileRight.classList.toggle("hidden");
-            if (menuIcon.textContent == "close") {
-                menuIcon.textContent = "menu";
-            } else {
-                menuIcon.textContent = "close";
-            }
+            menuIconClose.classList.toggle("hidden")
+            menuIconShow.classList.toggle("hidden")
         });
         const atrakcjeBtn = this.querySelector("#atrakcje-btn")
         const atrakcjeDiv = this.querySelector("#atrakcje-div")
@@ -139,10 +143,12 @@ class Footer extends HTMLElement {
                                 <div class="flex flex-col justify-start w-96">
                                     <h3 class="text-2xl my-2">Kontakt:</h3>
                                     <div class="flex flex-col gap-2">
-                                        <p><strong>Telefon:</strong> 505 720 041</p>
-                                        <p><strong>Email:</strong> info@cichyzakatek.com.pl</p>
+                                        <p><strong>Telefon:</strong> <a href="tel:+48505720041">505 720 041</a></p>
+                                        <p><strong>Email:</strong> <a href="mailto:info@cichyzakatek.com.pl">info@cichyzakatek.com.pl</a></p>
                                         
-                                        <p><strong>Adres:</strong> ul. Tadeusza Kościuszki 112C <br>57-350 Kudowa-Zdrój</p>
+                                        <p><strong>Adres:</strong> <a target="_blank" href="https://www.google.com/maps/place/Apartamenty+Cichy+Zakątek/@50.4514114,16.2529824,17z/data=!3m1!4b1!4m6!3m5!1s0x470e6f3db0cec145:0x24eb0e0ed1c3b027!8m2!3d50.4514114!4d16.2529824!16s%2Fg%2F11j0p_mlyv?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
+                                        ul. Tadeusza Kościuszki 112C <br>57-350 Kudowa-Zdrój
+                                        </a></p>
                                     </div>
                                 </div>
                                 <div class="flex flex-col justify-start w-96">
@@ -170,6 +176,13 @@ class Footer extends HTMLElement {
                                 
                             </div>
                         </div>
+                        <div class="flex gap-4 w-full justify-center items-center">
+                                <a class="bg-black bg-opacity-40 rounded-full p-5 w-16 h-16 flex justify-center items-center hover:opacity-65 duration-200 hover:bg-black" target="_blank" href="https://www.facebook.com/cichyzakatek.kudowa/"><svg class="w-[20px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path></svg></a>
+                                <a class="bg-black bg-opacity-40 rounded-full p-4 w-16 h-16 flex justify-center items-center hover:opacity-65 duration-200 hover:bg-black" target="_blank" href="https://www.instagram.com/cichyzakatek_/"><svg class="w-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+                          
+                        </div>
+                   
+                        
                         <div class="p-3">
                             <p>&copy; 2024 Apartamenty Cichy Zakątek. Wszelkie prawa zastrzeżone.</p>
                         </div>

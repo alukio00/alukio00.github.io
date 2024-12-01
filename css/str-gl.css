@@ -1,15 +1,49 @@
 .lista {
-    padding: 12px;
+    padding: 20px;
     border-radius: 10px;
     border: 2px solid black;
     width: 100%;
     display: flex;
+    flex-direction: column;
     gap: 8px;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
 
     background-color: white;
     font-size: 18px;
 }
+.lista .material-symbols-outlined {
+    font-size: 35px;
+ 
+}
+.lista-div {
+    display: flex;
+    gap: 28px;
+  
+}
+.lista-div img {
+    width: 33%;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.lista h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+  
+}
+@media (max-width: 1024px) {
+    
+    .lista-div img {
+        width: 100%;
+
+    }
+}
+
+
+
 @keyframes slide-in-up {
     0% {
         transform: translateY(200%);
