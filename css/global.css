@@ -40,7 +40,7 @@ body::before {
 body {
     font-family: Poppins;
     margin: 0px;
-    padding-left: 64px;
+    padding-top: 80px;
    
     
 }
@@ -51,7 +51,7 @@ main {
 
 @media(max-width: 1024px) {
     body {
-        padding-left: 0px;
+        padding-top: 0px;
     }
 }
 
@@ -115,32 +115,6 @@ section {
     box-shadow: 3px 0px 10px 0px #1f29374d;
 }
 
-.popup-link div {
-    display: flex;
-    flex-direction: column;
-  
-}
-.popup-link {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.205);
-    transition-duration: 250ms;
-    width: 400px;
-    max-width: 33%;
-    animation: growIn 200ms ease-in-out;
-}
-.popup-link img {
-    object-fit: cover;
-    border-radius: 12px 12px 0px 0px;
-    height: 250px;
-  
-}
-
-
-
-.popup-link:hover {
-    transform: scale(1.05);
-}
 #lista-show li {
     display: flex;
     flex-direction: row;
@@ -175,7 +149,7 @@ section {
 }
 .image-wstep {
    
-     background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.1) 100%), url("/img/galeria/back-main.jpg");
+     background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.2) 100%), url("/img/galeria/back-main.jpg");
      background-size: cover;
      background-position-y: 35%;
      background-position-x: center;
@@ -184,7 +158,7 @@ section {
  }
  @media (max-width: 700px) {
     .image-wstep {
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 60%, rgba(0, 0, 0, 0.1) 100%), url("/img/galeria/back-main-tel.jpg");
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.2) 100%), url("/img/galeria/back-main-tel.jpg");
         background-size: cover;
         background-position-y: center;
         background-position-x: center;
@@ -208,3 +182,30 @@ section {
     }
 }
  
+.header-link {
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+}
+.header-link:hover {
+    text-decoration: underline;
+}
+.header-atrakcje-parent:hover .header-atrakcje {
+    display: flex;
+}
+.header-atrakcje {
+    display: none;
+    font-size: 16px;
+}
+.header-apartamenty-parent:hover .header-apartamenty {
+    display: flex;
+    
+}
+.header-apartamenty {
+    display: none;
+    font-size: 16px;
+
+}
+.header-apartamenty a:hover,.header-atrakcje a:hover {
+    text-decoration: underline;
+}

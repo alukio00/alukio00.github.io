@@ -2,6 +2,9 @@
 .url-atrakcje {
     overflow: hidden;
 }
+body {
+    padding-top: 0px!important;
+}
 
 .img-atrakcje {
     border-radius: 10px;

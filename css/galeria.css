@@ -5,6 +5,10 @@
     height: 250px;
     object-fit: cover;
     cursor: pointer;
+    
+}
+body {
+    padding-top: 0px!important;
 }
 .grid-img {
     display: grid;
