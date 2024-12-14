@@ -40,7 +40,7 @@ body::before {
 body {
     font-family: Poppins;
     margin: 0px;
-    padding-top: 80px;
+    padding-top: 75px;
    
     
 }
@@ -191,14 +191,14 @@ section {
     text-decoration: underline;
 }
 .header-atrakcje-parent:hover .header-atrakcje {
-    display: flex;
+    display: block;
 }
 .header-atrakcje {
     display: none;
     font-size: 16px;
 }
 .header-apartamenty-parent:hover .header-apartamenty {
-    display: flex;
+    display: block;
     
 }
 .header-apartamenty {
