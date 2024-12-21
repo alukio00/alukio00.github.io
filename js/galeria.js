@@ -7,8 +7,11 @@ const galleryData = Array.from(document.querySelectorAll("#galeria-1 img"))
 const galleryUrls = galleryData.map(el => el.src)
 
 let currentZoom;
+
+const body = document.querySelector("body")
  
 const zoomIn = (index) => {
+    body.style.paddingTop = "0px"
     currentZoom = index
     popupDiv.classList.remove("hidden");
 
@@ -19,6 +22,7 @@ const zoomIn = (index) => {
 
 
 const closeZoom = () => {
+    body.style.paddingTop = "75px"
     popupDiv.classList.add("hidden");
     zoomDiv.innerHTML = "";
 }

@@ -7,6 +7,8 @@ let currentZoom = "";
 let currentTel = 0
 let interval
 
+const body = document.querySelector("body")
+
 
 const galleryData = Array.from(document.querySelectorAll("#gallery img"))
 const galleryUrls = galleryData.map(el => el.src)
@@ -49,6 +51,7 @@ const next = (selfPlayed=false) => {
 }
 
 const zoom = (index) => {
+    body.style.paddingTop = "0px"
     clearInterval(interval)
     currentZoom = index
     popupDiv.classList.remove("hidden");
@@ -57,6 +60,7 @@ const zoom = (index) => {
 
 
 const closeZoom = () => {
+    body.style.paddingTop = "75px"
     setLoop()
     popupDiv.classList.add("hidden");
     zoomDiv.innerHTML = "";

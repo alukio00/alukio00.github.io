@@ -7,9 +7,6 @@
     cursor: pointer;
     
 }
-body {
-    padding-top: 0px!important;
-}
 .grid-img {
     display: grid;
     grid-template-columns: repeat(auto-fill, 250px);

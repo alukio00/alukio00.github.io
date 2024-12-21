@@ -51,7 +51,7 @@ main {
 
 @media(max-width: 1024px) {
     body {
-        padding-top: 0px;
+        padding-top: 0px!important;
     }
 }
 

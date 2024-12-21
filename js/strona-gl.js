@@ -43,13 +43,17 @@ let currentZoom = 0
 const zoomDiv = document.getElementById("zoom-div");
 const popupDiv = document.getElementById("popup-div");
 
+const body = document.querySelector("body")
+
 const zoom = (index) => {
+    body.style.paddingTop = "0px"
     clearInterval(interval)
     currentZoom = index
     popupDiv.classList.remove("hidden");
     zoomDiv.innerHTML = `<img src="${allImgs[index].src}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-75vh max-lg:w-screen">`;
 };
 const closeZoom = () => {
+    body.style.paddingTop = "75px"
     popupDiv.classList.add("hidden");
     zoomDiv.innerHTML = "";
     setLoop()

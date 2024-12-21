@@ -5,9 +5,11 @@ popupDiv = document.getElementById("popup-div");
 const images = Array.from(galeria1).map(el => el.getAttribute("src"))
 
 let currentZoom;
+const body = document.querySelector("body")
  
 const zoomIn = (indexUrl) => {
-    console.log(indexUrl)
+
+    body.style.paddingTop = "0px"
     const index = images.findIndex((idx) => idx == indexUrl)
     currentZoom = index
     popupDiv.classList.remove("hidden");
@@ -19,6 +21,7 @@ const zoomIn = (indexUrl) => {
 
 
 const closeZoom = () => {
+    body.style.paddingTop = "75px"
     popupDiv.classList.add("hidden");
     zoomDiv.innerHTML = "";
 }

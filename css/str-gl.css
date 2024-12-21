@@ -221,6 +221,6 @@ label {
     gap: 4px;
     font-size: 16px;
 }
-.atrakcje-list-div a:hover {
+.atrakcje-list-div a {
     text-decoration: underline;
 }
