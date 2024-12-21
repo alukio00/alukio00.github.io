@@ -159,7 +159,7 @@ label {
    
     }
     100% {
-        max-height: 500px; 
+        max-height: 700px; 
 
     }
 }
@@ -177,7 +177,7 @@ label {
 
 @keyframes rollAtrakcjeReverse {
     0% {
-        max-height: 500px; 
+        max-height: 700px; 
 
     }
     100% {
