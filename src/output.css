@@ -923,10 +923,6 @@ video {
   max-width: 700px;
 }
 
-.max-w-80 {
-  max-width: 20rem;
-}
-
 .max-w-96 {
   max-width: 24rem;
 }
@@ -1224,16 +1220,16 @@ video {
   background-size: cover;
 }
 
+.fill-black {
+  fill: #000;
+}
+
 .fill-white {
   fill: #fff;
 }
 
 .fill-yellow-400 {
   fill: #facc15;
-}
-
-.fill-yellow-500 {
-  fill: #eab308;
 }
 
 .object-cover {
@@ -1317,11 +1313,6 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .pb-8 {
@@ -1458,6 +1449,10 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
 }
 
 .ease-in-out {

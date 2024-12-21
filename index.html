@@ -44,7 +44,7 @@
     <script src="/js/img-zoom-popup.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCSgWDaChX4f4KF7dG9zNUG-w6WyjZyZA&libraries=places"></script>
-    <script defer src="/js/opinie.js"></script>
+    <script src="/js/opinie.js"></script>
 
 
  
@@ -243,33 +243,104 @@
 
         <section class="flex flex-col gap-16 max-md:gap-12 justify-center align-middle my-10 max-md:my-6 max-md:p-4">
             <h2 class="text-center font-medium text-4xl">Atrakcje w okolicy</h2>
-            <div class="flex flex-row max-lg:flex-col items-center justify-center gap-12 w-11/12 max-sm:w-full mx-auto">
-                <a href="atrakcje/" class="rounded-xl w-72 bg-white max-lg:w-11/12 max-w-96 shadow-xl hover:scale-105 duration-200">
+            <div class="flex flex-row max-lg:flex-col max-lg:items-center items-start justify-center gap-12 w-11/12 max-sm:w-full mx-auto">
+                <div class="rounded-xl w-72 bg-white max-lg:w-11/12 max-w-96 shadow-xl">
                     <div class="flex flex-col">
-                        <img class="object-cover rounded-tl-xl rounded-tr-xl h-40" loading="lazy" src="/gallery/25d9b0c52278471f8fd8ca2861b208d6.jpg" alt="Atrakcje Turystyczne w Kudowie">
-                        <div class="flex flex-col gap-2 p-4">
-                            <h3 class="text-xl font-medium">Atrakcje Turystyczne</h3>
-                  
+                        <a id="atrakcje-img" class="" href="/atrakcje/">
+                            <img class="object-cover rounded-tl-xl w-full rounded-tr-xl h-40" loading="lazy" src="/gallery/25d9b0c52278471f8fd8ca2861b208d6.jpg" alt="Atrakcje Turystyczne w Kudowie">
+                        </a>
+                        <div class="flex flex-col gap-4 p-4">
+
+                            <div class="flex justify-between items-center gap-2">
+                                <h3 class="text-xl font-medium">Atrakcje Turystyczne</h3>
+                                <svg class="w-5 h-5 fill-black cursor-pointer rotate-180" onclick="toggleAtrakcje(0)" id="atrakcje-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+                    
+                            </div>
+                            <div id="atrakcje-list" class="hidden atrakcje-list-div">
+                                <a href='/atrakcje/id/kaplica-czaszek.html'>Kaplica Czaszek</a>
+                                <a href='/atrakcje/id/ruchoma-szopka.html'>Ruchoma Szopka</a>
+                                <a href='/atrakcje/id/zamek-w-nachodzie.html'>Zamek w Nachodzie</a>
+                                <a href='/atrakcje/id/ogrod-japonski.html'>Ogród Japoński</a>
+                                <a href='/atrakcje/id/szczeliniec-wielki-park-dinozaurow.html'>Szczeliniec Wielki</a>
+                                <a href='/atrakcje/id/skansen-w-pstraznej.html'>Skansen w Pstrążnej</a>
+                                <a href='/atrakcje/id/park-zdrojowy-muzeum-zabawek.html'>Park Zdrojowy / Muzeum Zabawek</a>
+                                <a href='/atrakcje/id/bledne-skaly.html'>Błędne Skały</a>
+                                <a href='/atrakcje/id/zieleniec-ski-arena.html'>Zieleniec Ski Arena</a>
+                                <a href='/atrakcje/id/skalne-miasto-adrspach.html'>Skalne Miasto Adrspach</a>
+                                <a href='/atrakcje/id/aquapark-wodny-swiat.html'>Aquapark Wodny Świat</a>
+                                <a href='/atrakcje/id/kopalnia-wegla-w-nowej-rudzie.html'>Kopalnia Węgla w Nowej Rudzie</a>
+                                <a href='/atrakcje/id/sniezka.html'>Snieżka z Pec pod Sněžkou</a>
+                                <a href='/atrakcje/id/broumovske-steny.html'>Broumovske Steny (CZ)</a>
+                                <a href='/atrakcje/id/odkryty-basen-hradec.html'>Basen Hradec Kralove (CZ)</a>
+                                <a href='/atrakcje/id/jaskinia-macochy.html'>Jaskinia Macochy (CZ)</a>
+                                <a href='/atrakcje/id/sky-bridge-721.html'>Sky Bridge 721 (CZ)</a>
+                                <a href='/atrakcje/id/jaskinia-niedzwiedzia.html'>Jaskinia Niedźwiedzia</a>
+                            </div>
                         </div>
                     </div>
-                </a>
-                <a href="szlaki/" class="rounded-xl w-72 bg-white shadow-xl max-lg:w-11/12 max-w-96 hover:scale-105 duration-200">
+                </div>
+    
+                <div class="rounded-xl w-72 bg-white max-lg:w-11/12 max-w-96 shadow-xl">
                     <div class="flex flex-col">
-                        <img class="object-cover rounded-tl-xl rounded-tr-xl h-40" loading="lazy" src="/gallery2\B--dne-Ska-y-15.jpg" alt="Szlaki piesze w Kudowie">
-                        <div class="flex flex-col gap-2 p-4">
-                            <h3 class="text-xl font-medium">Szlaki Piesze</h3>
+                        <a id="szlaki-img" class="" href="/szlaki/">
+                            <img class="object-cover rounded-tl-xl w-full rounded-tr-xl h-40" loading="lazy" src="/gallery2\B--dne-Ska-y-15.jpg" alt="Szlaki Turystyczne w Kudowie">
+                        </a>
+                        <div class="flex flex-col gap-4 p-4">
+
+                            <div class="flex justify-between items-center gap-2">
+                                <h3 class="text-xl font-medium">Szlaki Piesze</h3>
+                                <svg class="w-5 h-5 fill-black cursor-pointer rotate-180" onclick="toggleAtrakcje(1)" id="szlaki-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+                    
+                            </div>
+                            <div id="szlaki-list" class="hidden atrakcje-list-div">
+                                <a href='/szlaki/id/hvezda.html'>Hvězda (CZ)</a>
+                                <a href='/szlaki/id/bledne-skaly.html'>Błędne Skały</a>
+                                <a href='/szlaki/id/ostasz-kocie-skaly.html'>Ostasz, Kocie Skały (CZ)</a>
+                                <a href='/szlaki/id/torfowisko-pod-zielencem-.html'>Torfowisko pod Zieleńcem</a>
+                                <a href='/szlaki/id/kamenna-brana.html'>Koruna, Kamenná brána (CZ)</a>
+                                <a href='/szlaki/id/naroznik-biale-skaly.html'>Narożnik, Białe Skały</a>
+                                <a href='/szlaki/id/masarykova-chata-orlicke-hory.html'>Masarykova Chata (CZ)</a>
+                                <a href='/szlaki/id/prachowskie-skaly.html'>Prachowskie Skały (CZ)</a>
+                                <a href='/szlaki/id/hruboskalskie-skalne-miasto.html'>Skalne Miasto (CZ)</a>
+                                <a href='/szlaki/id/peklo-jiraskova-cesta.html'>Peklo (CZ)</a>
+                                <a href='/szlaki/id/radkowskie-skaly.html'>Radkowskie Skały</a>
+                                <a href='/szlaki/id/skalne-grzyby.html'>Skalne Grzyby</a>
+                                <a href='/szlaki/id/sciezka-skalnej-rzezby.html'>Ścieżka Skalnej Rzeźby</a>
+                            </div>
                         </div>
                     </div>
-                </a>
-                <a href="trasy-rowerowe/" class="rounded-xl max-lg:w-11/12 max-w-96 w-72 bg-white shadow-xl hover:scale-105 duration-200">
+                </div>
+
+                <div class="rounded-xl w-72 bg-white max-lg:w-11/12 max-w-96 shadow-xl">
                     <div class="flex flex-col">
-                        <img class="object-cover rounded-tl-xl rounded-tr-xl h-40" loading="lazy" src="\gallery\BABICCINO-UDOLI-RATIBORICE-z-paluby-vrtulniku-5ffbf53b01523.jpg" alt="Trasy rowerowe w Kudowie">
-                        <div class="flex flex-col gap-2 p-4">
-                            <h3 class="text-xl font-medium">Trasy Rowerowe</h3>
+                        <a id="trasy-img" class="" href="/trasy-rowerowe/">
+                            <img class="object-cover rounded-tl-xl w-full rounded-tr-xl h-40" loading="lazy" src="\gallery\BABICCINO-UDOLI-RATIBORICE-z-paluby-vrtulniku-5ffbf53b01523.jpg" alt="Atrakcje Turystyczne w Kudowie">
+                        </a>
+                        <div class="flex flex-col gap-4 p-4">
+
+                            <div class="flex justify-between items-center gap-2">
+                                <h3 class="text-xl font-medium">Trasy Rowerowe</h3>
+                                <svg class="w-5 h-5 fill-black cursor-pointer rotate-180" onclick="toggleAtrakcje(2)" id="trasy-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+                    
+                            </div>
+                            <div id="trasy-list" class="hidden atrakcje-list-div">
+                                <a href='/trasy-rowerowe/id/peklo.html'>Peklo</a>
+                                <a href='/trasy-rowerowe/id/ostra-gora-karlow.html'>Ostra Góra - Karłów</a>
+                                <a href='/trasy-rowerowe/id/sawanna-lezycka-sawanna-pasterska.html'>Sawanna Łężycka</a>
+                                <a href='/trasy-rowerowe/id/wieza-widokowa-vysoka-srbska.html'>Wieża Vysoká Srbská</a>
+                                <a href='/trasy-rowerowe/id/wieza-widokowa-na-signalu.html'>Wieża widokowa Na Signálu</a>
+                                <a href='/trasy-rowerowe/id/broumovske-steny.html'>Broumovské Stěny</a>
+                                <a href='/trasy-rowerowe/id/wieza-widokowa-sibenik.html'>Wieża widokowa Šibeník</a>
+                                <a href='/trasy-rowerowe/id/radkow-wodospad-posny.html'>Radków - Wodospad Pośny</a>
+                                <a href='/trasy-rowerowe/id/machov-pasterka.html'>Machov - Pasterka</a>
+                                <a href='/trasy-rowerowe/id/kregielny-trakt-szczytna.html'>Kręgielny Trakt - Szczytna</a>
+                                <a href='/trasy-rowerowe/id/pstrazna-zdarky.html'>Pstrążna - Žďárky</a>
+                                <a href='/trasy-rowerowe/id/bukowina-klodzka-darnkow.html'>Bukowina Kłodzka - Darnków</a>
+                            </div>
                         </div>
                     </div>
-                </a>
-            </div>
+
+                </div>
         </section>
 
         <reviews-wigdet></reviews-wigdet>
