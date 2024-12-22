@@ -209,3 +209,20 @@ section {
 .header-apartamenty a:hover,.header-atrakcje a:hover {
     text-decoration: underline;
 }
+
+.button-1 {
+    padding: 10px 20px;
+    background-color: var(--my-color);
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+@media (max-width: 500px) {
+    .button-1 {
+        
+        font-size: 18px;
+    
+    }
+}

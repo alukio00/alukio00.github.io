@@ -64,7 +64,7 @@ class ReviewsWidget extends HTMLElement {
                 <div class="w-full max-w-10xl mx-auto justify-center max-lg:flex-col max-lg:items-center flex gap-8">
                     ${htmlReviews.join("")}
                 </div>
-                <a class="mx-auto bg-gray-800 text-white py-2.5 px-5 max-sm:text-base  rounded-full shadow-lg text-xl hover:scale-105 duration-200" href="https://www.google.com/travel/search?gsas=1&ts=EggKAggDCgIIAxocEhoSFAoHCOkPEAMYARIHCOkPEAMYBBgDMgIQAA&qs=MhNDZ29JcC1DT2p1M0J3X1VrRUFFOAI&ap=ugEHcmV2aWV3cw&client=opera-gx&hs=q0F&biw=1557&bih=778&hl=pl-PL&ved=0CAAQ5JsGahcKEwjgzpP45aeKAxUAAAAAHQAAAAAQBQ" target="_blank">Wszystkie Opinie</a>
+                <a class="mx-auto button-1" href="https://www.google.com/travel/search?gsas=1&ts=EggKAggDCgIIAxocEhoSFAoHCOkPEAMYARIHCOkPEAMYBBgDMgIQAA&qs=MhNDZ29JcC1DT2p1M0J3X1VrRUFFOAI&ap=ugEHcmV2aWV3cw&client=opera-gx&hs=q0F&biw=1557&bih=778&hl=pl-PL&ved=0CAAQ5JsGahcKEwjgzpP45aeKAxUAAAAAHQAAAAAQBQ" target="_blank">Wszystkie Opinie</a>
             </section>
         `
     }
