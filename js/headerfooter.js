@@ -5,7 +5,7 @@ class Header extends HTMLElement {
                 <nav class="text-white flex flex-row justify-center items-center">
                     <a class="header-link" href="/">Strona Główna</a>
                     <div class="header-link header-apartamenty-parent relative">Nasza Oferta
-                        <div class="header-apartamenty w-80 absolute top-0 pt-12">
+                        <div class="header-apartamenty w-80 absolute top-8 pt-4">
                             <div class="flex flex-col gap-2 bg-gray-800 p-4 rounded-lg border-black border-2 shadow-div">
                                 <a href="/apartament-dwupoziomowy-nr1/">Apartament Dwupoziomowy Nr. 1</a>
                                 <a href="/apartament-dwupoziomowy-nr2/">Apartament Dwupoziomowy Nr. 2</a>
@@ -20,7 +20,7 @@ class Header extends HTMLElement {
                     <a class="header-link" href="/cennik">Cennik</a>
                     <a class="header-link" href="/rezerwacja">Rezerwacja</a>
                     <div class="header-link relative header-atrakcje-parent" href="/">Atrakcje w Okolicy
-                        <div class="header-atrakcje w-52 absolute top-0 pt-12">
+                        <div class="header-atrakcje w-52 absolute top-8 pt-4">
                             <div class="flex flex-col gap-2 bg-gray-800 p-4 rounded-lg border-black border-2 shadow-div">
                                 <a href="/atrakcje/">Atrakcje Turystyczne</a>
                                 <a href="/szlaki/">Szlaki Piesze</a>
