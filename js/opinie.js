@@ -45,7 +45,7 @@ class ReviewsWidget extends HTMLElement {
 
         const htmlReviews = this.reviews.map(({ author_name, profile_photo_url, text, time }) => {
             return `
-                <div class="bg-white rounded-xl shadow-div w-full max-w-96 p-5 gap-4 flex flex-col">
+                <div class="bg-white rounded-xl shadow-div w-full max-w-500 p-5 gap-4 flex flex-col">
                     <div class="flex gap-2">
                         <img class="w-20 h-20 object-cover" src="${profile_photo_url}" alt="Zdjęcie Profilowe">
                         <div class="flex flex-col gap-2">

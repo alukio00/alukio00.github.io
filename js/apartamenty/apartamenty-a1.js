@@ -55,7 +55,12 @@ const zoom = (index) => {
     clearInterval(interval)
     currentZoom = index
     popupDiv.classList.remove("hidden");
-    zoomDiv.innerHTML = `<img src="${galleryUrls[index]}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-95vh max-lg:w-screen">`;
+    zoomDiv.innerHTML = `
+    <picture>
+        <source media="(max-width:650px)" srcset="${galleryUrls[index]}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-95vh max-lg:w-screen">
+        <img src="${galleryUrls[index].replace("/tel/", "/full/")}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-95vh max-lg:w-screen">
+    </picture>
+    `;
 };
 
 

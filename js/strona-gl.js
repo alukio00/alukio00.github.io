@@ -24,7 +24,7 @@ const autoSlider = () => {
 const setLoop = () => {
     interval = setInterval(() => {
         autoSlider();
-    }, 3000);
+    }, 3500);
 }
 setLoop()
 
@@ -40,7 +40,13 @@ const zoom = (index) => {
     clearInterval(interval)
     currentZoom = index
     popupDiv.classList.remove("hidden");
-    zoomDiv.innerHTML = `<img src="${allImgs[index].src}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-75vh max-lg:w-screen">`;
+    zoomDiv.innerHTML = `
+    <picture>
+        <source media="(max-width:650px)"  srcset="${allImgs[index].src.replace("/full/", "/tel/")}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-75vh max-lg:w-screen">
+   
+        <img src="${allImgs[index].src.replace("/tel/", "/full/")}" alt="Powiększony obraz obiektu" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-75vh max-lg:w-screen">
+    </picture>
+        `;
 };
 const closeZoom = () => {
     body.style.paddingTop = "75px"
