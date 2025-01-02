@@ -16,7 +16,7 @@ const getReviews = async () => {
         }
   
    
-        const reviews = (place.reviews || []).filter(el => el.rating === 5).slice(0, 3);
+        const reviews = (place.reviews || []).filter(el => el.rating === 5).slice(0, 4);
         resolve(reviews);
       });
     });
@@ -61,8 +61,14 @@ class ReviewsWidget extends HTMLElement {
         this.innerHTML = `
             <section class="flex flex-col gap-14 justify-center">
                 <h2 class="text-center font-medium text-4xl">Opinie</h2>
-                <div class="w-full max-w-10xl mx-auto justify-center max-lg:flex-col max-lg:items-center flex gap-8">
-                    ${htmlReviews.join("")}
+                <div class="w-full max-w-10xl mx-auto justify-center flex-col items-center flex gap-8">
+                    <div class="flex gap-8 justify-center max-lg:flex-col">
+                        ${htmlReviews.slice(0, 2).join("")}
+                    </div>
+                    <div class="flex gap-8 justify-center max-lg:flex-col">
+                        ${htmlReviews.slice(2, 4).join("")}
+                    </div>
+                    
                 </div>
                 <a class="mx-auto button-1" href="https://www.google.com/travel/search?gsas=1&ts=EggKAggDCgIIAxocEhoSFAoHCOkPEAMYARIHCOkPEAMYBBgDMgIQAA&qs=MhNDZ29JcC1DT2p1M0J3X1VrRUFFOAI&ap=ugEHcmV2aWV3cw&client=opera-gx&hs=q0F&biw=1557&bih=778&hl=pl-PL&ved=0CAAQ5JsGahcKEwjgzpP45aeKAxUAAAAAHQAAAAAQBQ" target="_blank">Wszystkie Opinie</a>
             </section>
