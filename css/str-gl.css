@@ -11,10 +11,7 @@
     background-color: white;
     font-size: 18px;
 }
-.lista .material-symbols-outlined {
-    font-size: 35px;
- 
-}
+
 .lista-div {
     display: flex;
     gap: 28px;
@@ -91,18 +88,6 @@ label {
     } 
     100% {
         opacity: 1;
-    }
-}
-
-
-#popup-div .material-symbols-outlined {
-    font-size: 40px;
-    padding: 8px;
-}
-@media (max-width: 640px) {
-    #popup-div .material-symbols-outlined {
-        font-size: 30px;
-        padding: 6px;
     }
 }
 
