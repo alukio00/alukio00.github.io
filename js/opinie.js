@@ -47,7 +47,7 @@ class ReviewsWidget extends HTMLElement {
             return `
                 <div class="bg-white rounded-xl shadow-div w-full max-w-500 p-5 gap-4 flex flex-col">
                     <div class="flex gap-2">
-                        <img class="w-20 h-20 object-cover" src="${profile_photo_url}" alt="Zdjęcie Profilowe">
+                        <img loading="lazy" class="w-20 h-20 object-cover" src="${profile_photo_url}" alt="Zdjęcie Profilowe">
                         <div class="flex flex-col gap-2">
                             <h3 class="text-2xl">${author_name}</h3>
                             <div class="flex gap-1">${gwiazdki.join("")}</div>
