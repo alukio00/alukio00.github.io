@@ -145,42 +145,55 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
                     <footer class="bg-[#0c245c] text-white gap-5 flex flex-col">
-                        <div class="p-10 max-sm:p-6 flex flex-col justify-start w-11/12 max-xl:w-full">
+                        <div class="p-10 max-sm:p-6 flex flex-col justify-start w-full">
                             <h2 class="text-4xl max-sm:text-3xl font-glowna">Apartamenty Cichy Zakątek</h2>
                             <hr class="border-2 h-0.5 w-4/12 my-4 border-white">
-                            <div class="flex flex-row justify-between flex-wrap gap-8">
-                                <div class="flex flex-col justify-start w-96">
-                                    <h3 class="text-2xl my-2">Kontakt:</h3>
-                                    <div class="flex flex-col gap-2">
-                                        <p><strong>Telefon:</strong> <a href="tel:+48505720041">505 720 041</a></p>
-                                        <p><strong>Email:</strong> <a href="mailto:info@cichyzakatek.com.pl">info@cichyzakatek.com.pl</a></p>
-                                        
-                                        <p><strong>Adres:</strong> <a target="_blank" href="https://www.google.com/maps/place/Apartamenty+Cichy+Zakątek/@50.4514114,16.2529824,17z/data=!3m1!4b1!4m6!3m5!1s0x470e6f3db0cec145:0x24eb0e0ed1c3b027!8m2!3d50.4514114!4d16.2529824!16s%2Fg%2F11j0p_mlyv?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
-                                        ul. Tadeusza Kościuszki 112C <br>57-350 Kudowa-Zdrój
-                                        </a></p>
+                            <div class="flex flex-row max-[1400px]:flex-col gap-6">
+                                <div class="flex gap-6 max-md:flex-col w-full">
+                                    <div class="flex flex-col justify-start w-full">
+                                        <h3 class="text-2xl my-2">Kontakt:</h3>
+                                        <div class="flex flex-col gap-2">
+                                            <p><strong>Telefon:</strong> <a href="tel:+48505720041">505 720 041</a></p>
+                                            <p><strong>Email:</strong> <a href="mailto:info@cichyzakatek.com.pl">info@cichyzakatek.com.pl</a></p>
+                                            
+                                            <p><strong>Adres:</strong> <a target="_blank" href="https://www.google.com/maps/place/Apartamenty+Cichy+Zakątek/@50.4514114,16.2529824,17z/data=!3m1!4b1!4m6!3m5!1s0x470e6f3db0cec145:0x24eb0e0ed1c3b027!8m2!3d50.4514114!4d16.2529824!16s%2Fg%2F11j0p_mlyv?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
+                                            ul. Tadeusza Kościuszki 112C <br>57-350 Kudowa-Zdrój
+                                            </a></p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col justify-start w-full">
+                                        <h3 class="text-2xl my-2">Nasza Oferta:</h3>
+                                        <ul class="list-disc footer-list list-inside gap-2 flex flex-col">
+                                            <li><a href="/apartament-dwupoziomowy-nr1/">Apartament dwupoziomowy nr 1</a></li>
+                                            <li><a href="/apartament-dwupoziomowy-nr2/">Apartament dwupoziomowy nr 2</a></li>
+                                            <li><a href="/apartament-dwupoziomowy-nr3/">Apartament dwupoziomowy nr 3</a></li>
+                                            <li><a href="/apartament-dwupoziomowy-nr4/">Apartament dwupoziomowy nr 4</a></li>
+                                            <li><a href="/apartament-z-2-sypialniami/">Apartament z 2 sypialniami</a></li>
+                                            <li><a href="/domek-z-2-sypialniami/">Domek z 2 sypialniami</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="flex flex-col justify-start w-96">
-                                    <h3 class="text-2xl my-2">Nasza Oferta:</h3>
-                                    <ul class="list-disc list-inside gap-2 flex flex-col">
-                                        <li><a href="/apartament-dwupoziomowy-nr1/">Apartament Dwupoziomowy nr 1</a></li>
-                                        <li><a href="/apartament-dwupoziomowy-nr2/">Apartament Dwupoziomowy nr 2</a></li>
-                                        <li><a href="/apartament-dwupoziomowy-nr3/">Apartament Dwupoziomowy nr 3</a></li>
-                                        <li><a href="/apartament-dwupoziomowy-nr4/">Apartament Dwupoziomowy nr 4</a></li>
-                                        <li><a href="/apartament-z-2-sypialniami/">Apartament z 2 sypialniami</a></li>
-                                        <li><a href="/domek-z-2-sypialniami/">Domek z 2 sypialniami</a></li>
-                                    </ul>
-                                </div>
-                                <div class="flex flex-col justify-start w-96">
-                                    <h3 class="text-2xl my-2">Strony:</h3>
-                                    <ul class="list-disc list-inside flex flex-col gap-2">
-                                        <li><a href="/">Strona Główna</a></li>
-                                        <li><a href="/galeria/">Galeria</a></li>
-                                        <li><a href="/cennik/">Cennik</a></li>
-                                        <li><a href="/rezerwacja/">Rezerwacja</a></li>
-                                        <li><a href="/regulamin/">Regulamin</a></li>
-                                        <li><a href="/polityka-prywatnosci/">Polityka Prywatności</a></li>
-                                    </ul>
+                                <div class="flex gap-6 max-md:flex-col w-full">
+                                    <div class="flex flex-col justify-start w-full">
+                                        <h3 class="text-2xl my-2">Atrakcje w okolicy:</h3>
+                                        <ul class="list-disc footer-list list-inside gap-2 flex flex-col">
+                                            <li><a href="/atrakcje">Atrakcje turystyczne</a></li>
+                                            <li><a href="/szlaki">Szlaki piesze</a></li>
+                                            <li><a href="/trasy-rowerowe">Trasy rowerowe</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-col justify-start w-full">
+                                        <h3 class="text-2xl my-2">Strony:</h3>
+                                        <ul class="list-disc footer-list list-inside flex flex-col gap-2">
+                                            <li><a href="/">Strona Główna</a></li>
+                                            <li><a href="/galeria/">Galeria</a></li>
+                                            <li><a href="/cennik/">Cennik</a></li>
+                                            <li><a href="/rezerwacja/">Rezerwacja</a></li>
+                                            <li><a href="/regulamin/">Regulamin</a></li>
+                                            <li><a href="/polityka-prywatnosci/">Polityka Prywatności</a></li>
+                                        </ul>
+                                    </div>
+                                    
                                 </div>
                                 
                             </div>
