@@ -1,55 +1,43 @@
-const placeId = "ChIJRcHOsD1vDkcRJ7DD0Q4O6yQ"
 
-const getReviews = async () => {
-    return new Promise((resolve, reject) => {
-      const service = new google.maps.places.PlacesService(document.createElement('div'));
-  
-      const request = {
-        placeId,
-        fields: ["reviews"],
-      };
-  
-      service.getDetails(request, (place, status) => {
-        if (status !== google.maps.places.PlacesServiceStatus.OK) {
-          reject(`Błąd: ${status}`);
-          return;
-        }
-  
-   
-        const reviews = (place.reviews || []).filter(el => el.rating === 5).slice(0, 4);
-        resolve(reviews);
-      });
-    });
-  };
 class ReviewsWidget extends HTMLElement {
     
-    reviews = []
-
-    async connectedCallback() {
-        try {
-            this.reviews = await getReviews()
-        } catch (error) {
-            console.error(error)
-            this.reviews = []
+    reviews = [
+        {
+            text: ",,Urokliwe i bardzo spokojne miejsce w oddali od centrum Kudowy. Fakt, dojście do centrum zajmuje trochę czasu idąc drogą ale można też iść skrótem przez górę i wychodzi się po drugiej stronie przy parku zdrojowym. Bardzo miły i uczynny gospodarz obiektu. Cisza i spokój, piękny widok sprawiają, że można naprawdę odpocząć na urlopie. Dodatkową atrakcją są dwa jeziorka i kaczki :))''",
+            name: "Daniel"
+            
+        },
+        {
+            text: ",,Super miejsce na odpoczynek. Cisza i spokój od zgiełku miasta. Apartament nowoczesny, dobrze wyposażony. Na zewnątrz staw w którym pływają karpie. Można je karmić z ręki.. do dyspozycji jest też łódka którą można popływać po stawie.. Właściciel sympatyczny i życzliwy. Polecam 👍🇵🇱''",
+            name: "Maciej R"
+            
+        },
+        {
+            text: ",,Lokalizacja świetna, klimat wspaniały, apartament ładny, czyściutki i super wyposażony! Było tam wszystko. Pięknie pachnie. Są leżaki, hamaki, huśtawki, staw z rybami i hitem dla dzieci są oczywiście kaczki! Miejsce jest magiczne. Cisza i spokój. Właściciel bardzo miły, sympatyczny! Dziękujemy i życzymy najlepszego! Polecamy!''",
+            name: "Aga L"
+            
+        },
+        {
+            text: ",,Niesamowite miejsce. Jeżeli szukasz noclegu aby wypocząć wśród natury to trafiłeś idealnie. Tak jak my, choć zatrzymaliśmy się tu zupełnie przypadkiem to na pewno wrócimy. Cisza i spokój - miejsce do regeneracji ciała i duszy. Bardzo polecamy 😊''",
+            name: "Sandra K"
+            
         }
+    ]
 
-        this.render()
-        
-    }
 
-    render() {
+    connectedCallback() {
     
 
         const gwiazdki = Array.from({length: 5}, (v, k) => `
             <svg class="w-7 h-7 fill-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>`)
 
-        const htmlReviews = this.reviews.map(({ author_name, profile_photo_url, text, time }) => {
+        const htmlReviews = this.reviews.map(({ name, text }) => {
             return `
                 <div class="bg-white rounded-xl shadow-div w-full max-w-500 p-5 gap-4 flex flex-col">
                     <div class="flex gap-2">
-                        <img loading="lazy" class="w-20 h-20 object-cover" src="${profile_photo_url}" alt="Zdjęcie Profilowe">
+                        <img loading="lazy" class="w-20 h-20 rounded-full object-cover" src="/img/wspólne/avatar.png" alt="Zdjęcie Profilowe">
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-2xl">${author_name}</h3>
+                            <h3 class="text-2xl">${name}</h3>
                             <div class="flex gap-1">${gwiazdki.join("")}</div>
                         </div>
                     </div>
