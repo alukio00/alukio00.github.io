@@ -1,6 +1,6 @@
 class Header extends HTMLElement {
     connectedCallback() {
-        this.innerHTML = `
+        this.innerHTML = /*html*/`
             <header id="header" class="z-10 h-[75px] fixed w-full top-0 left-0 flex justify-center items-center bg-gray-800 max-lg:hidden shadow-div duration-200">
                 <nav class="text-white flex flex-row justify-center items-center">
                     <a class="header-link" href="/">Strona Główna</a>
@@ -39,7 +39,7 @@ class Header extends HTMLElement {
                         <svg id="menu-icon-close" class="hidden fill-white w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
                         </i>
                     
-                    <div id="mobile-drop-right" class="hidden flex flex-col justify-start py-24 gap-6 bg-gray-800 bg-opacity-95 h-full w-72 min-w-60 max-w-60% p-3 animate-slideInRight origin-left">
+                    <div id="mobile-drop-right" class="hidden flex flex-col justify-start py-24 gap-6 bg-gray-800 bg-opacity-85 backdrop-blur-md h-full w-72 min-w-60 max-w-60% p-3 animate-slideInRight origin-left">
                         <a class="mobile-menu-a" href="/">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg><p>Strona Główna</p>
                         </a>

@@ -2,7 +2,7 @@ const galeria1 = document.querySelectorAll(".img-atrakcje"),
 zoomDiv = document.getElementById("zoom-div"),
 popupDiv = document.getElementById("popup-div");
 
-const images = Array.from(galeria1).map(el => el.getAttribute("src"))
+const images = Array.from(galeria1).map(el => el.getAttribute("src")).map(el => el.replace("/tel/", "/full/"))
 
 let currentZoom;
 const body = document.querySelector("body")
