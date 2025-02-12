@@ -87,3 +87,37 @@ const sendAskEmail = async (event) => {
     
         
 }
+
+const copyBtn1 = document.getElementById("copy-btn-1")
+const copyBtn2 = document.getElementById("copy-btn-2")
+
+
+const copyEl = (id) => {
+    const array = [
+        "54 1090 2835 0000 0001 5320 1446",
+        "PL54109028350000000153201446"
+    ]
+
+    navigator.clipboard.writeText(array[id])
+
+    if (id == 1) {
+        copyBtn2.textContent = "Skopiowano!"
+
+        setTimeout(() => {
+            copyBtn2.textContent = "Kopiuj"
+        }, 2000)
+    } else {
+        copyBtn1.textContent = "Skopiowano!"
+
+        setTimeout(() => {
+            copyBtn1.textContent = "Kopiuj"
+        }, 2000)
+    }
+}
+
+copyBtn1.addEventListener("click", () => {
+    copyEl(0)
+})
+copyBtn2.addEventListener("click", () => {
+    copyEl(1)
+})

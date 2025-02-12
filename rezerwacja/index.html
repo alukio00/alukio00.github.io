@@ -13,7 +13,7 @@
     <link href="/src/output.css" rel="stylesheet">
     <link href="/css/kontakt.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="/js/rezerwacja.js"></script>
+    <script defer src="/js/rezerwacja.js"></script>
   
 </head>
 <!-- Google tag (gtag.js) -->
@@ -28,10 +28,10 @@
 <body>
     <my-header></my-header>
     <main class="space-y-8">
-        <section class="space-y-20 max-md:space-y-10 max-md:p-3">
+        <section class="space-y-20 max-md:space-y-10">
             <h1 class="text-5xl font-semibold text-center mt-10">Rezerwacja</h1>
-            <div class="flex flex-row max-xl:flex-col max-md:w-full items-start justify-center gap-8 w-11/12 mx-auto">
-                <div class="bg-white shadow-lg rounded-3xl p-10 max-md:p-6 flex flex-col gap-6 w-11/12 max-w-700 mx-auto border-2 border-black">
+            <div class="flex flex-row max-xl:flex-col max-md:w-full items-start justify-center gap-8 w-full mx-auto">
+                <div class="bg-white shadow-lg rounded-3xl p-10 max-md:p-6 flex flex-col gap-6 w-full max-w-700 mx-auto border-2 border-black">
                     <h2 class="text-3xl">Informacje</h2>
                     <hr class="border border-black h-0.5 w-2/3 bg-gray-800">
                     <p class="text-lg text-wrap">
@@ -46,13 +46,22 @@
                         ul. T. Kościuszki 112C<br>
                         57-350 Kudowa-Zdrój<br><br>
                         Nr konta bankowego:<br>
-                        <strong>54 1090 2835 0000 0001 5320 1446</strong><br><br>
+                        <span class="flex items-center flex-wrap gap-2">
+                            <strong>54 1090 2835 0000 0001 5320 1446</strong>
+                            <button id="copy-btn-1" class="text-sm py-1 px-3 rounded-full border-2 border-gray-800">Kopiuj</button>
+                        </span>
+                        <br><br>
                         Dla Przelewów zagranicznych:<br>
                         Kod SWIFT/BIC: <strong>WBKPPLPP</strong><br>
-                        IBAN: <strong class="flex gap-0 max-sm:flex-col"><span>PL541090283500</span><span>00000153201446</span></strong>
+                        IBAN: 
+                        <span class="flex items-center flex-wrap gap-2">
+                            <strong class="flex gap-0 max-sm:flex-col"><span>PL541090283500</span><span>00000153201446</span></strong>
+                            <button id="copy-btn-2" class="text-sm py-1 px-3 rounded-full border-2 border-gray-800">Kopiuj</button>
+                        </span>
                     </p>
+                    <a class="w-full py-3 px-5 bg-gray-800 border border-black text-white hover:bg-white hover:text-gray-800 hover:border-gray-800 duration-200 text-center rounded-full" href="https://buy.stripe.com/cN2aI5dP1g3p9yMcMM" target="_blank">Zapłać Blikiem</a>
                 </div>
-                <form onsubmit="sendEmail(event)" enctype="multipart/form-data" id="email-form" class="bg-white shadow-lg max-md:p-6 rounded-3xl p-10 flex flex-col gap-8 w-11/12 max-w-700 mx-auto border-2 border-black">
+                <form onsubmit="sendEmail(event)" enctype="multipart/form-data" id="email-form" class="bg-white shadow-lg max-md:p-6 rounded-3xl p-10 flex flex-col gap-8 w-full max-w-700 mx-auto border-2 border-black">
                     <h2 class="text-4xl">Kontakt w razie pytań</h2>
                     <hr class="border border-black h-0.5 w-2/3 bg-gray-800">
                     <div class="flex flex-row max-md:flex-col gap-8 justify-between">
