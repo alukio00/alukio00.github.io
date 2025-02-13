@@ -165,3 +165,71 @@ label {
 .atrakcje-list-div a {
     text-decoration: underline;
 }
+
+/* Reviews */ 
+
+
+.review-div {
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.review-inner-div {
+
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    justify-content: center;
+
+}
+.review-content-div {
+ 
+    background-color: white;
+    border-radius: 12px;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+}
+.review-content-div p {
+    font-size: 16px;
+}
+.review-img {
+    border-radius: 9999px;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+.review-svg {
+   
+    width: 28px;
+    height: 28px;
+    fill: yellow;
+    stroke-width: 4px;
+    stroke: black;
+}
+.review-info-div {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.review-info-div h3 {
+    font-size: 24px;
+}
+.review-info-div div {
+    display: flex;
+    gap: 4px;
+}
+.review-date {
+    font-size: 18px;
+    text-align: end;
+    margin-bottom: 8px;
+}
+@media (max-width: 1024px) {
+    .review-inner-div {
+        flex-direction: column;
+    }
+}
