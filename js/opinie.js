@@ -37,7 +37,7 @@ class ReviewsWidget extends HTMLElement {
                     <div class="flex gap-2">
                         <img loading="lazy" class="w-20 h-20 rounded-full object-cover" src="/img/wspólne/avatar.png" alt="Zdjęcie Profilowe">
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-2xl">${name}</h3>
+                            <p class="text-2xl font-medium">${name}</p>
                             <div class="flex gap-1">${gwiazdki.join("")}</div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ class ReviewsWidget extends HTMLElement {
 
         this.innerHTML = `
             <section class="flex flex-col gap-14 justify-center">
-                <h2 class="text-center font-medium text-4xl">Cichy Zakątek Opinie</h2>
+                <h2 class="text-center font-medium text-4xl max-sm:text-3xl">Cichy Zakątek Opinie</h2>
                 <div class="w-full max-w-10xl mx-auto justify-center flex-col items-center flex gap-8">
                     <div class="flex gap-8 justify-center max-lg:flex-col">
                         ${htmlReviews.slice(0, 2).join("")}

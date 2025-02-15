@@ -231,7 +231,13 @@ section {
     color: white;
     cursor: pointer;
     font-size: 20px;
+    border: 1px solid var(--my-color);
+    transition-duration: 200ms;
 
+}
+.button-1:hover {
+    background-color: white;
+    color: var(--my-color);
 }
 @media (max-width: 500px) {
     .button-1 {
