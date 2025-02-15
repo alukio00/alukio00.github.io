@@ -215,8 +215,9 @@ label {
     gap: 8px;
     flex-direction: column;
 }
-.review-info-div h3 {
+.review-info-div p {
     font-size: 24px;
+    font-weight: 500
 }
 .review-info-div div {
     display: flex;
