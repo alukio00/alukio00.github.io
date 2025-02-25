@@ -1,12 +1,12 @@
 class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = /*html*/`
-            <header id="header" class="z-10 h-[75px] fixed w-full top-0 left-0 flex justify-center items-center bg-gray-800 max-lg:hidden shadow-div duration-200">
+            <header id="header" class="z-10 h-[75px] w-full top-0 left-0 flex absolute justify-center items-center bg-gray-800 max-lg:hidden shadow-div duration-200">
                 <nav class="text-white flex flex-row justify-center items-center">
                     <a class="header-link" href="/">Strona Główna</a>
                     <div class="header-link header-apartamenty-parent relative">Nasza Oferta
                         <div class="header-apartamenty w-80 absolute top-8 pt-4">
-                            <div class="flex flex-col gap-2 bg-gray-800 p-4 rounded-lg border-black border-2 shadow-div">
+                            <div class="flex flex-col gap-2 bg-gray-800 p-4 rounded-lg shadow-div">
                                 <a href="/apartament-dwupoziomowy-nr1/">Apartament Dwupoziomowy Nr. 1</a>
                                 <a href="/apartament-dwupoziomowy-nr2/">Apartament Dwupoziomowy Nr. 2</a>
                                 <a href="/apartament-dwupoziomowy-nr3/">Apartament Dwupoziomowy Nr. 3</a>
@@ -21,7 +21,7 @@ class Header extends HTMLElement {
                     <a class="header-link" href="/rezerwacja">Rezerwacja</a>
                     <div class="header-link relative header-atrakcje-parent" href="/">Atrakcje w Okolicy
                         <div class="header-atrakcje w-52 absolute top-8 pt-4">
-                            <div class="flex flex-col gap-2 bg-gray-800 p-4 rounded-lg border-black border-2 shadow-div">
+                            <div class="flex flex-col gap-2 bg-gray-800 p-4 rounded-lg shadow-div">
                                 <a href="/atrakcje/">Atrakcje Turystyczne</a>
                                 <a href="/szlaki/">Szlaki Piesze</a>
                                 <a href="/trasy-rowerowe/">Trasy Rowerowe</a>
@@ -128,14 +128,14 @@ document.addEventListener("scroll", () => {
 
     const scroll = window.scrollY
 
-    if (scroll > lastScroll && scroll > 80) {
+    if (scroll < lastScroll && scroll > 80) {
       
-        header.classList.remove("fixed", "flex")
-        header.classList.add("hidden")
+        header.classList.add("fixed-header")
+      
     } else {
       
-        header.classList.remove("hidden")
-        header.classList.add("fixed", "flex")
+    
+        header.classList.remove("fixed-header")
         
     }
     lastScroll = scroll
