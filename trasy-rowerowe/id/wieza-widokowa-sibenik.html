@@ -33,23 +33,35 @@
         <popup-image-zoom></popup-image-zoom>
         <my-header></my-header>
         <main>
-            <section class="flex flex-col gap-14">
+            <section class="flex flex-col my-10 gap-16">
                 <div class="flex flex-col gap-8">
-                    <h1 class="text-4xl">Wieża widokowa Šibeník</h1>
-                    <hr class="h-0.5 bg-gray-800 w-2/5 border border-gray-800">
+                    <h1 class="text-4xl font-medium text-center">Wieża widokowa Šibeník - Zdjęcia</h1>
+                    <hr class="h-0.5 bg-gray-800 w-2/5 border mx-auto border-gray-800">
                 </div>
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-3xl">Więcej Informacji:</h2>
-                    <div class="flex flex-col gap-3" id="links">
-                        <a class="url-atrakcje" rel="nofollow" target="_blank" href="https://m.euro-glacensis.cz/rozhledna-sibenik.html?lang=10">https://m.euro-glacensis.cz/rozhledna-sibenik.html?lang=10</a>
-                    </div>
-                 </div>
-                 <div class="flex flex-col gap-4">
-                    <h2 class="text-3xl">Zdjęcia:</h2>
+                
+                <div class="flex flex-col gap-8">
                     <div class="grid-img" id="galeria-1">
                         <img class="img-atrakcje" onclick="zoomIn('/gallery3/1680336214895.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680336214895.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680336419968.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680336419968.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680336419948.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680336419948.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680336158619.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680336158619.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680336158600.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680336158600.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680336275844.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680336275844.webp">
                     </div>
+                </div>
+                <div class="flex flex-col gap-4 p-6 bg-white rounded-xl w-full max-w-600 mx-auto shadow-div ">
+                    <h2 class="text-3xl">Więcej Informacji</h2>
+                    <div class="flex flex-col gap-2 linki-div">
+                        <a class="url-atrakcje" rel="nofollow" target="_blank" href="https://m.euro-glacensis.cz/rozhledna-sibenik.html?lang=10">https://m.euro-glacensis.cz/rozhledna-sibenik.html?lang=10</a>
+                    </div>
                  </div>
+                <div class="flex flex-col gap-4 p-6 bg-white rounded-xl w-full max-w-600 mx-auto shadow-div">
+                    <h2 class="text-3xl">Popularne atrakcje turystyczne</h2>
+                    <div class="flex flex-col linki-div gap-2">
+                        <a href="/atrakcje/id/kaplica-czaszek.html">Kaplica czaszek</a>
+<a href="/atrakcje/id/bledne-skaly.html">Błędne skały</a>
+<a href="/atrakcje/id/szczeliniec-wielki-park-dinozaurow.html">Szczeliniec wielki</a>
+<a href="/atrakcje/id/skalna-czaszka.html">Skalna czaszka</a>
+<a href="/atrakcje/id/skalne-miasto-adrspach.html">Skalne miasto Adrspach</a>
+<a href="/atrakcje/id/teplickie-skaly.html">Teplickie skały</a>
+<a href="/atrakcje/id/jaskinia-niedzwiedzia.html">Jaskinia niedźwiedzia</a>
+                    </div>
+                </div>
             </section>
         </main>
         <my-footer></my-footer>

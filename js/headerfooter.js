@@ -23,7 +23,6 @@ class Header extends HTMLElement {
                         <div class="header-atrakcje w-52 absolute top-8 pt-4">
                             <div class="flex flex-col gap-2 bg-gray-800 p-4 rounded-lg shadow-div">
                                 <a href="/atrakcje/">Atrakcje Turystyczne</a>
-                                <a href="/szlaki/">Szlaki Piesze</a>
                                 <a href="/trasy-rowerowe/">Trasy Rowerowe</a>
                             </div>
                         </div>
@@ -32,7 +31,7 @@ class Header extends HTMLElement {
                 </nav>
             </header>
 
-            <header class="hidden z-10 fixed left-0 h-full max-lg:flex text-white flex-row justify-start">
+            <header class="hidden z-10 fixed top-0 left-0 h-full max-lg:flex text-white flex-row justify-start">
                 <div class="w-full">
                     <i id="menu-icon" class="justify-center items-center fixed top-3 left-3 z-20 p-2 rounded-lg border flex bg-gray-800">
                         <svg id="menu-icon-show" class="fill-white w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
@@ -71,7 +70,6 @@ class Header extends HTMLElement {
                             </a>
                             <div id="atrakcje-div" class="hidden flex-col gap-3 ml-2">
                                 <a href="/atrakcje/">Atrakcje Turystyczne</a>
-                                <a href="/szlaki/">Szlaki Piesze</a>
                                 <a href="/trasy-rowerowe/">Trasy Rowerowe</a>
                             </div>
                         </div>

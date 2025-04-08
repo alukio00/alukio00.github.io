@@ -2,7 +2,13 @@
 .url-atrakcje {
     overflow: hidden;
 }
+.linki-div a {
+    font-size: 18px;
 
+}
+.linki-div a:hover {
+    text-decoration: underline;
+}
 
 .img-atrakcje {
     border-radius: 10px;
@@ -14,7 +20,7 @@
 }
 .grid-img {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-columns: repeat(auto-fit, 250px);
     gap: 30px;
     justify-content: center;
 }

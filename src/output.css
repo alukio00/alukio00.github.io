@@ -702,6 +702,11 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -809,14 +814,6 @@ video {
 
 .h-95vh {
   height: 95vh;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[60vh\] {
-  height: 60vh;
 }
 
 .h-\[75px\] {
@@ -945,6 +942,10 @@ video {
 
 .max-w-60\% {
   max-width: 60%;
+}
+
+.max-w-600 {
+  max-width: 600px;
 }
 
 .max-w-700 {
@@ -1098,6 +1099,10 @@ video {
   gap: 2rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .space-y-14 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1132,6 +1137,10 @@ video {
 
 .text-wrap {
   text-wrap: wrap;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-2xl {

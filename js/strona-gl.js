@@ -76,11 +76,6 @@ const toggleAtrakcje = (id) => {
             document.getElementById("atrakcje-arrow")
         ],
         [
-            document.getElementById("szlaki-list"),
-            document.getElementById("szlaki-img"),
-            document.getElementById("szlaki-arrow")
-        ],
-        [
             document.getElementById("trasy-list"),
             document.getElementById("trasy-img"),
             document.getElementById("trasy-arrow")
