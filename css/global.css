@@ -181,6 +181,31 @@ section {
 
     }
 }
+.image-wstep-2 {
+   
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("/img/galeria/full/back-main.webp");
+    background-size: cover;
+    background-position-y: 25%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-attachment: fixed;
+
+}
+@media (max-width: 650px) {
+   .image-wstep-2 {
+       background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.3) 100%), url("/img/galeria/tel/back-main.webp");
+       background-size: cover;
+       background-position-y: center;
+       background-position-x: center;
+       background-repeat: no-repeat;
+       height: 50vh;
+
+   }
+}
 
  .fancy-h1 {
     text-align: center;
@@ -256,5 +281,42 @@ section {
         
         font-size: 18px;
     
+    }
+}
+.zoom-buttons {
+    /*hover:bg-gray-400 max-lg:hover:bg-white max-lg:bg-opacity-70 */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: white;
+    transition-duration: 200ms;
+    border-radius: 9999px;
+    cursor: pointer;
+
+
+}
+.zoom-buttons svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--my-color);
+
+}
+.zoom-buttons:hover {
+    background-color: #9ca3af;
+}
+@media (max-width: 1024px) {
+    .zoom-buttons svg {
+        width: 32px;
+        height: 32px;
+        
+    }
+    .zoom-buttons {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 6px;
+    }
+    .zoom-buttons:hover {
+        background-color: white;
     }
 }
