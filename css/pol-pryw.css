@@ -9,4 +9,5 @@ ul {
 }
 .inner-o {
     margin-left: 30px;
+    word-break: break-word;
 }

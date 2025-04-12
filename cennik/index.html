@@ -28,12 +28,15 @@
 <body>
     <my-header></my-header>
     <main>
-        <section class="space-y-20 max-md:space-y-10 max-md:p-3">
-            <h1 class="text-4xl font-semibold text-center mt-10">Cennik</h1>
+        <section class="image-wstep-2">
+            <h1>Cennik</h1>
+        </section>
+        <my-navigation></my-navigation>
+        <section class="max-md:p-3">
             <div class="flex flex-row max-xl:flex-col w-full items-start justify-center gap-8 max-w-10xl mx-auto">
-                <div class="bg-white shadow-lg rounded-3xl p-8 max-md:p-6 flex flex-col gap-8 w-full max-w-700 mx-auto border-2 border-black">
+
+                <div class="bg-white shadow-div rounded-xl p-8 max-md:p-6 flex flex-col gap-6 w-full max-w-700 mx-auto">
                     <h2 class="text-3xl font-medium">Informacje</h2>
-                    <hr class="border border-black h-0.5 w-2/3 bg-gray-800">
                     <p class="text-lg text-wrap">
                         <strong>Informacje Kontaktowe:</strong><br>
                         Numer Telefonu: 505 720 041  <br>E-mail: info@cichyzakatek.com.pl
@@ -49,9 +52,8 @@
                         Szczegółowych informacji udzielamy telefonicznie lub e-mail.
                     </p>
                 </div>
-                <form onsubmit="sendAskEmail(event)" id="email-form" enctype="multipart/form-data" class="bg-white shadow-lg max-md:p-6 rounded-3xl p-8 flex flex-col gap-8 w-full max-w-700 mx-auto border-2 border-black">
+                <form onsubmit="sendAskEmail(event)" id="email-form" enctype="multipart/form-data" class="bg-white shadow-div max-md:p-6 rounded-xl p-8 flex flex-col gap-6 w-full max-w-700 mx-auto">
                     <h2 class="text-3xl font-medium">Sprawdź Dostępność</h2>
-                    <hr class="border border-black h-0.5 w-2/3 bg-gray-800">
                      
                     <div class="flex flex-row max-sm:flex-col gap-8 justify-between">
                         <div class="w-full gap-3 flex flex-col">
@@ -85,7 +87,7 @@
                     <div class="hidden" id="errors-div"></div>
       
                 
-                    <button class="mt-8 mx-auto bg-gray-800 text-white p-2 px-10 rounded-xl shadow-md text-lg" type="submit">Prześlij</button>
+                    <button class="button-1" type="submit">Sprawdź dostępność</button>
                 </form>
             </div>
         </section>

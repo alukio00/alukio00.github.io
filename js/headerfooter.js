@@ -176,7 +176,6 @@ class Footer extends HTMLElement {
                                         <h3 class="text-2xl my-2">Atrakcje w okolicy:</h3>
                                         <ul class="list-disc footer-list list-inside gap-2 flex flex-col">
                                             <li><a href="/atrakcje">Atrakcje turystyczne</a></li>
-                                            <li><a href="/szlaki">Szlaki piesze</a></li>
                                             <li><a href="/trasy-rowerowe">Trasy rowerowe</a></li>
                                         </ul>
                                     </div>
@@ -252,3 +251,34 @@ const acceptCookies = (event) => {
 
     document.getElementById("cookies-div").classList.add("hidden");
 }
+class Navigation extends HTMLElement {
+
+
+    connectedCallback() {
+        const url = location.href.split("/").slice(3).filter(el => el)
+
+        let path = ''
+
+        this.innerHTML = /*html*/`
+            <section class="py-0">
+            <div class="w-full flex-row flex-wrap my-6 max-w-10xl mx-auto flex gap-0 items-center navigation-div">
+                <a href="/">Strona główna</a>
+                    ${url.map((el, index) => {
+                       
+                        path += `/${el}`;
+
+                        if (el == "id") {
+                            return
+                        }
+
+                        const name = el.replace(".html", "").replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+
+                        return `<img src="/svg/arrow/right.svg" alt="Strzałka"><a href="${path}">${name}</a>`;
+                    }).join("")}
+                </div>
+                </section>
+        `
+
+    }
+}
+customElements.define("my-navigation", Navigation);

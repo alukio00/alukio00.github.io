@@ -25,6 +25,7 @@
 }
 
 
+
 @media (max-width: 640px) {
     .img-div img {
         width: 400px;
@@ -146,8 +147,6 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
-    margin: 0px auto;
     gap: 32px;
 } 
 .opis-inner {
@@ -157,15 +156,14 @@
     width: 100%;
 
 }
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
+
 section {
     display: flex;
     flex-direction: column;
     gap: 56px;
+}
+.section-my {
+    margin: 40px 0px;
 }
 .dodatkowe-informacje-div {
 
@@ -173,8 +171,6 @@ section {
     gap: 32px;
     width: 100%;
     justify-content: center;
-    max-width: 1200px;
-    margin: 0px auto;
 }
 .dodatkowe-informacje-inner {
   
@@ -199,6 +195,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin: 20px 0px;
 }
 .main-div hr {
    
