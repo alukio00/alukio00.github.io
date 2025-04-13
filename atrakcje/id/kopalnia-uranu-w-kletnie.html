@@ -32,26 +32,37 @@
         <popup-image-zoom></popup-image-zoom>
         <my-header></my-header>
         <main>
+            <section class="image-wstep-2" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('/gallery/full/kopalnia-uranu/IMG20241008130631.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <h1>Kopalnia uranu w Kletnie</h1>
+            </section>
+            <my-navigation></my-navigation>
             <section class="flex flex-col my-8 gap-16 w-full">
-                <div class="flex flex-col gap-8">
-                    <h1 class="text-4xl font-medium text-center">Kopalnia uranu w Kletnie - Zdjęcia</h1>
-                    <hr class="h-0.5 bg-gray-800 w-2/5 border mx-auto border-gray-800">
-                </div>
-                
-                <div class="flex flex-col gap-8">
+                <div class="my-div">
+                    <h2 class="text-3xl font-medium text-center">Zdjęcia</h2>
+        
                     <div class="grid-img" id="galeria-1">
                         <img class="img-atrakcje" onclick="zoomIn('/gallery/full/kopalnia-uranu/IMG20241008123803.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/tel/kopalnia-uranu/IMG20241008123803.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery/full/kopalnia-uranu/IMG20241008124618.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/tel/kopalnia-uranu/IMG20241008124618.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery/full/kopalnia-uranu/IMG20241008125711.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/tel/kopalnia-uranu/IMG20241008125711.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery/full/kopalnia-uranu/IMG20241008130234.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/tel/kopalnia-uranu/IMG20241008130234.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery/full/kopalnia-uranu/IMG20241008130631.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/tel/kopalnia-uranu/IMG20241008130631.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery/full/kopalnia-uranu/IMG20241008131300.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/tel/kopalnia-uranu/IMG20241008131300.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery/full/kopalnia-uranu/IMG20241008131709.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery/tel/kopalnia-uranu/IMG20241008131709.webp">
                     </div>
+                 
                 </div>
-                <div class="flex flex-col gap-4 p-6 bg-white rounded-xl w-full max-w-600 mx-auto shadow-div hidden">
-                    <h2 class="text-3xl">Więcej Informacji</h2>
-                    <div class="flex flex-col gap-2 linki-div">
+                
+            </section>
+            <section class="my-8">
+                <div class="flex flex-col gap-8">
+                    <h2 class="text-3xl font-medium text-center hidden">Więcej Informacji</h2>
+
+                    <div class="flex linki-div flex-col gap-2 p-6 bg-white rounded-xl w-full max-w-600 mx-auto shadow-div hidden">
+                    
                         
                     </div>
-                 </div>
-                <div class="flex flex-col gap-4 p-6 bg-white rounded-xl w-full max-w-600 mx-auto shadow-div">
-                    <h2 class="text-3xl">Inne popularne atrakcje</h2>
-                    <div class="flex flex-col linki-div gap-2">
+                </div>
+            </section>
+            <section class="my-8">
+                <div class="flex flex-col gap-8">
+                    <h2 class="text-3xl font-medium text-center">Inne popularne atrakcje</h2>
+
+                    <div class="flex flex-col gap-2 p-6 linki-div bg-white rounded-xl w-full max-w-600 mx-auto shadow-div">
+                        
                         <a href="/atrakcje/id/kaplica-czaszek.html">Kaplica czaszek</a>
 <a href="/atrakcje/id/bledne-skaly.html">Błędne skały</a>
 <a href="/atrakcje/id/szczeliniec-wielki-park-dinozaurow.html">Szczeliniec wielki</a>
@@ -59,9 +70,9 @@
 <a href="/atrakcje/id/skalne-miasto-adrspach.html">Skalne miasto Adrspach</a>
 <a href="/atrakcje/id/teplickie-skaly.html">Teplickie skały</a>
 <a href="/atrakcje/id/jaskinia-niedzwiedzia.html">Jaskinia niedźwiedzia</a>
+                   
                     </div>
                 </div>
-                
             </section>
         </main>
         <my-footer></my-footer>

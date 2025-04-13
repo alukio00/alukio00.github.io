@@ -49,7 +49,6 @@
 
 
 
-
 /* All Aps */
 
 .h2-medium {
@@ -258,5 +257,150 @@ h1 {
     }
     .dodatkowe-informacje-inner {
         width: 100%;
+    }
+}
+
+
+
+.icon {
+    color: var(--my-color);
+    font-size: 40px!important;
+}
+
+.content-div {
+    display: flex;
+    gap: 32px;
+    margin: 20px 0px;
+    align-items: center;
+    width: 100%;
+}
+.content-div img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    aspect-ratio: 3/2;
+}
+.content-inner {
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+}
+.content-title {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    
+}
+.content-inner ul {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    list-style-type: disc;
+    list-style-position: inside;
+
+}
+.content-inner ul li {
+    font-size: 1.25rem;
+} 
+
+.udogodnienia {
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+}
+.udogodnienia-div {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.udogodnienia p {
+    font-size: 1.25rem;
+}
+.udogodnienia i {
+    color: var(--my-color);
+    font-size: 28px;
+}
+
+.content-dodatkowe-div {
+    display: flex;
+    gap: 32px;
+    margin: 20px 0px;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.content-dodatkowe-inner {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+}
+.content-dodatkowe {
+    display: flex;
+    gap: 32px;
+}
+.content-dodatkowe-div img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    aspect-ratio: 16/9;
+}
+
+@media (max-width: 1024px) {
+    .icon {
+        color: var(--my-color);
+        font-size: 40px!important;
+    }
+    
+    .content-div {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        max-width: 600px;
+        margin: 10px auto;
+    }
+
+    .content-inner ul li {
+        font-size: 1.125rem;
+    } 
+ 
+    .udogodnienia p {
+        font-size: 1.125rem;
+    }
+    .content-dodatkowe {
+        flex-direction: column;
+        max-width: 600px;
+        margin:  0px auto;
+    }
+    .content-dodatkowe img {
+        aspect-ratio: 3/2;
+    }
+    .content-dodatkowe-2 {
+        flex-direction: column-reverse!important;
+    }
+
+    
+}
+@media (max-width: 500px) {
+    .udogodnienia {
+        width: 100%;
+    
     }
 }

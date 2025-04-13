@@ -33,26 +33,38 @@
         <popup-image-zoom></popup-image-zoom>
         <my-header></my-header>
         <main>
-            <section class="flex flex-col my-10 gap-16">
-                <div class="flex flex-col gap-8">
-                    <h1 class="text-4xl font-medium text-center">Peklo - Zdjęcia</h1>
-                    <hr class="h-0.5 bg-gray-800 w-2/5 border mx-auto border-gray-800">
-                </div>
-                
-                <div class="flex flex-col gap-8">
+       
+            <section class="image-wstep-2" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('/gallery3/1680342626738.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <h1>Peklo</h1>
+            </section>
+            <my-navigation></my-navigation>
+            <section class="flex flex-col my-8 gap-16 w-full">
+                <div class="my-div">
+                    <h2 class="text-3xl font-medium text-center">Zdjęcia</h2>
+        
                     <div class="grid-img" id="galeria-1">
                         <img class="img-atrakcje" onclick="zoomIn('/gallery3/1680342626738.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680342626738.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680343094326.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680343094326.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680343094339.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680343094339.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680342589319.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680342589319.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/peklo1.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/peklo1.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680342545247.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680342545247.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680342626749.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680342626749.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680342482841.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680342482841.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680342545265.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680342545265.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680336275860.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680336275860.webp"><img class="img-atrakcje" onclick="zoomIn('/gallery3/1680342589305.webp')" loading="lazy" alt="Zdjęcie atrakcji" src="/gallery3/1680342589305.webp">
                     </div>
+                 
                 </div>
-                <div class="flex flex-col gap-4 p-6 bg-white rounded-xl w-full max-w-600 mx-auto shadow-div ">
-                    <h2 class="text-3xl">Więcej Informacji</h2>
-                    <div class="flex flex-col gap-2 linki-div">
+                
+            </section>
+            <section class="my-8">
+                <div class="flex flex-col gap-8">
+                    <h2 class="text-3xl font-medium text-center ">Więcej Informacji</h2>
+
+                    <div class="flex linki-div flex-col gap-2 p-6 bg-white rounded-xl w-full max-w-600 mx-auto shadow-div ">
+                    
                         <a class="url-atrakcje" rel="nofollow" target="_blank" href="https://www.hkregion.cz/dr-pl/101056-dolina-piek-o-udoli-peklo.html">https://www.hkregion.cz/dr-pl/101056-dolina-piek-o-udoli-peklo.html</a>
                     </div>
-                 </div>
-                <div class="flex flex-col gap-4 p-6 bg-white rounded-xl w-full max-w-600 mx-auto shadow-div">
-                    <h2 class="text-3xl">Popularne atrakcje turystyczne</h2>
-                    <div class="flex flex-col linki-div gap-2">
+                </div>
+            </section>
+            <section class="my-8">
+                <div class="flex flex-col gap-8">
+                    <h2 class="text-3xl font-medium text-center">Popularne atrakcje turystyczne</h2>
+
+                    <div class="flex flex-col gap-2 p-6 linki-div bg-white rounded-xl w-full max-w-600 mx-auto shadow-div">
+                        
                         <a href="/atrakcje/id/kaplica-czaszek.html">Kaplica czaszek</a>
 <a href="/atrakcje/id/bledne-skaly.html">Błędne skały</a>
 <a href="/atrakcje/id/szczeliniec-wielki-park-dinozaurow.html">Szczeliniec wielki</a>
@@ -60,6 +72,7 @@
 <a href="/atrakcje/id/skalne-miasto-adrspach.html">Skalne miasto Adrspach</a>
 <a href="/atrakcje/id/teplickie-skaly.html">Teplickie skały</a>
 <a href="/atrakcje/id/jaskinia-niedzwiedzia.html">Jaskinia niedźwiedzia</a>
+                   
                     </div>
                 </div>
             </section>

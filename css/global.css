@@ -13,6 +13,7 @@
 
 body::before {
     content: "";
+    
     background: linear-gradient(rgb(255, 255, 255, 0.85), rgb(255, 255, 255, 0.85)), url("/img/galeria/full/back-main.webp");
     background-size: cover;
     height: 100vh;
@@ -42,7 +43,6 @@ body::before {
 body {
     font-family: Poppins;
     margin: 0px;
-    padding-top: 75px;
    
     
 }
@@ -193,7 +193,9 @@ section {
 }
 .image-wstep-2 {
    
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("/img/galeria/full/back-main.webp");
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("/img/galeria/full/back-main.webp");
+    /*-webkit-mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 95%, transparent 100%);
+    mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 95%, transparent 100%);*/
     background-size: cover;
     background-position-y: 25%;
     background-position-x: center;
@@ -207,13 +209,14 @@ section {
 }
 .image-wstep-2 h1 {
     color: white;
-    font-size: 2rem;
+    font-size: 2.25rem;
     text-align: center;
     font-weight: 600;
+    text-shadow: 0em 0em 0.3em #000000;
 }
 @media (max-width: 650px) {
    .image-wstep-2 {
-       background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.3) 100%), url("/img/galeria/tel/back-main.webp");
+       background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.2) 100%), url("/img/galeria/tel/back-main.webp");
        background-size: cover;
        background-position-y: center;
        background-position-x: center;
