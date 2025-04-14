@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
     --my-color: #0d2764;
     --max-width: 1200px;
@@ -209,10 +209,11 @@ section {
 }
 .image-wstep-2 h1 {
     color: white;
-    font-size: 2.25rem;
+    font-size: 3.25rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     text-shadow: 0em 0em 0.3em #000000;
+    font-family: "Akaya Kanadaka";
 }
 @media (max-width: 650px) {
    .image-wstep-2 {
