@@ -208,6 +208,7 @@ section {
 
 }
 .image-wstep-2 h1 {
+  /*  margin-bottom: -80px;*/
     color: white;
     font-size: 3.25rem;
     text-align: center;
@@ -226,7 +227,7 @@ section {
 
    }
    .image-wstep-2 h1 {
-    font-size: 1.875rem;
+    font-size: 2.2rem;
    }
 }
 
@@ -353,4 +354,97 @@ section {
 }
 .content-overflow {
     word-break: break-word;
+}
+.section-my {
+    margin: 40px 0px;
+}
+
+
+
+
+
+/*  Atrakcje W Okolicy  */
+
+@keyframes rollAtrakcje {
+    0% {
+        max-height: 0;
+   
+    }
+    100% {
+        max-height: 700px; 
+
+    }
+}
+
+@keyframes hideImgAtrakcje {
+    0% {
+
+        max-height: 160px;
+    }
+    100% {
+   
+        max-height: 0px;
+    }
+}
+
+@keyframes rollAtrakcjeReverse {
+    0% {
+        max-height: 700px; 
+
+    }
+    100% {
+        max-height: 0;
+   
+    }
+}
+
+.animation-atrakcje {
+    animation-name: rollAtrakcje;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    overflow: hidden;
+}
+
+.animation-atrakcje-reverse {
+    animation-name: rollAtrakcjeReverse;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    overflow: hidden;
+}
+
+.animation-atrakcje-img {
+    animation-name: hideImgAtrakcje;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    transform-origin: center;
+    overflow: hidden;
+}
+
+.animation-atrakcje-img-reverse {
+    animation-name: hideImgAtrakcje;
+    animation-duration: 200ms;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    transform-origin: center;
+    overflow: hidden;
+}
+.atrakcje-list-div {
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+}
+.atrakcje-list-div a {
+    text-decoration: underline;
+}
+.atrakcje-div {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    width: 100%;
+}
+.atrakcje-zdjecie {
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+    width: 100%;
+    aspect-ratio: 16/9;
 }

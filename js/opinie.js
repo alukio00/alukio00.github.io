@@ -47,7 +47,7 @@ class ReviewsWidget extends HTMLElement {
         })
 
         this.innerHTML = `
-            <section class="flex flex-col gap-14 justify-center">
+            <section class="flex flex-col section-my gap-14 justify-center">
                 <h2 class="text-center font-medium text-4xl max-sm:text-3xl">Opinie</h2>
                 <div class="w-full max-w-10xl mx-auto justify-center flex-col items-center flex gap-8">
                     <div class="flex gap-8 justify-center max-lg:flex-col">

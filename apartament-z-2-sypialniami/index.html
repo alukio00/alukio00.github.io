@@ -25,6 +25,7 @@
     
     
     <script defer src="/js/opinie.js"></script>
+    <script defer src="/js/atrakcje.js"></script>
   
 
 </head>
@@ -43,19 +44,13 @@
 
     
     <main data-number="4">
-        <section class="image-wstep">
-           
-            
+        <section class="image-wstep-2">
+            <h1>Apartament z 2 Sypialniami</h1>
         </section>
-        <section>
-            <div class="main-div">
-         
-                <h1>Apartament z 2 sypialniami</h1>
-            </div>    
-        </section>
+        <my-navigation></my-navigation>
 
         <section>
-    
+            <h2 class="h2-medium">Galeria</h2>
             <div class="my-div">
                 <div id="gallery">
                     <button onclick="prev()" type="button" class="left-2 gallery-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></button>
@@ -85,77 +80,142 @@
             </div>
         </section>
 
-        <section class="section-my">
+        <section class="my-10">
             <div class="my-div">
                 <h2 class="h2-medium">Opis Apartamentu</h2>
             
-                <div class="opis-div">
-                    <div class="opis-inner">
-                        <h3 class="h3-medium">Salon:</h3>
-                        <hr class="hr-2-3">
-                        <div class="divider-p">
-                    
-                            <p><i class="material-symbols-outlined">skillet</i>Aneks Kuchenny</p>
-                            <p><i class="material-symbols-outlined">live_tv</i>Smart TV 49" (Netflix)</p>
-                            <p><i class="material-symbols-outlined">weekend</i>Rozkładany Narożnik (145cm x 200cm)</p>
-                        </div>
-                    </div>
-                    <div class="opis-inner">
-                        <h3 class="h3-medium">Inne pomieszczenia:</h3>
-                        <hr class="hr-2-3">
-                        <div class="divider-p">
-                            <p><i class="material-symbols-outlined">king_bed</i>Sypialnia Nr. 1 (Łóżko małżeńskie 140cm x 200cm)</p>
-                            <p><i class="material-symbols-outlined">single_bed</i>Sypialnia Nr. 2 (2 Łóżka 80cm x 200cm)</p>
-                            <p><i class="material-symbols-outlined">shower</i>Łazienka (Prysznic, suszarka do włosów)</p>
-                        </div>
-                    </div>
-                    <div class="opis-inner">
-                        <h3 class="h3-medium">Taras:</h3>
-                        <hr class="hr-2-3">
-                        <div class="divider-p">
-                            <p><i class="material-symbols-outlined">roofing</i>Zadaszony Taras</p>
-                            <p><i class="material-symbols-outlined">deck</i>Stół, ławy i krzesła</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section-my">
-            <div class="my-div">
-                <h2 class="h2-medium">Dodatkowe Informacje</h2>
+                <div class="content-div">
+                    <div class="content-inner">
 
-                <div class="dodatkowe-informacje-div">
-                    <div class="dodatkowe-informacje-inner shadow-div">
-                        <h3>Wyposażenie Kuchni:</h3>
-                        <hr>
+                        <div class="content-title">
+                            <i class="material-symbols-outlined icon">kitchen</i>
+                            <h3 class="h3-medium">Aneks Kuchenny</h3>
+                        </div>
+                        
                         <ul>
-                            <li>Płyta Indukcyjna</li>
+                            <li>Płyta indukcyjna</li>
                             <li>Mikrofalówka</li>
                             <li>Lodówka</li>
                             <li>Czajnik</li>
-                            <li>Talerze, miski i sztućce</li>
-                        </ul>
-                        <h3>W cenie pobytu:</h3>
-                        <hr>
-                        <ul>
-                            <li>Wi-Fi</li>
-                            <li>Parking</li>
-                            <li>Ogrzewanie</li>
-                        
+                            <li>Toster</li>
+                            <li>Talerze, szklanki, sztućce itp.</li>
                         </ul>
                     </div>
-                    <picture class="dodatkowe-img">
-                        <source media="(max-width:650px)" srcset="/img/a5/tel/2.webp" alt="Obraz Obiektu" class="shadow-div" />
-                        <img src="/img/a5/full/2.webp" alt="Obraz Obiektu" class="shadow-div" />
-                    </picture>
+                    <div><img loading="lazy" alt="Cichy zakątek aneks kuchenny" src="/img/a5/full/2.webp"></div>
                 </div>
-                <a class="button-1 mx-auto" href="/cennik/">Sprawdź Dostępność</a>
-            </div>
-       
-        </section>
+                <div class="udogodnienia-div">
+                    <div class="udogodnienia">
+                        <i class="material-symbols-outlined">wifi</i>
+                        <p>Darmowe Wifi</p>
+                    </div>
+                    <div class="udogodnienia">
+                        <i class="material-symbols-outlined">live_tv</i>
+                        <p>Netflix premium</p>
+                    </div>
+                    <div class="udogodnienia">
+                        <i class="material-symbols-outlined">local_parking</i>
+                        <p>Monitorowany parking</p>
+                    </div>
+                    <div class="udogodnienia">
+                        <i class="material-symbols-outlined">live_tv</i>
+                        <p>Smart TV 49"</p>
+                    </div>
+                 
+                </div>
+                <div class="content-div">
+                    
+                    <div class="content-inner">
 
-        <reviews-wigdet class="section-my"></reviews-wigdet>
+                        <div class="content-title">
+                            <i class="material-symbols-outlined icon">chair</i>
+                            <h3 class="h3-medium">Salon</h3>
+                        </div>
+
+                        <ul>
+                            <li>Aneks kuchenny</li>
+                            <li>Rozkładany narożnik (145cm x 200cm)</li>
+                            <li>Smart TV 49"</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div><img loading="lazy" alt="Cichy zakątek salon" src="/img/a5/full/1.webp"></div>
+                    
+                </div>
+                
+                <div class="content-div content-div-reverse">
+                    
+                    <div class="content-inner">
+
+                        <div class="content-title">
+                            <i class="material-symbols-outlined icon">king_bed</i>
+                            <h3 class="h3-medium">Sypialnie</h3>
+                        </div>
+                        
+                        <ul>
+                            <li>Sypialnia nr. 1 - łóżko małżeńskie (140cm x 200cm)</li>
+                            <li>Sypialnia nr. 2 - dwa łóżka (80cm x 200cm)</li>
+                        </ul>
+                    </div>
+                    <div><img loading="lazy" alt="Cichy zakątek sypialnia" src="/img/a5/full/4.webp"></div>
+                    
+                </div>
+                <div class="content-div">
+                    
+                    <div class="content-inner">
+
+                        <div class="content-title">
+                            <i class="material-symbols-outlined icon">shower</i>
+                            <h3 class="h3-medium">Łazienka</h3>
+                        </div>
+                        
+                        <ul>
+                            <li>Prysznic</li>
+                            <li>Suszarka do włosów</li>
+                            <li>Reczniki</li>
+                        </ul>
+                    </div>
+                    <div><img loading="lazy" alt="Cichy zakątek łazienka" src="/img/a5/full/8_1ryyvtpb.webp"></div>
+                    
+                </div>
+
+                <div class="content-dodatkowe">
+                    <div class="content-dodatkowe-div">
+                    
+    
+                        <div class="content-dodatkowe-inner">
+                            <i class="material-symbols-outlined icon"></i>
+                            <h3 class="h4-medium">Bezpłatny parking</h3>
+                        </div>
+                            
+                          
+                        <div><img loading="lazy" alt="Cichy zakątek parking" src="/img/wspólne/full/162-kudowa-zdroj-cichy-zakatek.webp"></div>
+                        
+                    </div>
+                    <div class="content-dodatkowe-div content-dodatkowe-2">
+                    
+                        <div><img loading="lazy" alt="Cichy zakątek taras" src="/img/a5/full/55-kudowa-zdroj-cichy-zakatek_q26cm0xb.webp"></div>
+
+                        <div class="content-dodatkowe-inner">
+    
+                            <i class="material-symbols-outlined icon"></i>
+                            <h3 class="h4-medium">Zadaszony taras</h3>
+                
+                      
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+            
+            </div>
+         
+        </section>
+        
+        <my-atrakcje></my-atrakcje>
+        <reviews-wigdet></reviews-wigdet>
         
     </main>
     <my-footer></my-footer>

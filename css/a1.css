@@ -169,9 +169,6 @@ section {
     flex-direction: column;
     gap: 56px;
 }
-.section-my {
-    margin: 40px 0px;
-}
 .dodatkowe-informacje-div {
 
     display: flex;
@@ -350,7 +347,7 @@ h1 {
     margin: 20px 0px;
     align-items: center;
     width: 100%;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .content-dodatkowe-inner {
@@ -365,6 +362,7 @@ h1 {
 }
 .content-dodatkowe {
     display: flex;
+    flex-direction: row-reverse;
     gap: 32px;
 }
 .content-dodatkowe-div img {
@@ -397,12 +395,16 @@ h1 {
         font-size: 1.125rem;
     }
     .content-dodatkowe {
-        flex-direction: column;
+        flex-direction: column-reverse;
         max-width: 600px;
         margin:  0px auto;
     }
     .content-dodatkowe img {
         aspect-ratio: 3/2;
+    }
+    .content-dodatkowe-div {
+  
+        flex-direction: column;
     }
     .content-dodatkowe-2 {
         flex-direction: column-reverse!important;

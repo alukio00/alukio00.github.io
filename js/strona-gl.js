@@ -68,53 +68,6 @@ const zoomLeft = () => {
 };
 
 
-const toggleAtrakcje = (id) => {
-    const divList = [
-        [
-            document.getElementById("atrakcje-list"),
-            document.getElementById("atrakcje-img"),
-            document.getElementById("atrakcje-arrow")
-        ],
-        [
-            document.getElementById("trasy-list"),
-            document.getElementById("trasy-img"),
-            document.getElementById("trasy-arrow")
-        ]
-    ];
-    const currList = divList[id];
-
-    const img = currList[1];
-    const list = currList[0];
-    const arrow = currList[2]
-
-    if (list.classList.contains("hidden")) {
-        
-        list.classList.remove("hidden");
-        list.classList.add("animation-atrakcje");
-        list.classList.add("flex");
-        arrow.classList.remove("rotate-180")
-
-        img.classList.add("animation-atrakcje-img");
-
-        setTimeout(() => {
-            img.classList.add("hidden");
-            img.classList.remove("animation-atrakcje-img");
-        }, 200); 
-    } else {
-       
-        list.classList.add("hidden");
-        list.classList.remove("animation-atrakcje");
-        list.classList.remove("flex");
-        arrow.classList.add("rotate-180")
-
-        img.classList.remove("hidden");
-        img.classList.add("animation-atrakcje-img-reverse");
-
-        setTimeout(() => {
-            img.classList.remove("animation-atrakcje-img-reverse");
-        }, 200); 
-    }
-};
 
 
 const deleteErrorMessage = () => {
