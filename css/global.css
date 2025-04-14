@@ -207,8 +207,12 @@ section {
     background-attachment: fixed;
 
 }
+.blur-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 95%, transparent 100%);
+    mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 93%, transparent 100%);
+}
 .image-wstep-2 h1 {
-  /*  margin-bottom: -80px;*/
+ 
     color: white;
     font-size: 3.25rem;
     text-align: center;
@@ -223,7 +227,7 @@ section {
        background-position-y: center;
        background-position-x: center;
        background-repeat: no-repeat;
-       height: 50vh;
+       height: 40vh;
 
    }
    .image-wstep-2 h1 {

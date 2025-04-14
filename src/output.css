@@ -708,8 +708,8 @@ video {
   margin-bottom: auto;
 }
 
-.-mb-10 {
-  margin-bottom: -2.5rem;
+.-mb-14 {
+  margin-bottom: -3.5rem;
 }
 
 .mb-4 {
@@ -726,10 +726,6 @@ video {
 
 .mr-16 {
   margin-right: 4rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .mt-12 {
@@ -754,10 +750,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.aspect-3\/2 {
-  aspect-ratio: 3 / 2;
 }
 
 .h-0 {
@@ -810,10 +802,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .w-1\/3 {
