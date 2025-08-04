@@ -22,8 +22,7 @@ const prev = () => {
     if (currentTel > 0) {
         
         currentTel--
-        
-        
+                
     } else {
         
         currentTel = galleryUrls.length - 1

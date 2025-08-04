@@ -1,0 +1,23 @@
+{
+  "name": "apartament-projekt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "generate": "node ./atrakcje/generate.js & node ./trasy-rowerowe/generate-3.js",
+    "generate-atrakcje": "node ./atrakcje/generate.js",
+    "generate-trasy": "node ./trasy-rowerowe/generate-3.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "fs-extra": "^11.3.0",
+    "jquery": "^3.7.1"
+  }
+}
