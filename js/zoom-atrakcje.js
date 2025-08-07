@@ -16,7 +16,7 @@ const zoomIn = (indexUrl) => {
     zoomDiv.innerHTML = `
         <img src="${indexUrl}" alt="Powiększony obraz" class="my-auto rounded-2xl max-lg:rounded-none shadow-xl object-cover w-auto h-95vh max-lg:h-min max-lg:max-h-80vh max-lg:w-screen">
     `;
-    console.log(index)
+  
 }
 
 
