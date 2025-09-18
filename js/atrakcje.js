@@ -44,7 +44,7 @@ class Atrakcje extends HTMLElement {
                     <div class="atrakcje-div">
                         <div class="flex flex-col">
                             <a id="trasy-img" class="" href="/trasy-rowerowe/">
-                                <img class="atrakcje-zdjecie" loading="lazy" src="/gallery3/1680269093418--1-.webp" alt="Trasy rowerowe w Kudowie">
+                                <img class="atrakcje-zdjecie" loading="lazy" src="/gallery3/main-tel.webp" alt="Trasy rowerowe w Kudowie">
                             </a>
                             <div class="flex flex-col gap-4 p-4">
 
