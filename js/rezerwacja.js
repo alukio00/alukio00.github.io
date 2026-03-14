@@ -50,19 +50,16 @@ const sendEmail = async (event) => {
 
 const copyBtn1 = document.getElementById("copy-btn-1")
 const copyBtn2 = document.getElementById("copy-btn-2")
-const copyBtn3 = document.getElementById("copy-btn-3")
 
 
 const copyEl = (id) => {
     const array = [
         "54 1090 2835 0000 0001 5320 1446",
-        "PL54109028350000000153201446", 
-        "505720041"
+        "PL54109028350000000153201446",
     ]
     const btns = [
         copyBtn1,
-        copyBtn2, 
-        copyBtn3
+        copyBtn2
     ]
 
     navigator.clipboard.writeText(array[id])
@@ -83,7 +80,4 @@ copyBtn1.addEventListener("click", () => {
 })
 copyBtn2.addEventListener("click", () => {
     copyEl(1)
-})
-copyBtn3.addEventListener("click", () => {
-    copyEl(2)
 })
