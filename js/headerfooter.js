@@ -203,7 +203,7 @@ class Footer extends HTMLElement {
                    
                         
                         <div class="p-3">
-                            <p>&copy; 2024 Apartamenty Cichy Zakątek. Wszelkie prawa zastrzeżone.</p>
+                            <p>&copy; 2026 Apartamenty Cichy Zakątek. Wszelkie prawa zastrzeżone.</p>
                         </div>
                     </footer>
                     <div id="cookies-div" class="hidden fixed bottom-5 left-24 max-lg:left-5 flex-col gap-2 bg-white rounded-xl shadow-2xl p-4 w-96 max-w-[calc(100%-36px)]">
